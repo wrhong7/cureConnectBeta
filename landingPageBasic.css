@@ -1,0 +1,199 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	background-color: #10A7EA;
+	font-color: white;
+}
+
+header {
+    width: 100vw;
+    overflow: auto;
+}
+
+.headerLeft {
+	float: left;
+	float: left;
+    margin: 1vh 1vw;
+}
+
+.headerComponent {
+	color: white;
+    background-color: #10A7EA;
+}
+
+.hederCureConnect {
+	padding: 0.4vw;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+.hederCureConnect:hover {
+	color: #10A7EA;
+    background-color: white;	
+	text-decoration: none;
+}
+
+.headerRight {
+    float: right;
+    margin: 1.5vh 1vw;
+}
+
+.headerLogo {
+	width: 40px;
+	height: 40px;
+}
+
+.headerSignIn {
+	padding: 0.4vw;
+	border-radius: 10px;
+}
+
+.headerSignIn:hover {
+	padding: 0.4vw;
+	color: #10A7EA;
+    background-color: white;
+ 	text-decoration: none;
+}
+
+.headerExpandMenuButton {
+	border-style: none;
+}
+
+.headerExpandMenuButton:hover {
+	background-color: white !important;
+    color: #10A7EA !important;
+}
+
+.expandMenuSection {
+	display: none;
+    float: right;
+    width: 20vw;
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 2vw;
+    /* padding-left: 5vw; */
+}
+
+.expandMenuSectionContent {
+
+}
+
+.expandMenuSectionList {
+
+}
+
+.expandMenuSectionListComponent {
+    margin-top: 1vw;
+}
+
+.contentCenter {
+	width: 80vw;
+    overflow: auto;
+    margin: 15vw 10vw;
+}
+
+.contentCenterUpperFloor {
+    width: 80vw;
+    overflow: auto;
+}
+
+.contentCenterUpperFloorButtonsLeft {
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1vw;
+    float: left;
+    width: 20vw;
+    text-align: center;
+    margin: 0 0.5vw 0 19.5vw;
+    cursor: pointer;
+}
+
+.contentCenterUpperFloorButtonsLeft:hover {
+	background-color: white;
+	color: #10A7EA;
+}
+
+.contentCenterUpperFloorButtonsRight {
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1vw;
+    float: left;
+    width: 20vw;
+    text-align: center;
+    margin: 0 19.5vw 0 0.5vw;
+    cursor: pointer;
+
+}
+
+.contentCenterUpperFloorButtonsRight:hover {
+	background-color: white;
+	color: #10A7EA;
+}
+
+.contentCenterLowerFloor {
+
+}
+
+.contentCenterLowerFloorButtons {
+	color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1vw;
+    margin-top: 1vw;
+    width: 20vw;
+    margin: 1vw 30vw 0 30vw;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.contentCenterLowerFloorButtons:hover {
+	background-color: white;
+	color: #10A7EA;	
+}
+
+.contentCenterScrollDownBar {
+	bottom: 0vh;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    overflow: auto;
+}
+
+.contentCenterScrollDownBarCaption {
+	color: white;
+}
+
+.contentCenterScrollDownBarIcon {
+	color: white;
+    background-color: #10A7EA;
+}
+
+.contentCenterScrollDownBarIconBorder {
+	color: white;
+    background-color: #10A7EA;
+    border-style: none;
+}
+
+.contentCenterScrollDownBarIconColor {
+	color: white;
+}
+
+/*blinking scross down section*/
+
+@keyframes blinkingScrossDown {
+	0% {opacity: 0.2;}
+	50% {opacity: 0.8;}
+	100% {opacity: 0.2;}
+}
+
+.contentCenterScrollDownBar {
+	animation: blinkingScrossDown 4s infinite;
+}
