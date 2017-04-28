@@ -107,7 +107,7 @@
     width: 70vw;
     overflow: auto;
     color: white;
-    margin: 10vw 15vw 0 15vw;
+    margin: 5vw 15vw 0 15vw;
 }
 
 .nurseRegStep1Header {
@@ -115,11 +115,23 @@
 }
 
 .nurseRegStep1Content {
+    width: 70vw;
+    overflow: auto;
+}
 
+.nurseRegStep1ContentLeft {
+    float: left;
+    width: 70vw;
+    overflow: auto;
+}
+
+.nurseRegStep1ContentRight {
+    float: left;
+    margin-left: 2vw;
 }
 
 .nurseRegStep1AttachResumeButton {
-        margin-top: 3vh;
+    margin-top: 3vw;
 }
 
 .nurseRegStep1AttachResumeButtonDesign {
@@ -326,3 +338,33 @@ label { margin-left: 5px; }
     margin-top: 10px;
     font-weight: 100;
 }
+
+
+.inputFile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputFile + label {
+    background-color: #10A7EA;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 3px 20px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.inputFile:focus + label,
+.inputFile + label:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+

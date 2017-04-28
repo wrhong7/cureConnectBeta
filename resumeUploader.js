@@ -6,7 +6,7 @@
 
 			    function convertToBase64() {
 			        //Read File
-			        var selectedFile = document.getElementById("inputFile").files;
+			        var selectedFile = document.getElementById("pdfFile").files;
 			        //Check File is not Empty
 			        if (selectedFile.length > 0) {
 			            // Select the very first file from list
