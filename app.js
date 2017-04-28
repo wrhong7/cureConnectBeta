@@ -111,27 +111,38 @@ function fromPg3ToPg2() {
 
 }
 
-
-
-
-
 var toggled = false
 
-function toggleExpandMenuButton() {
+function toggleExpandMenuButton(stage) {
 
-	if (toggled == false ) {
-		$(".contentCenter").css({"opacity": "0.1"})
-		$(".contentCenterScrollDownBar").css({"display": "none"})
-		$(".expandMenuSection").css({"display": "block"})
-		toggled = true
+	if (stage = 0) {
+		if (toggled == false ) {
+			$(".contentCenter").css({"opacity": "0.1"})
+			$(".contentCenterScrollDownBar").css({"display": "none"})
+			$(".expandMenuSection").css({"display": "block"})
+			toggled = true
 
-	} else {
-		$(".contentCenter").css({"opacity": "1"})
-		$(".contentCenterScrollDownBar").css({"display": "block"})
-		$(".expandMenuSection").css({"display": "none"})
-		toggled = false
+		} else {
+			$(".contentCenter").css({"opacity": "1"})
+			$(".contentCenterScrollDownBar").css({"display": "block"})
+			$(".expandMenuSection").css({"display": "none"})
+			toggled = false
+		}
+	
 	}
-		
+
+	if (stage = 1) {
+		if (toggled == false ) {
+			$(".nurseOnBoardingEmailCover").css({"opacity": "0.1"})
+			$(".expandMenuSection").css({"display": "block"})
+			toggled = true
+
+		} else {
+			$(".nurseOnBoardingEmailCover").css({"opacity": "1"})
+			$(".expandMenuSection").css({"display": "none"})
+			toggled = false
+		}
+	}
 }
 
 $(document).ready(function() {
