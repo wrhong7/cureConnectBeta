@@ -1,0 +1,261 @@
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+.nurseOnBoardingEmailCover {
+	width: 80vw;
+    overflow: auto;
+    color: white;
+    text-align: center;
+    margin: 30vh 10vw 0 10vw;
+    line-height: 2;
+}
+
+.nurseOnBoardingEmailDirectionUpperLayer {
+	margin-bottom: 1vw;
+}
+
+.nurseOnBoardingEmailDirectionEntry {
+	text-align: center;
+    color: #10A7EA;
+}
+
+.nurseOnBoardingEmailDirectionEntryField {
+
+}
+
+.nurseOnBoardingEmailDirectionLowerLayer {
+	margin-top: 1vw;
+}
+
+.nextButton {
+	color: white;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    right: 1.5vw;
+    top: 45vh;
+    cursor: pointer;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.nextButton:hover {
+	background-color: white;
+	color: #10A7EA;
+	padding: 1vw;
+	border-radius: 10px;
+}
+
+.nextButtonArrow {
+
+}
+
+.nextButtonCaption {
+
+}
+
+.nurseOnBoardingEmailDirectionEntryButton {
+	color: #10A7EA;
+    border-style: none;
+    background-color: white;
+    border-width: 2px;
+    border-color: white;
+    height: 45px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.nurseOnBoardingEmailDirectionEntryButton:hover {
+	color: white;
+	background-color: #10A7EA;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+.prevButton {
+	color: white;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    left: 1.5vw;
+    top: 46vh;
+    cursor: pointer;
+    padding: 1vw;
+    border-radius: 10px;
+    display: none;
+}
+
+.prevButton:hover {
+	background-color: white;
+	color: #10A7EA;
+	padding: 1vw;
+	border-radius: 10px;
+}
+
+.prevButtonArrow {
+
+}
+
+.prevButtonCaption {
+
+}
+
+.nurseOnBoardingRegStep1 {
+	display: none;
+    width: 70vw;
+    overflow: auto;
+    color: white;
+    margin: 10vw 15vw 0 15vw;
+}
+
+.nurseRegStep1Header {
+	margin-bottom: 3vh;
+}
+
+.nurseRegStep1Content {
+
+}
+
+.nurseRegStep1AttachResumeButton {
+	    margin-top: 3vh;
+}
+
+.nurseRegStep1AttachResumeButtonDesign {
+    color: #10A7EA;
+    border-style: none;
+    background-color: white;
+    border-width: 2px;
+    border-color: white;
+    height: 45px;
+    width: 200px;
+    cursor: pointer;
+    margin-left: 1vw;
+}
+
+.nurseRegStep1AttachResumeButtonDesign:hover {
+	color: white;
+	background-color: #10A7EA;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+}
+
+.bottomStatusBar {
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    bottom: 1vh;
+    position: absolute;
+    width: 40vw;
+    overflow: auto;
+    margin: 0 30vw;
+    text-align: center;
+    display: none;
+}
+
+.bottomStatusBarUpperLayer {
+    width: auto;
+    overflow: auto;
+}
+
+.bottomStatusBarStep1 {
+	float: left;
+    width: 8vw;
+    text-align: center;
+    background-color: white;
+    color: #10A7EA;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+.bottomStatusBarStep2 {
+    float: left;
+    width: 8vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+.bottomStatusBarStep3 {
+    float: left;
+    width: 8vw;
+    padding: 1vw;
+}
+
+.bottomStatusBarLowerLayer {
+	margin-top: 1vh;
+    width: 40vw;
+    overflow: auto;
+}
+
+.bottomStatusBarDivider {
+    float: left;
+    width: 8vw;
+    text-align: center;
+    padding: 1vw;
+}
+
+/*Step 2/3 Procedures*/
+
+.nurseOnBoardingRegStep2 {
+	display: none;
+    color: white;
+    width: 80vw;
+    overflow: auto;
+    margin: 20vh 10vw 0 10vw;
+}
+
+.nurseRegStep2Header {
+
+}
+
+.nurseRegStep2Content {
+    width: 80vw;
+    overflow: auto;
+    margin: 5vh 0 0 0;
+}
+
+.signUpWithLinkedIn {
+	width: 25vw;
+    overflow: auto;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1vw;
+    margin-right: 1vw;
+}
+
+.signUpWithGoogle {
+    width: 25vw;
+    overflow: auto;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1vw;
+}
+
+.signUpWithCureConnect {
+    width: 26vw;
+    overflow: auto;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1vw;
+    margin-left: 1vw;
+}
+
+.nurseRegStep2ToaCheckbox {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.ToaCheckbox {
+
+}

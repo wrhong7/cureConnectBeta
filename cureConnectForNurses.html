@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cure Connect Registration</title>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="app.js"></script>
+	<link rel="stylesheet" href="app.css" />
+	<link rel="stylesheet" href="landingPageBasic.css" />
+	<link rel="stylesheet" href="cureConnectForNurses.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	<!-- cureConnect.com Product Demo Page -->
+</head>
+
+<body>
+
+	<header>
+		<div class="headerLeft">
+			<img class="headerComponent headerLogo" src="imageAsset/cureConnectLogoWhite.png" />
+			<a class="headerComponent hederCureConnect">cureConnect for Nurses</a>
+		</div>
+		<div class="headerRight">
+			<a class="headerComponent headerSignIn" href="">Sign In</a>
+			<button type="button" class="btn btn-default headerComponent headerExpandMenuButton" onclick="toggleExpandMenuButton()" aria-label="Left Align">
+			  <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+			</button>
+		</div>
+	</header>
+
+
+	<div class="nurseOnBoardingEmailCover">
+
+		<div class="nurseOnBoardingEmailDirectionUpperLayer">
+			Before we start, just tell us your email!
+		</div>
+
+		<div class="nurseOnBoardingEmailDirectionEntry">
+			<input class="nurseOnBoardingEmailDirectionEntryField" type="email" placeholder="example@email.com"></input>
+			<button class="nurseOnBoardingEmailDirectionEntryButton" onclick="fromPg0ToPg1()">next</button>
+		</div>
+
+		<div class="nurseOnBoardingEmailDirectionLowerLayer">
+			This process will take 4 minutes.
+		</div>
+
+	</div>
+
+	<div class="nurseOnBoardingRegStep1">
+		<div class="nurseRegStep1Header">
+			Step 1/3 - tell us about yourself
+		</div>
+		<div class="nurseRegStep1Content">
+			I am an APRN with ICU specialty with 3+ years of clinical experiences with MSN degree PASSIVELY looking for WOMEN'S HEALTH related APRN jobs. I can speak English and Russian. I am at 10154 and willing to commute 10 miles.
+			</br></br>
+			COMPENSATION, WORKHOURS, AND MISSIONS are important for me. I PREFER interviewing for the positions that pay more than $40 per HOUR, 10-20 hours per week, NO CALL and DAYSHIFTS. I would love to have various opportunities and my passion is WOMEN'S HEALTH.
+		</div>
+		<div class="nurseRegStep1AttachResumeButton">
+			Here is my resume attached
+			<button class="nurseRegStep1AttachResumeButtonDesign">attach resume</button>
+		</div>
+	</div>
+
+	<div class="nurseOnBoardingRegStep2">
+		<div class="nurseRegStep2Header">
+			Step 2/3 - sign up for the account
+		</div>
+		<div class="nurseRegStep2Content">
+			<div class="signUpWithLinkedIn">
+				Login with LinekdIn
+			</div>
+			<div class="signUpWithGoogle">
+				Login with Google
+			</div>
+			<div class="signUpWithCureConnect">
+				Create New Account
+			</div>
+		</div>
+		<div class="nurseRegStep2ToaCheckbox">
+			<input type="checkbox" class="ToaCheckbox">I agree with CureConnect's Terms of Agreement</input>	
+		</div>
+	</div>
+
+
+
+<div class="prevButton cureConnectForNursePage1ToLandingPage" onclick="fromPg1ToPg0()">
+	<div class="prevButtonArrow">
+		<
+	</div>
+	<div class="prevButtonCaption" >
+		prev
+	</div>
+</div>
+
+<div class="nextButton cureConnectForNursePage1ToPage2" onclick="fromPg0ToPg1()">
+	<div class="nextButtonArrow">
+		>
+	</div>
+	<div class="nextButtonCaption">
+		next
+	</div>
+</div>
+
+<div class="bottomStatusBar">
+	<div class="bottomStatusBarUpperLayer">
+		<div class="bottomStatusBarStep1">
+			Step 1
+		</div>
+		<div class="bottomStatusBarDivider">
+			--
+		</div>
+		<div class="bottomStatusBarStep2">
+			Step 2
+		</div>
+		<div class="bottomStatusBarDivider">
+			--
+		</div>
+		<div class="bottomStatusBarStep3">
+			Step 3
+		</div>
+	</div>
+	<div class="bottomStatusBarLowerLayer">
+		4 mins remaining
+	</div>	
+</div>
+
+</body>
