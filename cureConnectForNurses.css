@@ -3,7 +3,7 @@
 }
 
 .nurseOnBoardingEmailCover {
-	width: 80vw;
+    width: 80vw;
     overflow: auto;
     color: white;
     text-align: center;
@@ -12,24 +12,24 @@
 }
 
 .nurseOnBoardingEmailDirectionUpperLayer {
-	margin-bottom: 1vw;
+    margin-bottom: 1vw;
 }
 
 .nurseOnBoardingEmailDirectionEntry {
-	text-align: center;
+    text-align: center;
     color: #10A7EA;
 }
 
 .nurseOnBoardingEmailDirectionEntryField {
-
+    margin-top: -0.3vh;
 }
 
 .nurseOnBoardingEmailDirectionLowerLayer {
-	margin-top: 1vw;
+    margin-top: 1vw;
 }
 
 .nextButton {
-	color: white;
+    color: white;
     text-align: center;
     font-size: 15px;
     position: absolute;
@@ -41,10 +41,10 @@
 }
 
 .nextButton:hover {
-	background-color: white;
-	color: #10A7EA;
-	padding: 1vw;
-	border-radius: 10px;
+    background-color: white;
+    color: #10A7EA;
+    padding: 1vw;
+    border-radius: 10px;
 }
 
 .nextButtonArrow {
@@ -56,7 +56,7 @@
 }
 
 .nurseOnBoardingEmailDirectionEntryButton {
-	color: #10A7EA;
+    color: #10A7EA;
     border-style: none;
     background-color: white;
     border-width: 2px;
@@ -67,15 +67,15 @@
 }
 
 .nurseOnBoardingEmailDirectionEntryButton:hover {
-	color: white;
-	background-color: #10A7EA;
-	border-style: solid;
-	border-width: 1px;
-	border-color: white;
+    color: white;
+    background-color: #10A7EA;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
 }
 
 .prevButton {
-	color: white;
+    color: white;
     text-align: center;
     font-size: 15px;
     position: absolute;
@@ -88,10 +88,10 @@
 }
 
 .prevButton:hover {
-	background-color: white;
-	color: #10A7EA;
-	padding: 1vw;
-	border-radius: 10px;
+    background-color: white;
+    color: #10A7EA;
+    padding: 1vw;
+    border-radius: 10px;
 }
 
 .prevButtonArrow {
@@ -103,7 +103,7 @@
 }
 
 .nurseOnBoardingRegStep1 {
-	display: none;
+    display: none;
     width: 70vw;
     overflow: auto;
     color: white;
@@ -111,7 +111,7 @@
 }
 
 .nurseRegStep1Header {
-	margin-bottom: 3vh;
+    margin-bottom: 3vh;
 }
 
 .nurseRegStep1Content {
@@ -119,7 +119,7 @@
 }
 
 .nurseRegStep1AttachResumeButton {
-	    margin-top: 3vh;
+        margin-top: 3vh;
 }
 
 .nurseRegStep1AttachResumeButtonDesign {
@@ -135,11 +135,11 @@
 }
 
 .nurseRegStep1AttachResumeButtonDesign:hover {
-	color: white;
-	background-color: #10A7EA;
-	border-style: solid;
-	border-width: 2px;
-	border-color: white;
+    color: white;
+    background-color: #10A7EA;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
 }
 
 .bottomStatusBar {
@@ -153,6 +153,7 @@
     margin: 0 30vw;
     text-align: center;
     display: none;
+    cursor: default;
 }
 
 .bottomStatusBarUpperLayer {
@@ -161,7 +162,7 @@
 }
 
 .bottomStatusBarStep1 {
-	float: left;
+    float: left;
     width: 8vw;
     text-align: center;
     background-color: white;
@@ -184,7 +185,7 @@
 }
 
 .bottomStatusBarLowerLayer {
-	margin-top: 1vh;
+    margin-top: 1vh;
     width: 40vw;
     overflow: auto;
 }
@@ -199,7 +200,7 @@
 /*Step 2/3 Procedures*/
 
 .nurseOnBoardingRegStep2 {
-	display: none;
+    display: none;
     color: white;
     width: 80vw;
     overflow: auto;
@@ -217,7 +218,7 @@
 }
 
 .signUpWithLinkedIn {
-	width: 25vw;
+    width: 25vw;
     overflow: auto;
     float: left;
     border-style: solid;
@@ -226,6 +227,12 @@
     text-align: center;
     padding: 1vw;
     margin-right: 1vw;
+    cursor: pointer;
+}
+
+.signUpWithLinkedIn:hover {
+    color: #10A7EA;
+    background-color: white;
 }
 
 .signUpWithGoogle {
@@ -237,6 +244,13 @@
     border-radius: 10px;
     text-align: center;
     padding: 1vw;
+    cursor: pointer;
+
+}
+
+.signUpWithGoogle:hover {
+    color: #10A7EA;
+    background-color: white;
 }
 
 .signUpWithCureConnect {
@@ -249,6 +263,13 @@
     text-align: center;
     padding: 1vw;
     margin-left: 1vw;
+    cursor: pointer;
+
+}
+
+.signUpWithCureConnect:hover {
+    color: #10A7EA;
+    background-color: white;
 }
 
 .nurseRegStep2ToaCheckbox {
@@ -258,4 +279,50 @@
 
 .ToaCheckbox {
 
+}
+
+input[type='checkbox'] { 
+    height: 20px;
+    border:1px solid #B5B7B8;
+    font: 14px/26px 'pt-sans', 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+    padding:7px 7px 7px 12px;
+    /*margin:0 0 30px 0;*/
+    background:#FFF;
+    border:1px solid #d5d5d6;
+    outline:none;
+    color:#96999D;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+       -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);        
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-transition: all 0.15s;
+       -moz-transition: all 0.15s;
+        -ms-transition: all 0.15s;
+         -o-transition: all 0.15s;
+            transition: all 0.15s;          
+}
+
+input[type=checkbox]:focus
+  {
+    border-color: #ACACB8;
+    color: #2E3236;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18)!important;
+       -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18)!important;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18)!important;
+}
+
+input[type=checkbox]:checked {
+    background-color: #3afc7a;
+}
+
+input, label { vertical-align: middle }
+label { margin-left: 5px; }
+
+.checkboxLabel {
+    margin-top: 10px;
+    font-weight: 100;
 }

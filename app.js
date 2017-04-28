@@ -75,8 +75,9 @@ function fromPg1ToPg2() {
 function fromPg2ToPg1() {
 	$(".nurseOnBoardingRegStep1").css("display", "block");
 	$(".nurseOnBoardingRegStep2").css("display", "none");
-	$(".bottomStatusBarStep2").css("background-color", "#10A7EA")
-	$(".bottomStatusBarStep2").css("color", "white")
+	$(".bottomStatusBarStep2").css("background-color", "#10A7EA");
+	$(".bottomStatusBarStep2").css("color", "white");
+	$(".bottomStatusBarLowerLayer").text("4 mins remaining");
 	$(".nextButton").replaceWith(
 		`<div class="nextButton cureConnectForNursePage1ToPage2" onclick="fromPg1ToPg2()">
 			<div class="nextButtonArrow">

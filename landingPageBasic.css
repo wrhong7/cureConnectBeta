@@ -1,9 +1,9 @@
 body {
-	font-family: 'Montserrat', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-size: 20px;
-	background-color: #10A7EA;
-	font-color: white;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    background-color: #10A7EA;
+    font-color: white;
 }
 
 header {
@@ -12,26 +12,26 @@ header {
 }
 
 .headerLeft {
-	float: left;
-	float: left;
+    float: left;
+    float: left;
     margin: 1vh 1vw;
 }
 
 .headerComponent {
-	color: white;
+    color: white;
     background-color: #10A7EA;
 }
 
 .hederCureConnect {
-	padding: 0.4vw;
-	text-decoration: none;
-	border-radius: 10px;
+    padding: 0.4vw;
+    text-decoration: none;
+    border-radius: 10px;
 }
 
 .hederCureConnect:hover {
-	color: #10A7EA;
-    background-color: white;	
-	text-decoration: none;
+    color: #10A7EA;
+    background-color: white;    
+    text-decoration: none;
 }
 
 .headerRight {
@@ -40,33 +40,33 @@ header {
 }
 
 .headerLogo {
-	width: 40px;
-	height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .headerSignIn {
-	padding: 0.4vw;
-	border-radius: 10px;
+    padding: 0.4vw;
+    border-radius: 10px;
 }
 
 .headerSignIn:hover {
-	padding: 0.4vw;
-	color: #10A7EA;
+    padding: 0.4vw;
+    color: #10A7EA;
     background-color: white;
- 	text-decoration: none;
+    text-decoration: none;
 }
 
 .headerExpandMenuButton {
-	border-style: none;
+    border-style: none;
 }
 
 .headerExpandMenuButton:hover {
-	background-color: white !important;
+    background-color: white !important;
     color: #10A7EA !important;
 }
 
 .expandMenuSection {
-	display: none;
+    display: none;
     float: right;
     width: 20vw;
     color: white;
@@ -89,7 +89,7 @@ header {
 }
 
 .contentCenter {
-	width: 80vw;
+    width: 80vw;
     overflow: auto;
     margin: 15vw 10vw;
 }
@@ -113,8 +113,8 @@ header {
 }
 
 .contentCenterUpperFloorButtonsLeft:hover {
-	background-color: white;
-	color: #10A7EA;
+    background-color: white;
+    color: #10A7EA;
 }
 
 .contentCenterUpperFloorButtonsRight {
@@ -132,8 +132,8 @@ header {
 }
 
 .contentCenterUpperFloorButtonsRight:hover {
-	background-color: white;
-	color: #10A7EA;
+    background-color: white;
+    color: #10A7EA;
 }
 
 .contentCenterLowerFloor {
@@ -141,7 +141,7 @@ header {
 }
 
 .contentCenterLowerFloorButtons {
-	color: white;
+    color: white;
     border-style: solid;
     border-width: 2px;
     border-radius: 10px;
@@ -155,12 +155,12 @@ header {
 }
 
 .contentCenterLowerFloorButtons:hover {
-	background-color: white;
-	color: #10A7EA;	
+    background-color: white;
+    color: #10A7EA; 
 }
 
 .contentCenterScrollDownBar {
-	bottom: 0vh;
+    bottom: 0vh;
     position: absolute;
     text-align: center;
     width: 100vw;
@@ -168,32 +168,32 @@ header {
 }
 
 .contentCenterScrollDownBarCaption {
-	color: white;
+    color: white;
 }
 
 .contentCenterScrollDownBarIcon {
-	color: white;
+    color: white;
     background-color: #10A7EA;
 }
 
 .contentCenterScrollDownBarIconBorder {
-	color: white;
+    color: white;
     background-color: #10A7EA;
     border-style: none;
 }
 
 .contentCenterScrollDownBarIconColor {
-	color: white;
+    color: white;
 }
 
 /*blinking scross down section*/
 
 @keyframes blinkingScrossDown {
-	0% {opacity: 0.2;}
-	50% {opacity: 0.8;}
-	100% {opacity: 0.2;}
+    0% {opacity: 0.2;}
+    50% {opacity: 0.8;}
+    100% {opacity: 0.2;}
 }
 
 .contentCenterScrollDownBar {
-	animation: blinkingScrossDown 4s infinite;
+    animation: blinkingScrossDown 4s infinite;
 }
