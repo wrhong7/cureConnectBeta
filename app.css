@@ -1,0 +1,128 @@
+body {
+/*	default font color and font size and font type*/
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	color: #10A7EA;
+}
+
+/*This section is for the product demo landing page*/
+
+.demoContentContainer {
+	width: 80vw;
+    overflow: auto;
+    margin: 15vh 10vw 0 10vw;
+}
+
+.demoNurse {
+	width: 30vw;
+    overflow: auto;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 1vw;
+    margin: 0 1vw 0 9vw;
+    line-height: 2;
+}
+
+.demoClinic {
+	width: 30vw;
+    overflow: auto;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 1vw;
+    margin: 0 9vw 0 1vw;
+    line-height: 2;
+}
+
+.demoDetails {
+    font-size: 17px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.demoButtonGroup {
+    width: 80vw;
+    overflow: auto;
+    margin: 1vw 10vw 0 10vw;
+}
+
+.demoButtonLeft {
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1vw;
+    width: 20vw;
+    overflow: auto;
+    margin: 0 1vw 0 19vw;
+    text-align: center;
+}
+
+.demoButtonRight {
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1vw;
+    width: 20vw;
+    overflow: auto;
+    margin: 0 19vw 0 1vw;
+    text-align: center;
+}
+
+.goToMainpageButton {
+    border-style: solid;
+    border-color: #FD5E0F;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 1vw;
+    width: 20vw;
+    margin: 0 30vw 0 30vw;
+    text-align: center;
+    color: #FD5E0F;
+    cursor: pointer;
+}
+
+.goToMainpageButton:hover {
+    color: white;
+    background-color: #FD5E0F;
+}
+
+.demoAdvantageSynopsis {
+    width: 80vw;
+    overflow: auto;
+    margin: 0vw 10vw 0 0vw;
+}
+
+.demoAdvantageComponent {
+    width: 80vw;
+    overflow: auto;
+    margin: 0 10vw 0 10vw;
+}
+
+.upperFloor {
+    width: 60vw;
+    overflow: auto;
+    margin: 0 15vw 0 15vw;
+}
+
+.demoAdvantageComponentImage {
+    width: 10vw;
+    height: 10vw;
+}
+
+.lowerFloor {
+    width: 80vw;
+    overflow: auto;
+    margin: 2vw 10vw 0 0vw;    
+}
+
+.demoAdvantageMsgDisplay {
+    width: 80vw;
+    overflow: auto;
+    text-align: center;
+}
