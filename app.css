@@ -11,18 +11,18 @@ body {
 .demoContentContainer {
 	width: 80vw;
     overflow: auto;
-    margin: 15vh 10vw 0 10vw;
+    margin: 20vh 10vw 0 10vw;
 }
 
 .demoNurse {
-	width: 30vw;
+    width: 30vw;
     overflow: auto;
     float: left;
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
     padding: 1vw;
-    margin: 0 1vw 0 9vw;
+    margin: 0 1vw 0 1vw;
     line-height: 2;
 }
 
@@ -53,10 +53,8 @@ body {
 }
 
 .demoNurseName {
-    height: 1.5em;
     width: 22vw;
-    font-size: 1.8em;
-    margin-top: -2vh;
+    font-size: 16px;
     padding: 0;
 }
 
@@ -65,6 +63,23 @@ body {
     height: 2.2em;
     overflow: auto;
     color: #FD5E0F;
+}
+
+.demoHeartLogoContainer {
+    float: left;
+    width: 16vw;
+    overflow: auto;
+    animation: heartBlinking 4s;
+}
+
+.demoHeartLogo {
+    width: vvw;
+    /* height: 14vw; */
+    width: 8vw;
+    overflow: auto;
+    margin-top: -2vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .demoNurseDegrees {
@@ -82,24 +97,25 @@ body {
 }
 
 .demoNursePayContianer {
-    width: 33%;
+    width: 120px;
     overflow: auto;
     float: left;
 }
 
 .demoNursePayIcon {
-    height: 33%;
-    width: 33%;
+    height: 40px;
+    width: 40px;
     float: left;
 }
 
 .demoNursePayAmount {
     float: left;
     margin-left: 2%;
+    margin-top: 2%;
 }
 
 .demoNurseCalContainer {
-    width: 33%;
+    width: 100px;
     overflow: auto;
     float: left;
 }
@@ -112,39 +128,52 @@ body {
 
 .demoNurseCalIcon {
     float: left;
-    width: 33%;
-    height: 33%;
+    width: 40px;
+    height: 40px;
 }
 
 .demoNurseCalDay {
     float: left;
     /* font-size: 15px; */
-    width: 30px;
-    font-size: 13px;
+    width: 55px;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 .demoNurseDayNightContainer {
-
+    width: 140px;
+    overflow: auto;
+    float: left;
 }
 
 .demoNurseDayNightIcon {
-
+    width: 40px;
+    height: 33%;
+    float: left;
 }
 
 .demoNurseDayNightText {
-
+    float: left;
+    width: 100px;
+    overflow: auto;
+    margin-top: 2%;
 }
 
 .demoClinic {
-	width: 30vw;
+    width: 30vw;
     overflow: auto;
     float: left;
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
     padding: 1vw;
-    margin: 0 9vw 0 1vw;
+    margin: 0 1vw 0 1vw;
     line-height: 2;
+}
+
+.demoClinicName {
+    font-size: 16px;
 }
 
 .demoDetails {
@@ -188,12 +217,15 @@ body {
     border-color: #FD5E0F;
     border-width: 2px;
     border-radius: 10px;
+    line-height: 1.6;
+    font-size: 18px;
     padding: 1vw;
-    width: 20vw;
-    margin: 0 30vw 0 30vw;
+    width: 16vw;
+    /* margin: 0 30vw 0 30vw; */
     text-align: center;
     color: #FD5E0F;
     cursor: pointer;
+    /* font-size: 14px; */
 }
 
 .goToMainpageButton:hover {
@@ -232,6 +264,12 @@ body {
 
 .demoAdvantageMsgDisplay {
     width: 80vw;
-    overflow: auto;
+    height: 30px;
     text-align: center;
+}
+
+@keyframes heartBlinking {
+    0% {opacity: 0;}
+    5% {opacity: 0;}
+    100% {opacity: 1;}
 }
