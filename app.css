@@ -26,6 +26,115 @@ body {
     line-height: 2;
 }
 
+.demoNurseTitleLeft {
+    width: 5vw;
+    overflow: auto;
+    float: left;
+}
+
+.demoNurseIcon {
+    width: 5vw;
+    height: 5vw;
+}
+
+.demoNurseTitleRight {
+    width: 22vw;
+    overflow: auto;
+    float: left;
+}
+
+.demoNurseTitle {
+    width: 28vw;
+    overflow: auto;
+}
+
+.demoNurseTitleComponent {
+    float: left;
+}
+
+.demoNurseName {
+    height: 1.5em;
+    width: 22vw;
+    font-size: 1.8em;
+    margin-top: -2vh;
+    padding: 0;
+}
+
+.demoNurseLowerLevel {
+    width: 25vw;
+    height: 2.2em;
+    overflow: auto;
+    color: #FD5E0F;
+}
+
+.demoNurseDegrees {
+    font-size: 1.5rem;
+}
+
+.demoNurseJurisdiction {
+    margin-left: 0.5vw;
+    font-size: 1.5rem;
+}
+
+.demoNursePreferences {
+    width: 28vw;
+    overflow: auto;
+}
+
+.demoNursePayContianer {
+    width: 33%;
+    overflow: auto;
+    float: left;
+}
+
+.demoNursePayIcon {
+    height: 33%;
+    width: 33%;
+    float: left;
+}
+
+.demoNursePayAmount {
+    float: left;
+    margin-left: 2%;
+}
+
+.demoNurseCalContainer {
+    width: 33%;
+    overflow: auto;
+    float: left;
+}
+
+.demoNurseCal {
+    width: 33%;
+    height: 33%;
+    float: left;
+}
+
+.demoNurseCalIcon {
+    float: left;
+    width: 33%;
+    height: 33%;
+}
+
+.demoNurseCalDay {
+    float: left;
+    /* font-size: 15px; */
+    width: 30px;
+    font-size: 13px;
+}
+
+.demoNurseDayNightContainer {
+
+}
+
+.demoNurseDayNightIcon {
+
+}
+
+.demoNurseDayNightText {
+
+}
+
 .demoClinic {
 	width: 30vw;
     overflow: auto;
