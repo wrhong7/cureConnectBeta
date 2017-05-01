@@ -147,6 +147,10 @@ function toggleExpandMenuButton(stage) {
 
 $(document).ready(function() {
 
+	setTimeout(function() {
+		$(".goToMainpageButtonDesc").replaceWith("go to cureConnect")
+	}, 4000)
+
 	$(".demoButton").hover(
 		function() {
 			$(".demoButtonGroup").empty()
@@ -161,7 +165,7 @@ $(document).ready(function() {
 		function() {
 			$(".demoAdvantageMsgDisplay").empty()
 			$(".demoAdvantageMsgDisplay").append(
-				`Takes only five minutes to register`
+				`Build your profile in five minutes`
 			)
 		}, function () {
 			$(".demoAdvantageMsgDisplay").empty()
@@ -172,7 +176,7 @@ $(document).ready(function() {
 		function() {
 			$(".demoAdvantageMsgDisplay").empty()
 			$(".demoAdvantageMsgDisplay").append(
-				`Reduced burdensome paperwork to only five minutes`
+				`Apply to jobs with one click`
 			)
 		}, function () {
 			$(".demoAdvantageMsgDisplay").empty()
@@ -183,7 +187,7 @@ $(document).ready(function() {
 		function() {
 			$(".demoAdvantageMsgDisplay").empty()
 			$(".demoAdvantageMsgDisplay").append(
-				`Know the real-time status of the application`
+				`Track your application status`
 			)
 		}, function () {
 			$(".demoAdvantageMsgDisplay").empty()
@@ -194,7 +198,7 @@ $(document).ready(function() {
 		function() {
 			$(".demoAdvantageMsgDisplay").empty()
 			$(".demoAdvantageMsgDisplay").append(
-				`Know everything before you apply--hours, package, patient type & ratio etc`
+				`Transparent hours, package, patient type & ratio`
 			)
 		}, function () {
 			$(".demoAdvantageMsgDisplay").empty()
@@ -205,7 +209,7 @@ $(document).ready(function() {
 		function() {
 			$(".demoAdvantageMsgDisplay").empty()
 			$(".demoAdvantageMsgDisplay").append(
-				`We pay attention to what motivates you`
+				`Enjoy working in your own schedule`
 			)
 		}, function () {
 			$(".demoAdvantageMsgDisplay").empty()
