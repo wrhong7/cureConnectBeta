@@ -2,32 +2,6 @@
    text-align: center;
 }
 
-.nurseOnBoardingEmailCover {
-    width: 80vw;
-    overflow: auto;
-    color: white;
-    text-align: center;
-    margin: 30vh 10vw 0 10vw;
-    line-height: 2;
-}
-
-.nurseOnBoardingEmailDirectionUpperLayer {
-    margin-bottom: 1vw;
-}
-
-.nurseOnBoardingEmailDirectionEntry {
-    text-align: center;
-    color: #10A7EA;
-}
-
-.nurseOnBoardingEmailDirectionEntryField {
-    margin-top: -0.3vh;
-}
-
-.nurseOnBoardingEmailDirectionLowerLayer {
-    margin-top: 1vw;
-}
-
 .nextButton {
     color: white;
     text-align: center;

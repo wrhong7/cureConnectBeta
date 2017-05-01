@@ -37,7 +37,7 @@ header {
 .demoContentContainer {
     width: 80vw;
     overflow: auto;
-    margin: 10vh 10vw 0 10vw;
+    margin: 13vh 10vw 0 10vw;
 }
 
 .demoNurse {
@@ -115,8 +115,7 @@ header {
     float: left;
     width: 80vw;
     overflow: auto;
-    /* margin-top: 14vh; */
-    /* margin: 10vh 40vw; */
+    margin-top: 7vh;
     padding-left: 40vw;
     padding-top: 5vh;
     animation: heartBlinking 4s;
@@ -235,6 +234,7 @@ header {
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
+    border-color: #FD5E0F;
     padding: 1vw;
     margin: 0 9vw 0 1vw;
     line-height: 2;
@@ -508,6 +508,52 @@ header {
     margin-top: 40px;
 }
 
+.contentCenter {
+    width: 80vw;
+    overflow: auto;
+    margin: 20vh 10vw;
+}
+
+.contentCenterButtons {
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px 50px;
+    width: 350px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nurseOnBoardingEmailCover {
+    display: none;
+    width: 80vw;
+    overflow: auto;
+    color: white;
+    text-align: center;
+    margin: 10vh 0vw 0 0vw;
+    line-height: 2;
+}
+
+.nurseOnBoardingEmailDirectionUpperLayer {
+    margin-bottom: 1vw;
+}
+
+.nurseOnBoardingEmailDirectionEntry {
+    text-align: center;
+    color: #10A7EA;
+}
+
+.nurseOnBoardingEmailDirectionEntryField {
+    margin-top: -0.3vh;
+}
+
+.nurseOnBoardingEmailDirectionLowerLayer {
+    margin-top: 1vw;
+}
 
 
 

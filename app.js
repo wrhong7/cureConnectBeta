@@ -3,6 +3,21 @@
 // 	$(".contentCenter").css({"opacity": "0"})
 // }
 
+//these functions are used for the user to trigger email entry filed prior to they are moving towards the landing page.
+
+function toNurseRegistration() {
+	$(".contentCenterButtonsCover").css("display", "none");
+	$(".nurseOnBoardingEmailCover").css("display", "block");
+}
+
+function toRecruiterRegisteration() {
+
+}
+
+function toSignInPage() {
+
+}
+
 function fromPg0ToPg1() {
 	$(".nurseOnBoardingEmailCover").css("display", "none")
 	$(".bottomStatusBar").css("display", "block")
@@ -236,13 +251,18 @@ $(document).ready(function() {
 
     $("#slider > div:gt(0)").hide();
     $("#slider").height($("#slider > div > img").height());
-    setInterval(function () {
-        $('#slider > div:first')
-          .fadeOut(1000)
-          .next()
-          .fadeIn(1000)
-          .end()
-          .appendTo('#slider');
-    }, 3000);
+    
+	setTimeout(function() {
+		setInterval(function () {
+	        $('#slider > div:first')
+	          .fadeOut(1000)
+	          .next()
+	          .fadeIn(1000)
+	          .end()
+	          .appendTo('#slider');
+	    }, 4000);
+	}, 4000);
+
+
 
 });
