@@ -89,21 +89,21 @@ header {
 
 .demoNurseName {
     width: 100%;
-    font-size: 30px;
+    font-size: 22px;
     /* padding-right: 5px; */
-    padding: 0 15px 0 0;
+    padding: 5px 15px 0 0;
     text-align: right;
     float: right;
     text-align: center;
     text-align: right;
     /* background-color: white; */
-    height: 1.7em;
+    height: 2.1em;
     color: #135672;
 }
 
 .demoNurseLowerLevel {
     width: 100%;
-    height: 2em;
+    height: 2.2em;
     overflow: auto;
     color: #FD5E0F;
     float: right;
@@ -230,6 +230,7 @@ header {
 .demoClinic {
     float: left;
     width: 30vw;
+    height: 173px;
     overflow: auto;
     border-style: solid;
     border-width: 2px;
@@ -244,6 +245,7 @@ header {
     width: 28vw;
     overflow: auto;
     padding-bottom: 2px;
+    display: none
 }
 
 .demoClinicTitleLeft {
@@ -406,6 +408,7 @@ header {
     overflow: auto;
     background-color: white;
     border-radius: 10px;
+    display: none;
 }
 
 .demoClinicPayContianer {
@@ -487,14 +490,28 @@ header {
 }
 
 .sliderComponent {
+    width: 80%;
     height: auto;
-    max-width: 100%!important;
-    text-align: center;
+    max-width: 100% !important;
+    text-align: center !important;
+    font-size: 30px;
 }
 
-.sliderComponentText {
-    text-align: center;
+.sliderComponentOrange {
+    color: #FD5E0F;
 }
+
+.demoClinicMatching {
+    text-align: center;
+    font-size: 25px;
+    color: #fd5e0f;
+    margin-top: 40px;
+}
+
+
+
+
+
 
 
 

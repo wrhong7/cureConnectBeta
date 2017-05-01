@@ -17,26 +17,17 @@
 
 <body>
 
-	<div id="slider">
-	    <div class="sliderComponent">Simplifying Nurse Recruiting</div>
-	    <div class="sliderComponent">Build your profile in five minutes</div>
-	    <div class="sliderComponent">Apply to jobs with one click</div>
-	    <div class="sliderComponent">Track your application status</div>
-	    <div class="sliderComponent">Transparent hours, package, patient type & ratio</div>
-	    <div class="sliderComponent">Enjoy working in your own schedule</div>
+	<div class="progressBar">
+		Hi
+		<div class="progressBar1">
+		</div>
+		<div class="progressBar2">
+		</div>
+		<div class="progressBar3">
+		</div>
 	</div>
 
 	<script>
-	    $("#slider > div:gt(0)").hide();
-	    $("#slider").height($("#slider > div > img").height());
-	    setInterval(function () {
-	        $('#slider > div:first')
-	          .fadeOut(1000)
-	          .next()
-	          .fadeIn(1000)
-	          .end()
-	          .appendTo('#slider');
-	    }, 3000);
 	</script>
 
 </body>

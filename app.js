@@ -151,6 +151,24 @@ $(document).ready(function() {
 		$(".goToMainpageButtonDesc").replaceWith("go to cureConnect")
 	}, 4000)
 
+	setTimeout(function() {
+		$(".demoClinicMatching").append(".")
+	}, 1000)
+
+	setTimeout(function() {
+		$(".demoClinicMatching").append(".")
+	}, 2000)
+
+	setTimeout(function() {
+		$(".demoClinicMatching").append(".")
+	}, 3000)
+
+	setTimeout(function() {
+		$(".demoClinicMatching").css("display", "none")
+		$(".demoClinicTitle").css("display", "block")
+		$(".demoClinicPreferences").css("display", "block")
+	}, 4000)
+
 	$(".demoButton").hover(
 		function() {
 			$(".demoButtonGroup").empty()
