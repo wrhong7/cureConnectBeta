@@ -35,9 +35,9 @@ header {
 /*This section is for the product demo landing page*/
 
 .demoContentContainer {
-	width: 80vw;
+    width: 80vw;
     overflow: auto;
-    margin: 20vh 10vw 0 10vw;
+    margin: 10vh 10vw 0 10vw;
 }
 
 .demoNurse {
@@ -48,7 +48,7 @@ header {
     border-width: 2px;
     border-radius: 15px;
     padding: 1vw;
-    margin: 0 1vw 0 1vw;
+    margin: 0 1vw 0 9vw;
     line-height: 2;
     background-color: rgba(16, 167, 234, 0.2);
 }
@@ -113,9 +113,12 @@ header {
 
 .demoHeartLogoContainer {
     float: left;
-    width: 16vw;
+    width: 80vw;
     overflow: auto;
-    margin-top: 14vh;
+    /* margin-top: 14vh; */
+    /* margin: 10vh 40vw; */
+    padding-left: 40vw;
+    padding-top: 5vh;
     animation: heartBlinking 4s;
 }
 
@@ -225,20 +228,22 @@ header {
 }
 
 .demoClinic {
+    float: left;
     width: 30vw;
     overflow: auto;
-    float: left;
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
     padding: 1vw;
-    margin: 0 1vw 0 1vw;
+    margin: 0 9vw 0 1vw;
     line-height: 2;
+    background-color: rgba(253, 94, 15, 0.15);
 }
 
 .demoClinicTitle {
     width: 28vw;
     overflow: auto;
+    padding-bottom: 2px;
 }
 
 .demoClinicTitleLeft {
@@ -247,34 +252,29 @@ header {
     float: left;
 }
 
-.demoClinicTitleComponent {
-    overflow: auto;
-    float: left;
-    font-size: 1.5rem;
-}
-
 .demoClinicIcon {
     width: 5vw;
     height: 5vw;
 }
 
 .demoClinicTitleRight {
-    width: 22vw;
+    width: 23vw;
     overflow: auto;
     float: left;
+    margin-bottom: 7.5px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .demoClinicTitleComponent {
     overflow: auto;
     float: left;
-}
-
-.demoClinicName {
-
+    font-size: 20px;
 }
 
 .demoClnicLowerLevel {
-    width: 25vw;
+    width: 100%;
+    padding-left: 15px;
     height: 2.2em;
     overflow: auto;
     color: #FD5E0F;
@@ -286,12 +286,16 @@ header {
 
 .demoClinicJurisdiction {
     margin-left: 0.5vw;
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #10A7EA;
 }
 
 .demoClinicName {
-    font-size: 16px;
+    font-size: 22px;
+    padding-left: 15px;
+    color: #135672;
+    /* height: 42px; */
+    padding-top: 5px;
 }
 
 .demoDetails {
@@ -338,12 +342,13 @@ header {
     line-height: 1.6;
     font-size: 18px;
     padding: 1vw;
-    width: 16vw;
+    width: 20vw;
     /* margin: 0 30vw 0 30vw; */
     text-align: center;
     color: #FD5E0F;
     cursor: pointer;
     /* font-size: 14px; */
+    /* margin: 0 30vw; */
 }
 
 .goToMainpageButton:hover {
@@ -354,13 +359,16 @@ header {
 .demoAdvantageSynopsis {
     width: 80vw;
     overflow: auto;
-    margin: 2vw 10vw 0 0vw;
+    margin: 2vw 10vw 0 10vw;
 }
 
 .demoAdvantageComponent {
-    width: 80vw;
+    /* width: 80vw; */
     overflow: auto;
-    margin: 0 10vw 0 10vw;
+    /* margin: 0 10vw 0 10vw; */
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10vh;
 }
 
 .upperFloor {
@@ -392,3 +400,105 @@ header {
     5% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+.demoClinicPreferences {
+    width: 28vw;
+    overflow: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.demoClinicPayContianer {
+    width: 120px;
+    overflow: auto;
+    float: left;
+    margin-left: 10px;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #FFE7DB;
+}
+
+.demoClinicPayIcon {
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.demoClinicPayAmount {
+    float: left;
+    margin-left: 2%;
+}
+
+.demoClinicCalContainer {
+    width: 100px;
+    overflow: auto;
+    float: left;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #FFE7DB;
+}
+
+.demoClinicCal {
+
+}
+
+.demoClinicCalIcon {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.demoClinicCalDay {
+    float: left;
+    /* font-size: 15px; */
+    width: 55px;
+    font-size: 20px;
+    margin-left: 2%;
+    /* margin-top: 2%; */
+}
+
+.demoClinicDayNightContainer {
+    width: 140px;
+    overflow: auto;
+    float: left;
+}
+
+.demoClinicDayNightIcon {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.demoClinicDayNightText {
+    float: left;
+    width: 100px;
+    overflow: auto;
+}
+
+#slider { 
+    margin: 0px auto;
+    width: 100%;
+    height: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slider > div { 
+    position: absolute;   
+}
+
+.sliderComponent {
+    height: auto;
+    max-width: 100%!important;
+    text-align: center;
+}
+
+.sliderComponentText {
+    text-align: center;
+}
+
+
+
+
+
+
+
