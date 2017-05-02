@@ -41,6 +41,7 @@ header {
 
 .demoHeaderComponent {
     color: #FD5E0F;
+    cursor: pointer;
 }
 
 .demoHeaderCureConnect {
@@ -613,6 +614,7 @@ header {
     bottom: 0px;
     right: 0px;
     animation: chatButtonBlinking 2s infinite;
+    cursor: pointer;
 }
 
 .chatLogoAddOn img {
@@ -629,6 +631,11 @@ header {
     0% {opacity: 0.3;}
     50%  {opacity: 0.8;}
     100%  {opacity: 0.3;}
+}
+
+.demoHeaderSmallerFont {
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 
