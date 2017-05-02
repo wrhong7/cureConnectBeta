@@ -11,11 +11,16 @@ function toNurseRegistration() {
 }
 
 function toRecruiterRegisteration() {
-
+	$(".contentCenterButtonsCover").css("display", "none");
+	$(".firstEmailEntryHeader").empty()
+	$(".firstEmailEntryHeader").append(
+		`I am a Nurse Recruiter`
+	)
+	$(".nurseOnBoardingEmailCover").css("display", "block");
 }
 
 function toSignInPage() {
-
+	//this will directly force them to move to step 1
 }
 
 function fromPg0ToPg1() {
@@ -167,16 +172,109 @@ $(document).ready(function() {
 	}, 4000)
 
 	setTimeout(function() {
-		$(".demoClinicMatching").append(".")
-	}, 1000)
-
-	setTimeout(function() {
-		$(".demoClinicMatching").append(".")
+		$(".demoClinic").replaceWith(
+			`
+			<div class="demoClinic">
+				<div class="demoClinicTitle">
+					<div class="demoClinicTitleLeft">
+						<img class="demoClinicTitleComponent demoClinicIcon" src="imageAsset/hospitalLogoOrange.png" />
+					</div>
+					<div class="demoClinicTitleRight">
+						<div class="demoClinicTitleComponent demoClinicName">Queens Regional Hospital</div>
+						<div class="demoClnicLowerLevel">
+							<div class="demoClinicTitleComponent demoClinicDegrees">Outpatient, 2+ Yr Exp</div>
+							<div class="demoClinicTitleComponent demoClinicJurisdiction">NY Lic</div>
+						</div>
+					</div>
+				</div>
+				<div class="demoClinicPreferences">
+					<div class="demoClinicPayContianer">
+						<img class="demoClinicPayIcon" src="/imageAsset/payIconOrange.png" />
+						<div class="demoClinicPayAmount">$55/hr</div>
+					</div>
+					<div class="demoClinicCalContainer">
+						<img class="demoClinicCal demoClinicCalIcon" src="/imageAsset/calendarOrange.png" />
+						<div class="demoClinicCal demoClinicCalDay">F</div>
+					</div>
+					<div class="demoClinicDayNightContainer">
+						<img class="demoClinicDayNightIcon" src="/imageAsset/dayNightOrange.png" />
+						<div class="demoClinicDayNightText">8AM-8PM</div>
+					</div>
+				</div>
+			</div>
+			`
+		)
 	}, 2000)
 
 	setTimeout(function() {
-		$(".demoClinicMatching").append(".")
-	}, 3000)
+		$(".demoClinic").replaceWith(
+			`
+			<div class="demoClinic">
+				<div class="demoClinicTitle">
+					<div class="demoClinicTitleLeft">
+						<img class="demoClinicTitleComponent demoClinicIcon" src="imageAsset/hospitalLogoOrange.png" />
+					</div>
+					<div class="demoClinicTitleRight">
+						<div class="demoClinicTitleComponent demoClinicName">Anna Baldwin, MD, Office</div>
+						<div class="demoClnicLowerLevel">
+							<div class="demoClinicTitleComponent demoClinicDegrees">Assistance, 1+ Yr Exp</div>
+							<div class="demoClinicTitleComponent demoClinicJurisdiction">NJ Lic</div>
+						</div>
+					</div>
+				</div>
+				<div class="demoClinicPreferences">
+					<div class="demoClinicPayContianer">
+						<img class="demoClinicPayIcon" src="/imageAsset/payIconOrange.png" />
+						<div class="demoClinicPayAmount">$50/hr</div>
+					</div>
+					<div class="demoClinicCalContainer">
+						<img class="demoClinicCal demoClinicCalIcon" src="/imageAsset/calendarOrange.png" />
+						<div class="demoClinicCal demoClinicCalDay">Th</div>
+					</div>
+					<div class="demoClinicDayNightContainer">
+						<img class="demoClinicDayNightIcon" src="/imageAsset/dayNightOrange.png" />
+						<div class="demoClinicDayNightText">9AM-6PM</div>
+					</div>
+				</div>
+			</div>
+			`
+		)
+	}, 4000)
+
+	setTimeout(function() {
+		$(".demoClinic").replaceWith(
+			`
+			<div class="demoClinic">
+				<div class="demoClinicTitle">
+					<div class="demoClinicTitleLeft">
+						<img class="demoClinicTitleComponent demoClinicIcon" src="imageAsset/hospitalLogoOrange.png" />
+					</div>
+					<div class="demoClinicTitleRight">
+						<div class="demoClinicTitleComponent demoClinicName">LBJ Memorial Hospital</div>
+						<div class="demoClnicLowerLevel">
+							<div class="demoClinicTitleComponent demoClinicDegrees">ICU, 5+ Yr Exp</div>
+							<div class="demoClinicTitleComponent demoClinicJurisdiction">NY Lic</div>
+						</div>
+					</div>
+				</div>
+				<div class="demoClinicPreferences">
+					<div class="demoClinicPayContianer">
+						<img class="demoClinicPayIcon" src="/imageAsset/payIconOrange.png" />
+						<div class="demoClinicPayAmount">$70/hr</div>
+					</div>
+					<div class="demoClinicCalContainer">
+						<img class="demoClinicCal demoClinicCalIcon" src="/imageAsset/calendarOrange.png" />
+						<div class="demoClinicCal demoClinicCalDay">F</div>
+					</div>
+					<div class="demoClinicDayNightContainer">
+						<img class="demoClinicDayNightIcon" src="/imageAsset/dayNightOrange.png" />
+						<div class="demoClinicDayNightText">9AM-9PM</div>
+					</div>
+				</div>
+			</div>
+			`
+		)
+	}, 6000)
 
 	setTimeout(function() {
 		$(".demoClinicMatching").css("display", "none")
@@ -260,7 +358,7 @@ $(document).ready(function() {
 	          .fadeIn(1000)
 	          .end()
 	          .appendTo('#slider');
-	    }, 4000);
+	    }, 3000);
 	}, 4000);
 
 

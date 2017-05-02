@@ -9,6 +9,7 @@ body {
 header {
     width: 100vw;
     overflow: auto;
+    background-color: #10A7EA;
 }
 
 .headerLeft {
@@ -191,4 +192,18 @@ header {
 
 .contentCenterScrollDownBar {
     animation: blinkingScrossDown 4s infinite;
+}
+
+.firstEmailEntryHeader {
+    border-bottom-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 40vw;
+    margin: 0 20vw 5vh 20vw;
+    padding-bottom: 10px; 
+}
+
+@keyframes divAppearSlowMotion {
+    0% {opacity: 0.2;}
+    100% {opacity: 1; }
 }
