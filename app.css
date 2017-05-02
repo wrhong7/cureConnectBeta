@@ -608,9 +608,9 @@ header {
 }
 
 .chatLogoAddOn {
-    width: 100px;
+    width: 15vh;
     overflow: auto;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     right: 0px;
     animation: chatButtonBlinking 2s infinite;
@@ -619,12 +619,14 @@ header {
 
 .chatLogoAddOn img {
     width: 80px;
-    margin-top: -12px;
+    /* margin-top: -12px; */
+    margin: -1.5vh auto 0 auto;
 }
 
 .chatLogoAddOnCaption {
     font-size: 2vmin;
     color: orange;
+    margin: 0 auto 0 auto;
 }
 
 @keyframes chatButtonBlinking {
