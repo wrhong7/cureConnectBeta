@@ -39,7 +39,7 @@ body {
 
 }
 
-.ourStoryContainerTail {
+.ourContainerTail {
 	width: 100%;
 	height: 7vh;
 	text-align: center;
@@ -50,7 +50,7 @@ body {
 	cursor: pointer;
 }
 
-.ourStoryContainerTail:hover {
+.ourContainerTail:hover {
 	color: #0f3c6c:
 	background-color: white;
 }

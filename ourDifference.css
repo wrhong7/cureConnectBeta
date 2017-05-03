@@ -3,60 +3,128 @@ body {
 	margin: 0px;
 }
 
-.ourStoryContainer {
-	width: 80vw;
-    overflow: auto;
-    margin: 0 10vw 13vh 10vw;
-    color: white;
+.contentContainer {
+	width: 100vw;
+	overflow: auto;
+	color: white;
 }
 
-.viewPortHeight90 {
-	width: 100%;
-    height: 100vh;
-    padding-top: 15vw;
+.timelineLeft {
+	width: 48.5vw;
+	overflow: auto;
+	float: left;
 }
 
-.storyBreak {
-    font-size: 5vmin;
+.timelineRight {
+	width: 48.5vw;
+	overflow: auto;
+	float: left;
 }
 
-.storyMain {
-    margin-top: 10vh;
-    font-size: 3vmin;
-    padding-bottom: 10vh;
+.stepOne {
+    padding: 30vh 5% 0 5%;
 }
 
-.storyTail {
-    font-size: 3vmin;
-}
-
-.storyTailTopic {
+.stepOneTopic {
+	color: #EF4931;
 	font-size: 5vmin;
-    margin-bottom: 5vh;
 }
 
-.storyTailContent {
+.stepOneSubtopic {
+    margin-top: 1vh;
+    font-size: 4vmin;
+}
 
+.stepOneContent {
+	font-size: 2vmin;
+    margin-top: 1vh;
+}
+
+.stepTwo {
+    padding: 100vh 5% 0 5%;
+}
+
+.stepTwoTopic {
+	color: #ffd200;
+	font-size: 5vmin;
+}
+
+.stepTwoSubtopic {
+    margin-top: 1vh;
+    font-size: 4vmin;
+}
+
+.stepTwoContent {
+	font-size: 2vmin;
+    margin-top: 1vh;
+}
+
+.stepThree {
+    padding: 130vh 5% 0 5%;
+}
+
+.stepThreeTopic {
+	color: #99BFBC;
+	font-size: 5vmin;
+}
+
+.stepThreeSubtopic {
+    margin-top: 1vh;
+    font-size: 4vmin;
+}
+
+.stepThreeContent {
+	font-size: 2vmin;
+    margin-top: 1vh;
+}
+
+.stepFour {
+    padding: 170vh 5% 0 5%;
+}
+
+.stepFourTopic {
+	color: #FD5E0F;
+	font-size: 5vmin;
+}
+
+.stepFourSubtopic {
+    margin-top: 1vh;
+    font-size: 4vmin;
+}
+
+.stepFourContent {
+	font-size: 2vmin;
+    margin-top: 1vh;
+}
+
+.middleTimelineBar {
+	margin: 5vh auto 0 auto;
+    width: 3vw;
+    height: 2900px;
+    background-color: #FFD200;
+    border-radius: 30px;
+    float: left;
 }
 
 .ourStoryContainerTail {
 	width: 100%;
 	height: 7vh;
-	text-align: center;
+	text-align: left;
+	padding-left: 2vw;
 	position: fixed;
 	bottom: 0;
-	color: white;
-	animation: containerTailBlinking 4s infinite;
+	color: #e44835;
+	animation: containerTailBlinking 2s infinite;
 	cursor: pointer;
 }
 
 .ourStoryContainerTail:hover {
-	color: #0f3c6c:
+	color: #e44835:
 	background-color: white;
 }
 
 @keyframes containerTailBlinking {
-	0% {opacity: 0.1;}
-	50% {opacity: 0.6;}
-	100% {opacity: 0.1;}
+    0% {opacity: 0.3;}
+    50%  {opacity: 0.8;}
+    100%  {opacity: 0.3;}
 }
