@@ -200,9 +200,9 @@ $(document).ready(function() {
 						<img class="demoClinicTitleComponent demoClinicIcon" src="imageAsset/hospitalLogoOrange.png" />
 					</div>
 					<div class="demoClinicTitleRight">
-						<div class="demoClinicTitleComponent demoClinicName">Queens Regional Hospital</div>
+						<div class="demoClinicTitleComponent demoClinicName">Queens Regional</div>
 						<div class="demoClnicLowerLevel">
-							<div class="demoClinicTitleComponent demoClinicDegrees">Outpatient, 2+ Yr Exp</div>
+							<div class="demoClinicTitleComponent demoClinicDegrees">ICU, 2+ Yr Exp</div>
 							<div class="demoClinicTitleComponent demoClinicJurisdiction">NY Lic</div>
 						</div>
 					</div>
@@ -220,6 +220,10 @@ $(document).ready(function() {
 						<img class="demoClinicDayNightIcon" src="/imageAsset/dayNightOrange.png" />
 						<div class="demoClinicDayNightText">8AM-8PM</div>
 					</div>
+					<div class="demoClinicLocationContainer">
+						<img class="demoClinicLocationIcon" src="/imageAsset/location.png" />
+						<div class="demoClinicLocationText">Queens, NY</div>
+					</div>
 				</div>
 			</div>
 			`
@@ -235,9 +239,9 @@ $(document).ready(function() {
 						<img class="demoClinicTitleComponent demoClinicIcon" src="imageAsset/hospitalLogoOrange.png" />
 					</div>
 					<div class="demoClinicTitleRight">
-						<div class="demoClinicTitleComponent demoClinicName">Anna Baldwin, MD, Office</div>
+						<div class="demoClinicTitleComponent demoClinicName">Anna Baldwin, MD</div>
 						<div class="demoClnicLowerLevel">
-							<div class="demoClinicTitleComponent demoClinicDegrees">Assistance, 1+ Yr Exp</div>
+							<div class="demoClinicTitleComponent demoClinicDegrees">Assist, 1+ Yr Exp</div>
 							<div class="demoClinicTitleComponent demoClinicJurisdiction">NJ Lic</div>
 						</div>
 					</div>
@@ -254,6 +258,10 @@ $(document).ready(function() {
 					<div class="demoClinicDayNightContainer">
 						<img class="demoClinicDayNightIcon" src="/imageAsset/dayNightOrange.png" />
 						<div class="demoClinicDayNightText">9AM-6PM</div>
+					</div>
+					<div class="demoClinicLocationContainer">
+						<img class="demoClinicLocationIcon" src="/imageAsset/location.png" />
+						<div class="demoClinicLocationText">Newport, NJ</div>
 					</div>
 				</div>
 			</div>
@@ -289,6 +297,10 @@ $(document).ready(function() {
 					<div class="demoClinicDayNightContainer">
 						<img class="demoClinicDayNightIcon" src="/imageAsset/dayNightOrange.png" />
 						<div class="demoClinicDayNightText">9AM-9PM</div>
+					</div>
+					<div class="demoClinicLocationContainer">
+						<img class="demoClinicLocationIcon" src="/imageAsset/location.png" />
+						<div class="demoClinicLocationText">New York, NY</div>
 					</div>
 				</div>
 			</div>

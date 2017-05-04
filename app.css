@@ -139,7 +139,6 @@ header {
     float: left;
     width: 80vw;
     overflow: auto;
-    margin-top: 7vh;
     padding-left: 40vw;
     padding-top: 5vh;
     animation: heartBlinking 4s;
@@ -173,7 +172,7 @@ header {
 }
 
 .demoNursePreferences {
-    width: 27vw;
+    width: 28vw;
     min-width: 180px;
     overflow: auto;
     background-color: white;
@@ -182,14 +181,13 @@ header {
 
 .demoNursePayContianer {
     width: 9vw;
-    min-width: 120px;
+    min-width: 180px;
     overflow: auto;
     float: left;
     /* margin-left: 10px; */
     border-right-style: solid;
     border-width: 1px;
     border-color: rgba(16, 167, 234, 0.2);
-    margin: 0 30px 0 30px;
 }
 
 .demoNursePayIcon {
@@ -207,13 +205,12 @@ header {
 .demoNurseCalContainer {
     width: 9vw;
     /* padding: 0 10px 0 10px; */
-    min-width: 120px;
+    min-width: 180px;
     overflow: auto;
     float: left;
     border-right-style: solid;
     border-width: 1px;
     border-color: rgba(16, 167, 234, 0.2);
-    margin: 0 30px 0 30px;
 }
 
 .demoNurseCal {
@@ -240,19 +237,19 @@ header {
 
 .demoNurseDayNightContainer {
     width: 9vw;
-    min-width: 120px;
+    min-width: 180px;
     overflow: auto;
     float: left;
     /* border: solid; */
     border-right: solid 1px;
     border-color: rgba(16, 167, 234, 0.2);
-    margin: 0 30px 0 30px;
 }
 
 .demoNurseDayNightIcon {
     width: 40px;
     height: 40px;
     float: left;
+    margin-left: 5px;
 }
 
 .demoNurseDayNightText {
@@ -330,11 +327,11 @@ header {
 }
 
 .demoClinicName {
-    font-size: 22px;
+    font-size: 3vmin;
     padding-left: 15px;
     color: #135672;
     /* height: 42px; */
-    padding-top: 5px;
+    /* padding-top: 5px; */
 }
 
 .demoDetails {
@@ -442,16 +439,18 @@ header {
 
 .demoClinicPreferences {
     width: 28vw;
+    min-width: 180px;
     overflow: auto;
     background-color: white;
     border-radius: 10px;
 }
 
 .demoClinicPayContianer {
-    width: 120px;
+    width: 9vw;
+    min-width: 180px;
     overflow: auto;
     float: left;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     border-right-style: solid;
     border-width: 1px;
     border-color: #FFE7DB;
@@ -469,7 +468,8 @@ header {
 }
 
 .demoClinicCalContainer {
-    width: 100px;
+    width: 9vw;
+    min-width: 180px;
     overflow: auto;
     float: left;
     border-right-style: solid;
@@ -497,9 +497,14 @@ header {
 }
 
 .demoClinicDayNightContainer {
-    width: 140px;
+    width: 9vw;
+    min-width: 180px;
     overflow: auto;
     float: left;
+    text-align: center;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #FFE7DB;
 }
 
 .demoClinicDayNightIcon {
@@ -672,9 +677,51 @@ header {
     width: 10vw;
 }
 
+.demoClinicLocationContainer {
+    width: 9vw;
+    min-width: 180px;
+    overflow: auto;
+    float: left;
+    /* border: solid; */
+    border-right: solid 1px;
+    border-color: rgba(16, 167, 234, 0.2);
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #FFE7DB;
+}
 
+.demoClinicLocationIcon {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
 
+.demoClinicLocationText {
+    float: left;
+    margin-left: 2%;
+}
 
+.demoNurseLocationContainer {
+    width: 9vw;
+    min-width: 180px;
+    overflow: auto;
+    float: left;
+    /* border: solid; */
+    border-right: solid 1px;
+    border-color: rgba(16, 167, 234, 0.2);
+}
+
+.demoNurseLocationIcon {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    float: left;
+}
+
+.demoNurseLocationText {
+    float: left;
+    margin-left: 2%;
+}
 
 
 

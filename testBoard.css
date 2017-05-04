@@ -10,6 +10,12 @@ body {
 	padding-top: 10vh;
 }
 
+.middleAndRightColumnContainer {
+	width: 65vw;
+    /* min-width: 800px; */
+    float: left;
+}
+
 .regFirstStepContainer {
 	width: 90vw;
 	overflow: auto;
@@ -19,29 +25,34 @@ body {
 .leftColumn {
     float: left;
     width: 25vw;
+    min-width: 330px;
     height: 33vw;
     overflow: auto;
     text-align: center;
-    padding-top: 30vh;
+    padding-top: 18.5%;
     /* border-style: solid; */
     border: solid 1px;
-/*	background-color: white;*/
+    /* background-color: white; */
+    /* margin-left: calc(10vw); */
+    margin-right: auto;
 }
 
 .middleColumn {
 	float: left;
     width: 32.5vw;
+    min-width: 430px;
     overflow: auto;
     padding: 2vw;
-/*	background-color: white;*/
+    /* background-color: white; */
 }
 
 .rightColumn {
-	float: left;
-	width: 32.5vw;
-	overflow: auto;
-	padding: 2vw;
-/*	background-color: white;*/
+    float: left;
+    width: 32.5vw;
+    min-width: 430px;
+    overflow: auto;
+    padding: 2vw;
+    /* background-color: white; */
 }
 
 .selectorColumnContainer {
