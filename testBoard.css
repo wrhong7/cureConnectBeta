@@ -1,0 +1,49 @@
+body {
+	background-color: #10A7EA;
+	color: white;
+	font-family: 'Montserrat', sans-serif !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-size: 20px;
+}
+
+.select2-results {
+	color: #10A7EA !important;
+}
+
+.select2-selection--multiple {
+	color: white !important;
+	background-color: #10A7EA !important;
+	border-color: white !important;
+	border-top-style: none !important;
+	border-left-style: none !important;
+	border-right-style: none !important;
+	border-bottom-style: solid !important;
+	border-width: 1px !important;
+	border-radius: 0 !important;
+}
+
+.select2-selection__choice__remove {
+	color: white !important;
+}
+
+.select2-selection__choice {
+	background-color: #10A7EA !important;
+	border-color: white !important;
+}
+
+.select2-search__field {
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}

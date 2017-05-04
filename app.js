@@ -5,6 +5,26 @@
 
 //these functions are used for the user to trigger email entry filed prior to they are moving towards the landing page.
 
+
+var userEmail;
+
+function validateEmail(email) {
+	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(email);
+}
+
+function confirmAndPassEmailAddress() {
+	userEmail = $(".nurseOnBoardingEmailDirectionEntryField").val()
+	if (validateEmail(userEmail) == true ) {
+		window.location.href='cureConnectForNurses.html'
+		localStorage["userEnteredEmail"] = userEmail;
+	} else {
+		$(".nurseOnBoardingEmailDirectionLowerLayer").replaceWith("Please enter a valid email.")
+	}
+	
+}
+
+
 function toNurseRegistration() {
 	$(".contentCenterButtonsCover").css("display", "none");
 	$(".nurseOnBoardingEmailCover").css("display", "block");
@@ -361,6 +381,31 @@ $(document).ready(function() {
 	    }, 3000);
 	}, 4000);
 
+  $('select').select2();
+
+  providerTypes.forEach(function(providerType) {
+  	  $('#providerType').append(
+		`<option value=${providerType}>${providerType}</option>`
+	  )
+  })
+
+  clinicianSpecialty.forEach(function(clinicianSpecialty) {
+  	  $('#providerSpecialty').append(
+		`<option value=${clinicianSpecialty}>${clinicianSpecialty}</option>`
+	  )
+  })
+
+  providerDegreeTypes.forEach(function(providerDegreeTypes) {
+  	  $('#providerDegree').append(
+		`<option value=${providerDegreeTypes}>${providerDegreeTypes}</option>`
+	  )
+  })
+
+  stateLicenses.forEach(function(stateLicenses) {
+  	  $('#providerRegion').append(
+		`<option value=${stateLicenses}>${stateLicenses}</option>`
+	  )
+  })
 
 
 });

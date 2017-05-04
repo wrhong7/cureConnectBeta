@@ -16,16 +16,16 @@ function convertToBase64() {
             // Print data in console
 
             resumePDFBinary = base64
-            $(".nurseRegStep1ContentRight").replaceWith(
+            $(".nurseRegStep1ContentLeft").replaceWith(
                 `
-                <div class="nurseRegStep1ContentRight"></div>
+                <div class="nurseRegStep1ContentLeft"></div>
                 `
             );
 
             $(".attachFile").text("replace attached resume")
             $(".nurseRegStep1ContentLeft").css("width", "45vw");
 
-            $(".nurseRegStep1ContentRight").append(
+            $(".nurseRegStep1ContentLeft").append(
             	`
             	<iframe src="${base64}"  "width=400px" height="430px"></iframe>
             	`
