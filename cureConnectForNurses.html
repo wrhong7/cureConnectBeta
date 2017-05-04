@@ -8,6 +8,7 @@
 	<script src="app.js"></script>
 	<script src="uploadResume.js"></script>
 	<script src="localStorage.js"></script>
+	<script src="cureConnectForNurses.js"></script>
 	<link rel="stylesheet" href="app.css" />
 	<link rel="stylesheet" href="landingPageBasic.css" />
 	<link rel="stylesheet" href="cureConnectForNurses.css" />
@@ -46,31 +47,97 @@
 	</div>
 
 	<div class="nurseOnBoardingRegStep1">
-		<div class="nurseRegStep1Content">
-			<div class="nurseRegStep1ContentLeft">
-			</div>
-			<div class="nurseRegStep1ContentMiddle">
-				<select class="js-example-basic-multiple" id="providerType" multiple="multiple">
-				</select>
-			</div>
-			<div class="nurseRegStep1ContentRight">
-			</div>
 
 
+		<div class="mainpageContianer">
 
+			<div class="regFirstStepContainer">
 
-				<div class="nurseRegStep1Header">
-					Step 1/3 - tell us about yourself
+				<div class="leftColumn">
+					<div class="nurseRegStep1AttachResumeButton">
+						Here is my resume attached
+						<input class="inputFile" name="file" type="file" id="file" onchange="convertToBase64();" />
+						<label for="file" class="attachFile">attach file</label>
+					</div>
 				</div>
-				I am an APRN with ICU specialty with 3+ years of clinical experiences with MSN degree PASSIVELY looking for WOMEN'S HEALTH related APRN jobs. I can speak English and Russian. I am at 10154 and willing to commute 10 miles.
-				</br></br>
-				COMPENSATION, WORKHOURS, AND MISSIONS are important for me. I PREFER interviewing for the positions that pay more than $40 per HOUR, 10-20 hours per week, NO CALL and DAYSHIFTS. I would love to have various opportunities and my passion is WOMEN'S HEALTH.
-				<div class="nurseRegStep1AttachResumeButton">
-					Here is my resume attached
-					<input class="inputFile" name="file" type="file" id="file" onchange="convertToBase64();" />
-					<label for="file" class="attachFile">attach file</label>
+
+				<div class="middleAndRightColumnContainer">
+					<div class="middleAndRightColumnContainerDownstairs">
+						Please ype and select the closest descriptions</br>Choose as many descriptions as they suit you
+					</div>
+
+					<div class="middleAndRightColumnContainerDownstairs">
+
+						<div class="middleColumn">
+
+							<!-- Questionnaire 1 Nurse Type -->
+							<div class="selectorColumnContainer">
+								<select class="js-example-basic-multiple nurseTypeQuestion selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 3 Department Experiences -->
+								<select class="js-example-basic-multiple deptExperiences selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 5 Part Time or Full Time -->
+								<select class="js-example-basic-multiple partTimeOrFullTime selectFieldDimension" multiple="multiple">
+								</select>	
+							</div>
+
+							<div class="selectorColumnContainer">				
+								<!-- Questionnaire 7 Desired shift -->
+								<select class="js-example-basic-multiple desiredShift selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 9 Drive/mission -->
+								<select class="js-example-basic-multiple driveMission selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+						</div>
+
+						<div class="rightColumn">
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 2 Nursing Degree-->
+								<select class="js-example-basic-multiple nurseDegree selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 4 Nursing Experience -->
+								<select class="js-example-basic-multiple nursingYrExperience selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 6 Desired compensation -->
+								<select class="js-example-basic-multiple desiredCompensation selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 8 Your current zipcode -->
+								<input type="text" class="selectFieldDimension zipcodeInput" placeholder="Your Zipcode"></input>
+							</div>
+
+							<div class="selectorColumnContainer">
+								<!-- Questionnaire 10 NO List -->
+								<select class="js-example-basic-multiple noList selectFieldDimension" multiple="multiple">
+								</select>
+							</div>
+						</div>
+					</div>
+
 				</div>
-			
+
+			</div>
+
 		</div>
 	</div>
 

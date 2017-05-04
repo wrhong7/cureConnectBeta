@@ -393,31 +393,4 @@ $(document).ready(function() {
 	    }, 3000);
 	}, 4000);
 
-  $('select').select2();
-
-  providerTypes.forEach(function(providerType) {
-  	  $('#providerType').append(
-		`<option value=${providerType}>${providerType}</option>`
-	  )
-  })
-
-  clinicianSpecialty.forEach(function(clinicianSpecialty) {
-  	  $('#providerSpecialty').append(
-		`<option value=${clinicianSpecialty}>${clinicianSpecialty}</option>`
-	  )
-  })
-
-  providerDegreeTypes.forEach(function(providerDegreeTypes) {
-  	  $('#providerDegree').append(
-		`<option value=${providerDegreeTypes}>${providerDegreeTypes}</option>`
-	  )
-  })
-
-  stateLicenses.forEach(function(stateLicenses) {
-  	  $('#providerRegion').append(
-		`<option value=${stateLicenses}>${stateLicenses}</option>`
-	  )
-  })
-
-
 });
