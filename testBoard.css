@@ -6,11 +6,34 @@ body {
 	font-size: 20px;
 }
 
+.middleColumn {
+	float: left;
+	width: 25vw;
+	overflow: auto;
+}
+
+.rightColumn {
+	float: left;
+	width: 25vw;
+	overflow: auto;
+}
+
+.selectFieldDimension {
+	width: 400px !important;
+	height: 80px !important;
+}
+
 .select2-results {
 	color: #10A7EA !important;
 }
 
+.js-example-basic-multiple {
+}
+
 .select2-selection--multiple {
+	width: 400px !important;
+	overflow: auto !important;
+	float: left;
 	color: white !important;
 	background-color: #10A7EA !important;
 	border-color: white !important;
