@@ -6,21 +6,50 @@ body {
 	font-size: 20px;
 }
 
+.mainpageContianer {
+	padding-top: 10vh;
+}
+
+.regFirstStepContainer {
+	width: 90vw;
+	overflow: auto;
+	margin: 5vh 5vw 0 5vw;
+}
+
+.leftColumn {
+    float: left;
+    width: 25vw;
+    height: 33vw;
+    overflow: auto;
+    text-align: center;
+    padding-top: 30vh;
+    /* border-style: solid; */
+    border: solid 1px;
+/*	background-color: white;*/
+}
+
 .middleColumn {
 	float: left;
-	width: 25vw;
-	overflow: auto;
+    width: 32.5vw;
+    overflow: auto;
+    padding: 2vw;
+/*	background-color: white;*/
 }
 
 .rightColumn {
 	float: left;
-	width: 25vw;
+	width: 32.5vw;
 	overflow: auto;
+	padding: 2vw;
+/*	background-color: white;*/
+}
+
+.selectorColumnContainer {
+	margin-top: 2.75vw;
 }
 
 .selectFieldDimension {
 	width: 400px !important;
-	height: 80px !important;
 }
 
 .select2-results {
@@ -56,6 +85,23 @@ body {
 
 .select2-search__field {
 
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+.zipcodeInput {
+	background-color: #10A7EA;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    width: 400px;
+    height: 41px;
+    padding-left: 5px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
