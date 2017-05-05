@@ -372,6 +372,8 @@ label { margin-left: 5px; }
     width: 25vw;
     min-width: 330px;
     height: 38vw;
+    min-height: 500px;
+    margin-bottom: 5vh;
     overflow: auto;
     text-align: center;
     border: solid 1px;
