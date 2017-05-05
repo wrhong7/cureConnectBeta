@@ -19,7 +19,7 @@ function convertToBase64() {
             $(".leftColumn").replaceWith(
                 `
                 <div class="leftColumn">
-                    <div class="nurseRegStep1AttachResumeButton">
+                    <div class="nurseRegStep1ReplaceAttachedResumeButton">
                         <input class="inputFile" name="file" type="file" id="file" onchange="convertToBase64();" />
                         <label for="file" class="attachFile">replace attached resume</label>
                     </div>

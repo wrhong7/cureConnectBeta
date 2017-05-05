@@ -104,7 +104,7 @@
 }
 
 .nurseRegStep1AttachResumeButton {
-    margin-top: 3vw;
+    margin-top: 60%;
 }
 
 .nurseRegStep1AttachResumeButtonDesign {
@@ -332,6 +332,8 @@ label { margin-left: 5px; }
     border-width: 2px;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 4%;
+    margin-bottom: 3%;
 }
 
 .inputFile:focus + label,
