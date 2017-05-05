@@ -1,5 +1,6 @@
 function chatWithCureConnect() {
   $(".chatLogoAddOn").empty();
+  $(".chatLogoAddOn").css("animation", "none")
   $(".chatLogoAddOn").append(
     `
     <div class="chatWithCureConnectWindow">
@@ -8,8 +9,7 @@ function chatWithCureConnect() {
       </div>
       <div class="chatWindowContent">
       </div>
-      <input id="txt" class="chatWindowInputBox" placeholder="enter to send" type="text" onkeypress="this.style.height = ((Math.floor((40+this.value.length)/40)) * 20) + 'px';">
-      </input>
+      <textarea class="chatWindowInputBox" placeholder="enter to send" type="text" onkeypress="this.style.height = ((Math.floor((this.value.length)/22)+1) * 28) + 'px';" />
       <div class="chatWindowInputSendButton">
       </div>
     </div>

@@ -17,7 +17,11 @@
 }
 
 .chatWindowInputBox {
-
+    color: blue;
+    max-height: 200px;
+    min-height: 25px;
+    height: 25px;
+    overflow-y: scroll;
 }
 
 .chatWindowInputSendButton {
