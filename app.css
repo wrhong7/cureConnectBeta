@@ -627,7 +627,7 @@ header {
 }
 
 .chatLogoAddOn {
-    width: 15vh;
+    width: auto;
     overflow: auto;
     position: fixed;
     bottom: 0px;
@@ -723,5 +723,28 @@ header {
     margin-left: 2%;
 }
 
+.demoHeaderRight {
+    float: right;
+    margin-bottom: 1vh;
+}
+
+.headerStartButton {
+    font-size: 15px;
+    color: #FD5E0F;
+    border: solid 2px #FD5E0F;
+    border-radius: 10px;
+    padding: 1vh;
+    width: 15vw;
+    min-width: 100px;
+    text-align: center;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.headerStartButton:hover {
+    color: white;
+    background-color: #FD5E0F;
+}
 
 

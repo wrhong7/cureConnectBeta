@@ -1,3 +1,24 @@
+function chatWithCureConnect() {
+  $(".chatLogoAddOn").empty();
+  $(".chatLogoAddOn").append(
+    `
+    <div class="chatWithCureConnectWindow">
+      <div class="chatWindowIntro">
+        Hello! This is Ricky from cureConnect. Send us the message, we will get back to you very soon. 
+      </div>
+      <div class="chatWindowContent">
+      </div>
+      <input id="txt" class="chatWindowInputBox" placeholder="enter to send" type="text" onkeypress="this.style.height = ((Math.floor((40+this.value.length)/40)) * 20) + 'px';">
+      </input>
+      <div class="chatWindowInputSendButton">
+      </div>
+    </div>
+    <div class="exitChatBoxButton">X</div>
+    `
+  )
+}
+
+
 const nurseTypes = [
   "Registered Nurse",
   "Licensed practical nurse",
@@ -296,3 +317,5 @@ $(document).ready(function() {
   })
 
 });
+
+

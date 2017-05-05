@@ -188,7 +188,7 @@ function toggleExpandMenuButton(stage) {
 $(document).ready(function() {
 
 	setTimeout(function() {
-		$(".goToMainpageButtonDesc").replaceWith("go to cureConnect")
+		$(".goToMainpageButtonDesc").replaceWith("start")
 	}, 4000)
 
 	setTimeout(function() {
