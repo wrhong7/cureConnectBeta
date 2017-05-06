@@ -1,21 +1,45 @@
+function closeChatButton() {
+  $(".chatLogoAddOn").css("animation", "chatButtonBlinking 2s infinite");
+  $(".chatLogoAddOnCaption").css("display", "block");
+  $(".chatImageContainer").css("display", "block");
+
+  $(".chatWithCureConnectWindow").hide();
+  $(".exitChatBoxButton").hide();
+
+}
+
+
+
+function chatOutputBoxSize(height) {
+  console.log(height)
+  var outputBoxHeight = Math.floor(height);
+  console.log(outputBoxHeight)
+  outputBoxHeight = 305 - (outputBoxHeight * 22);
+  console.log(outputBoxHeight)
+  var outputBoxHeightPX = outputBoxHeight + "px"
+  $(".chatWindowContent").css("height", outputBoxHeightPX)
+}
+
 function chatWithCureConnect() {
-  $(".chatLogoAddOn").empty();
-  $(".chatLogoAddOn").css("animation", "none")
-  $(".chatLogoAddOn").append(
-    `
-    <div class="chatWithCureConnectWindow">
-      <div class="chatWindowIntro">
-        Hello! This is Ricky from cureConnect. Send us the message, we will get back to you very soon. 
+
+  $(".chatLogoAddOn").css("animation", "none");
+  $(".chatLogoAddOnCaption").hide();
+  $(".chatImageContainer").hide();
+
+  $(".chatWithCureConnectWindow").css("display", "block");
+  $(".exitChatBoxButton").css("display", "block")
+
+
+  setTimeout(function(){
+    $(".chatWindowContent").append(
+      `
+      <div class="cureConnectSpeaks">
+        Hi there! This is Irem, what can I do for you today?
       </div>
-      <div class="chatWindowContent">
-      </div>
-      <textarea class="chatWindowInputBox" placeholder="enter to send" type="text" onkeypress="this.style.height = ((Math.floor((this.value.length)/22)+1) * 28) + 'px';" />
-      <div class="chatWindowInputSendButton">
-      </div>
-    </div>
-    <div class="exitChatBoxButton">X</div>
-    `
-  )
+      `
+    )
+  }, 2000)
+
 }
 
 

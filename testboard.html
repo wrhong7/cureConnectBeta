@@ -103,10 +103,31 @@
 	</div>
 
 	<div class="chatLogoAddOn">
+
+	    <div class="chatWithCureConnectWindow">
+	      <div class="chatWindowIntro">
+	        <div class="answeringMachineIcon">
+	          <img class="imageFile" src="imageAsset/iremProfile.png" />
+	          <div class="imageNameSection">Irem</div>
+	        </div>
+	        <div class="answeringMachineContent">
+	          Ask us about cureConnect,</br>
+	          we will get back to you soon.
+	        </div>
+	      </div>
+	      
+	      <div class="chatWindowContentContainer">
+	        <div class="chatWindowContent">
+	        </div>
+	        <textarea class="chatWindowInputBox" placeholder=" Type here and press enter to send" type="text" onkeypress="this.style.height = ((Math.floor((this.value.length)/(35))+1) * 22) + 'px'; chatOutputBoxSize((this.value.length)/(35))"></textarea>
+	      </div>
+	    </div>
+	    <div class="exitChatBoxButton" onclick="closeChatButton()">close</div>
+
 		<div class="chatLogoAddOnCaption" onclick="chatWithCureConnect()">
-			chat with us
+			Question?
 		</div>
-		<img src="imageAsset/chatLogoOrange.png" onclick="chatWithCureConnect()"/>
+		<img class="chatImageContainer" src="imageAsset/chatLogoOrange.png" onclick="chatWithCureConnect()"/>
 	</div>
 
 </div>

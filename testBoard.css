@@ -1,27 +1,85 @@
 
 
 .chatWithCureConnectWindow {
-    background-color: yellow;
     width: 25vw;
-    max-width: 350px;
-    min-width: 200px;
-    height: 50vh;
+    /* max-width: 350px; */
+    /* min-width: 200px; */
+    height: 480px;
+    width: 300px;
+    border-radius: 15px;
+    display: none;
 }
 
 .chatWindowIntro {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    overflow: auto;
+    color: white;
+    font-size: 15px;
+    background-color: #0F3C6C;
+    /* border-radius: 5px; */
+}
+
+.answeringMachineIcon {
+    width: 100%;
+    overflow: auto;
+     padding-top: 10px; 
+    /* margin-left: 36%; */
+}
+
+.imageFile {
+    height: 60px !important;
+    width: 60px !important;
+    margin-left: 38% !important;
+    border-radius: 100% !important;
+}
+
+.imageNameSection {
+    text-align: center;
+}
+
+.answeringMachineContent {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.chatPressEnter {
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.chatWindowContentContainer {
 
 }
 
 .chatWindowContent {
-
+    width: 100%;
+    height: 305px;
+    background-color: white;
+    padding: 5px 10px 0px 10px;
 }
 
 .chatWindowInputBox {
-    color: blue;
+    background-color: #0F3C6C;
     max-height: 200px;
     min-height: 25px;
     height: 25px;
     overflow-y: scroll;
+    width: 100%;
+    bottom: 0px;
+    font-size: 15px;
+    font-style: proxima-nova;
+}
+
+.cureConnectSpeaks {
+    background-color: rgba(16, 167, 234, 0.2);
+    color: #0F3C6C;
+    font-size: 13px;
+    margin: 5px 60px 0 2px;
+    padding: 10px;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
 }
 
 .chatWindowInputSendButton {
@@ -29,9 +87,21 @@
 }
 
 .exitChatBoxButton {
-
+    background-color: #0F3C6C;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+    display: none;
 }
 
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 
 body {
 	background-color: #10A7EA;
@@ -162,3 +232,4 @@ input[type=range] {
 :-moz-placeholder { /* Firefox 18- */
   color: white;
 }
+
