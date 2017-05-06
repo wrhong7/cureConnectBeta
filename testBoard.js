@@ -1,3 +1,8 @@
+function sendChatContentToServer(event) {
+  console.log("working")
+  console.log(event)
+}
+
 function closeChatButton() {
   $(".chatLogoAddOn").css("animation", "chatButtonBlinking 2s infinite");
   $(".chatLogoAddOnCaption").css("display", "block");
@@ -7,8 +12,6 @@ function closeChatButton() {
   $(".exitChatBoxButton").hide();
 
 }
-
-
 
 function chatOutputBoxSize(height) {
   console.log(height)

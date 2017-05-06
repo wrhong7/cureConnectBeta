@@ -119,10 +119,13 @@
 	      <div class="chatWindowContentContainer">
 	        <div class="chatWindowContent">
 	        </div>
-	        <textarea class="chatWindowInputBox" placeholder=" Type here and press enter to send" type="text" onkeypress="this.style.height = ((Math.floor((this.value.length)/(35))+1) * 22) + 'px'; chatOutputBoxSize((this.value.length)/(35))"></textarea>
+	        <textarea class="chatWindowInputBox" placeholder=" Type here and press enter to send" type="text" onkeypress="this.style.height = ((Math.floor((this.value.length)/(35))+1) * 22) + 'px'; chatOutputBoxSize((this.value.length)/(35)); sendChatContentToServer(event)"></textarea>
 	      </div>
 	    </div>
-	    <div class="exitChatBoxButton" onclick="closeChatButton()">close</div>
+	    <div class="exitChatBoxButton">
+	    	<div class="sendMessageButton">send</div>
+	    	<div class="chatBoxCloseButton" onclick="closeChatButton()">close</div>
+	    </div>
 
 		<div class="chatLogoAddOnCaption" onclick="chatWithCureConnect()">
 			Question?
