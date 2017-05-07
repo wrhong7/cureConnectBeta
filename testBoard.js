@@ -1,6 +1,22 @@
-function sendChatContentToServer(event) {
-  console.log("working")
-  console.log(event)
+function sendChatContentToServer() {
+  var textbox = $(".chatWindowInputBox").val();
+  
+  //emptying the chatbox content
+  $(".chatWindowInputBox").empty();
+
+  $(".chatWindowContent").append(
+      `
+      <div class="userSpeaks">
+        ${textbox}
+      </div>
+      `
+  );
+
+  $(".chatWindowContent").animate({ scrollTop: $('.chatWindowContent').prop("scrollHeight")}, 1000);
+
+  console.log(textbox);
+
+
 }
 
 function closeChatButton() {
