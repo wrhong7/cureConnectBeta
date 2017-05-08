@@ -2,25 +2,194 @@
 /*Hospital Sourcer Signing In Beginning
 */
 
+@media screen and (max-width: 820px) {
+
+    .sourcerLinkedInInfoConfirmationDirection {
+        margin-left: 15px !important;
+    }
+
+    .sourcerProfilePhotoContianer{
+        width: 25vw;
+        /* height: 30vw; */
+        float: left;
+        padding-left: auto;
+        margin-left: 15vw;
+        /* margin-left: 20px; */
+        padding-top: 10px !important;
+    }
+
+    .sourcerProfilePhoto {
+        width: 200px;
+        /* max-width: 180px; */
+        /* min-width: 15vw; */
+        /* height: 15vw; */
+        /* max-width: 180px; */
+        /* max-height: 180px; */
+        height: 200px;
+        border-radius: 100%;
+        float: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .changeImageButton {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+        border: solid 2px;
+        border-radius: 15px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .sourcerProfilePhotoContianer {
+        width: auto;
+        overflow: auto;
+    }
+
+    .sourcerProfileEntryContainer {
+        width: auto;
+        overflow: auto;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .selectorWrapper2{
+        float: left;
+        margin-left: 10px !important;
+        margin-top: 5px !important;
+        color: red;
+    }
+
+    .sourcerProfileConfirmContainer {
+        width: 90% !important;
+    }
+
+}
+
+.sourcerProfileContainer {
+    width: 80vw;
+    max-width: 1000px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sourcerProfileConfirmContainer {
+    width: 100%;
+    padding-top: 30px;
+    overflow: auto;
+    float: left;
+    /* padding-left: 20px; */
+}
+
+.sourcerProfileConfirmButton {
+    border: solid 2px;
+    width: 180px;
+    padding: 5px;
+    overflow: auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    padding-left: 10;
+    margin-bottom: 10%;
+}
+
+.sourcerProfileEntryContainer {
+    width: auto;
+    max-width: 700px;
+    overflow: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+.changeImageButton {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 5px; 
+    cursor: pointer;
+}
+
+.changeImageButton:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+
+.selectorWrapper1 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.selectorWrapper2 {
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.marginLeft20PxAdded {
+    margin-left: 20px !important;
+}
+
+.select2-selection--multiple {
+    width: 330px !important;
+    overflow: auto !important;
+    float: left;
+    color: white !important;
+    background-color: #10A7EA !important;
+    border-color: white !important;
+    border-top-style: none !important;
+    border-left-style: none !important;
+    border-right-style: none !important;
+    border-bottom-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 0 !important;
+}
+
+.select2-container {
+}
+
+.select2-container--default {
+    width: 330px !important;
+}
+
 .sourcerLinkedInPulled {
-    width: 80%;
-    margin-left: 10%;
-    margin-lefT: 10%;
-    padding: 10%;
+    width: 100%;
+    margin-left: 6%;
+    padding: 10% 10% 0 10%;
 }
 
 .sourcerProfilePhotoContianer {
-    width: 15vw;
+    width: 25vw;
+    /* max-width: 180px; */
+    min-width: 200px;
+    max-width: 200px;
     /* height: 30vw; */
-    padding-top: 4vh;
+    padding-top: 40px;
     float: left;
     padding-left: auto;
 }
 
 .sourcerProfilePhoto {
-    width: 15vw;
-    min-width: 15vw;
-    height: 15vw;
+    width: 200px;
+    /* max-width: 180px; */
+    /* min-width: 15vw; */
+    /* height: 15vw; */
+    /* max-width: 180px; */
+    /* max-height: 180px; */
+    height: 200px;
     border-radius: 100%;
     float: center;
     margin-left: auto;
@@ -34,7 +203,16 @@
 }
 
 .floorStackForSelector {
-    
+    width: 55vw;
+    overflow: auto;
+}
+
+.sourcerLinkedInInfoConfirmationDirection {
+    width: 60vw;
+    max-width: 900px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sourcerInfoEntry {
@@ -48,6 +226,7 @@
     height: 41px;
     margin-left: 10px;
     margin-right: 10px;
+    padding-left: 5px;
 }
 
 
@@ -410,21 +589,6 @@ body {
 }
 
 .js-example-basic-multiple {
-}
-
-.select2-selection--multiple {
-	width: 400px !important;
-	overflow: auto !important;
-	float: left;
-	color: white !important;
-	background-color: #10A7EA !important;
-	border-color: white !important;
-	border-top-style: none !important;
-	border-left-style: none !important;
-	border-right-style: none !important;
-	border-bottom-style: solid !important;
-	border-width: 1px !important;
-	border-radius: 0 !important;
 }
 
 .select2-selection__choice__remove {

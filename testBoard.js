@@ -377,7 +377,7 @@ $(document).ready(function() {
   })
 
   $(".recruitingSpecialty").select2({
-    placeholder: "Candidate Types"
+    placeholder: "Recruiting Candidates"
   });
 
   sourcerRecruitingSpecialty.forEach(function(element) {
