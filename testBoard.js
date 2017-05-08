@@ -1,13 +1,18 @@
 function sendChatContentToServer() {
   var textbox = $(".chatWindowInputBox").val();
   
+  //here needs to have the slack update.
+
+
   //emptying the chatbox content
-  $(".chatWindowInputBox").empty();
+  $(".chatWindowInputBox").val("");
 
   $(".chatWindowContent").append(
       `
-      <div class="userSpeaks">
-        ${textbox}
+      <div class="userSpeaksContianer">
+        <div class="userSpeaks">
+          ${textbox}
+        </div>
       </div>
       `
   );

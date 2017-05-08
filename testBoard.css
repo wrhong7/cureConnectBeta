@@ -83,16 +83,24 @@
     height: auto;
 }
 
+.userSpeaksContianer {
+    width: 80%;
+    overflow: auto;
+    margin-left: 20%; 
+}
+
 .userSpeaks {
     background-color: rgba(16, 167, 234, 0.2);
     color: #0F3C6C;
     font-size: 13px;
-    margin: 5px 60px 0 2px;
     padding: 10px;
     border-radius: 15px;
-    width: auto;
-    height: auto;
     display: inline-block;
+    right: 0px;
+    width: auto;
+    overflow: auto;
+    float: right;
+    margin-top: 10px;
 
 /*    make sure to integrate with this slack.*/
 }
