@@ -285,126 +285,227 @@ const languageList = [
     "Kazkh"
   ]
 
+const sourcerRecruitingRegion = [
+  "US Nationwide", "Non-US", "Alabama", "Birmingham, Alabama Area", "Alaska", "Anchorage, Alaska Area", "Arizona",
+  "Phoenix, Arizona  Area", "Tucson, Arizona Area", "Arkansas","Little Rock, Arkansas Area", 
+  "California", "Fresno, California Area", "Greater Los Angeles Area", "Greater San Diego Area", 
+  "Orange County, California Area", "Sacramento, California Area", "Salinas, California Area", 
+  "San Francisco Bay Area", "Santa Barbara, California Area", "Stockton, California Area", "Colorado", 
+  "Colorado Springs, Colorado Area", "Fort Collins, Colorado Area", "Greater Denver Area", "Connecticut", 
+  "Hartford, Connecticut Area", "New London orwich, Connecticut Area", "Delaware", "District Of Columbia", 
+  "Washington D.C. Metro Area", "Florida", "Daytona Beach, Florida Area","Fort Myers, Florida Area", 
+  "Fort Pierce, Florida Area", "Gainesville, Florida Area", "Lakeland, Florida Area",
+  "Melbourne, Florida Area", "Miami/Fort Lauderdale Area", "Orlando, Florida Area", "Sarasota, Florida Area",
+  "Tampa/St. Petersburg, Florida Area", "West Palm Beach, Florida Area", "Georgia", "Greater Atlanta Area",
+  "Jacksonville, Florida Area", "Tallahassee, Florida Area", "Hawaii", "Idaho", "Boise, Idaho Area", "Illinois", 
+  "Greater Chicago Area", "Peoria, Illinois Area", "Urbana-Champaign, Illinois Area", "Indiana", 
+  "Evansville, Indiana Area", "Indianapolis, Indiana Area", "Iowa", "Kansas", "Wichita, Kansas Area", 
+  "Kentucky", "Lexington, Kentucky Area", "Louisville, Kentucky Area", "Louisiana", "Maine", "Portland, Maine Area", 
+  "Maryland", "Baltimore, Maryland Area", "Massachusetts", "Greater Boston Area", "Michigan", 
+  "Fort Wayne, Indiana Area", "Greater Detroit Area", "Greater Grand Rapids, Michigan Area", 
+  "Kalamazoo, Michigan Area", "Lansing, Michigan Area", "Saginaw, Michigan Area", "Minnesota", 
+  "Greater Minneapolis-St. Paul Area", "Mississippi", "Baton Rouge, Louisiana Area", "Greater New Orleans Area", 
+  "Jackson, Mississippi Area", "Mobile, Alabama Area", "Missouri", "Columbia, Missouri Area", "Davenport, Iowa Area",
+  "Des Moines, Iowa Area", "Fayetteville, Arkansas Area", "Greater St. Louis Area", "Kansas City, Missouri Area",  
+  " Springfield, Missouri Area", "Montana", "Nebraska", "Greater Omaha Area", "Lincoln, Nebraska Area", "Nevada", 
+  "Las Vegas, Nevada Area", "Reno, Nevada Area", "New Hampshire", "New Jersey", "New Mexico", 
+  "Albuquerque, New Mexico Area", "New York", "Albany, New York Area", "Buffalo iagara, New York Area", 
+  "Greater New York City Area", "Rochester, New York Area", "Syracuse, New York Area", "North Carolina", 
+  "Charlotte, North Carolina Area", "Raleigh-Durham, North Carolina Area", "Wilmington, North Carolina Area", 
+  "North Dakota", "Ohio", "Cincinnati Area", "Cleveland/Akron, Ohio Area", "Columbus, Ohio Area", "Dayton, Ohio Area", "Toledo, Ohio Area", "Oklahoma", "Oklahoma City, Oklahoma Area", "Tulsa, Oklahoma Area", "Oregon", "Eugene, Oregon Area", "Portland, Oregon Area", "Pennsylvania",
+  "Allentown, Pennsylvania Area", "Greater Philadelphia Area", "Greater Pittsburgh Area", 
+  "Harrisburg, Pennsylvania Area", "Ithaca, New York Area", "Lancaster, Pennsylvania Area", 
+  "Scranton, Pennsylvania Area", "Rhode Island", "Providence, Rhode Island Area", "South Carolina", 
+  "Augusta, Georgia Area", "Charleston, South Carolina Area", "Columbia, South Carolina Area", 
+  "Greenville, South Carolina Area", "Savannah, Georgia Area", "South Dakota", "Sioux Falls, South Dakota Area",
+  "Tennessee", "Asheville, North Carolina Area", "Chattanooga, Tennessee Area", "Greater Memphis Area",
+  "Greater Nashville Area", "Huntsville, Alabama Area" , "Johnson City, Tennessee Area", "Knoxville, Tennessee Area", 
+  "Texas", "Austin, Texas Area", "Dallas/Fort Worth Area", "El Paso, Texas Area", "Houston, Texas Area",
+  "San Antonio, Texas Area", "Utah", "Greater Salt Lake City Area", "Provo, Utah Area", "Vermont", 
+  "Burlington, Vermont Area", "Springfield, Massachusetts Area", "Virginia", "Charlottesville, Virginia Area", 
+  "Greensboro/Winston-Salem, North Carolina Area", "Norfolk, Virginia Area", "Richmond, Virginia Area",
+  "Roanoke, Virginia Area", "Washington", "Greater Seattle Area", "Spokane, Washington Area",
+  "West Virginia", "Wisconsin", "Greater Milwaukee Area", "Green Bay, Wisconsin Area", "Madison, Wisconsin Area", 
+  "Oshkosh, Wisconsin Area", "Rockford, Illinois Area", "Wyoming"
+];
+
+const sourcerRecruitingSpecialty = [
+  "General Recruiter",
+  "Nurse",
+  "Nurse Practitioner",
+  "Part Time",
+  "Per Diem",
+  "Full Time",
+  "Temporary Contract",
+  "Ambulatory Clinics",
+  "Apheresis",
+  "Burn Unit",
+  "Cancer Center",
+  "Critical Care Unit",
+  "Emergency Dept",
+  "Gastrointestinal",
+  "Intensive Care Unit (ICU)",
+  "Intermediate Care Unit (IMU)",
+  "Medical-Surgical Units",
+  "Neonatal Intensive Care Unit (NICU)",
+  "Nursing Education, Development and Research",
+  "Operating Rooms",
+  "Perioperative Anaesthetic Care Unit (PACU)",
+  "Progressive Care Unit (PCU)",
+  "Professional Service Nursing",
+  "Psychiatry",
+  "Shiley Eye Institute",
+  "Surgical Intensive Care Unit (SICU)",
+  "Sulpizio Cardiovascular Center",
+  "Telemetry",
+  "Transplant nursing",
+  "Women's Services"
+];
+
 $(document).ready(function() {
 
-  // <!-- Questionnaire 1 Nurse Type -->
-  $(".nurseTypeQuestion").select2({
-    placeholder: "Nurse Type"
+  $(".recruitingRegion").select2({
+    placeholder: "Recruiting Regions"
   });
 
-  nurseTypes.forEach(function(element) {
-    $(".nurseTypeQuestion").append(
+  sourcerRecruitingRegion.forEach(function(element) {
+    $(".recruitingRegion").append(
       `
        <option value="${element}">${element}</option>
       `
     )
   })
 
-  //<!-- Questionnaire 3 Department Experiences -->
-  $(".deptExperiences").select2({
-    placeholder: "Departments"
+  $(".recruitingSpecialty").select2({
+    placeholder: "Candidate Types"
   });
 
-  deptExperienceList.forEach(function(element) {
-    $(".deptExperiences").append(
+  sourcerRecruitingSpecialty.forEach(function(element) {
+    $(".recruitingSpecialty").append(
       `
        <option value="${element}">${element}</option>
       `
     )
   })
 
-  // <!-- Questionnaire 5 Part Time or Full Time -->
-  $(".partTimeOrFullTime").select2({
-    placeholder: "Employment Preference"
-  });
+  // // <!-- Questionnaire 1 Nurse Type -->
+  // $(".nurseTypeQuestion").select2({
+  //   placeholder: "Nurse Type"
+  // });
 
-  partOrFullTimeList.forEach(function(element) {
-    $(".partTimeOrFullTime").append(
-      `
-       <option value="${element}">${element}</option>
-      `
-    )
-  })
+  // nurseTypes.forEach(function(element) {
+  //   $(".nurseTypeQuestion").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
-  // <!-- Questionnaire 7 Desired shift -->
-  $(".desiredShift").select2({
-    placeholder: "Desired Shift"
-  });
+  // //<!-- Questionnaire 3 Department Experiences -->
+  // $(".deptExperiences").select2({
+  //   placeholder: "Departments"
+  // });
 
-  desiredShiftList.forEach(function(element) {
-    $(".desiredShift").append(
-      `
-       <option value="${element}">${element}</option>
-      `
-    )
-  })
+  // deptExperienceList.forEach(function(element) {
+  //   $(".deptExperiences").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
-  // <!-- Questionnaire 9 Drive/mission -->
-  $(".driveMission").select2({
-    placeholder: "I am passionate about"
-  });
+  // // <!-- Questionnaire 5 Part Time or Full Time -->
+  // $(".partTimeOrFullTime").select2({
+  //   placeholder: "Employment Preference"
+  // });
 
-  driveMissionList.forEach(function(element) {
-    $(".driveMission").append(
-      `
-       <option value="${element}">${element}</option>
-      `
-    )
-  })
+  // partOrFullTimeList.forEach(function(element) {
+  //   $(".partTimeOrFullTime").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
-  // <!-- Questionnaire 2 Nursing Degree-->
-  $(".nurseDegree").select2({
-    placeholder: "Degrees"
-  });
+  // // <!-- Questionnaire 7 Desired shift -->
+  // $(".desiredShift").select2({
+  //   placeholder: "Desired Shift"
+  // });
 
-  nursingDegreeList.forEach(function(element) {
-    $(".nurseDegree").append(
-      `
-       <option value="${element}">${element}</option>
-      `
-    )
-  })
+  // desiredShiftList.forEach(function(element) {
+  //   $(".desiredShift").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
-  //      <!-- Questionnaire 4 Nursing Experience -->
+  // // <!-- Questionnaire 9 Drive/mission -->
+  // $(".driveMission").select2({
+  //   placeholder: "I am passionate about"
+  // });
 
-  $(".nursingYrExperience").select2({
-    placeholder: "Years of Professional Experience"
-  });
+  // driveMissionList.forEach(function(element) {
+  //   $(".driveMission").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
-  nursingYrExperienceList.forEach(function(element) {
-    $(".nursingYrExperience").append(
-      `
-       <option value="${element}">${element}</option>
-      `
-    )
-  })
+  // // <!-- Questionnaire 2 Nursing Degree-->
+  // $(".nurseDegree").select2({
+  //   placeholder: "Degrees"
+  // });
 
-  //<!-- Questionnaire 6 Desired compensation -->
+  // nursingDegreeList.forEach(function(element) {
+  //   $(".nurseDegree").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
-  $(".desiredCompensation").select2({
-    placeholder: "Desired Compensation"
-  });
+  // //      <!-- Questionnaire 4 Nursing Experience -->
 
-  desiredCompensationList.forEach(function(element) {
-    $(".desiredCompensation").append(
-      `
-       <option value="${element}">${element}</option>
-      `
-    )
-  })
+  // $(".nursingYrExperience").select2({
+  //   placeholder: "Years of Professional Experience"
+  // });
 
-  //<!-- Questionnaire 10 No List -->
-  $(".noList").select2({
-    placeholder: "Things I don't like"
-  });
+  // nursingYrExperienceList.forEach(function(element) {
+  //   $(".nursingYrExperience").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
-  noList.forEach(function(element) {
-    $(".noList").append(
-      `
-       <option value="${element}">${element}</option>
-      `
-    )
-  })
+  // //<!-- Questionnaire 6 Desired compensation -->
+
+  // $(".desiredCompensation").select2({
+  //   placeholder: "Desired Compensation"
+  // });
+
+  // desiredCompensationList.forEach(function(element) {
+  //   $(".desiredCompensation").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
+
+  // //<!-- Questionnaire 10 No List -->
+  // $(".noList").select2({
+  //   placeholder: "Things I don't like"
+  // });
+
+  // noList.forEach(function(element) {
+  //   $(".noList").append(
+  //     `
+  //      <option value="${element}">${element}</option>
+  //     `
+  //   )
+  // })
 
 });
 
