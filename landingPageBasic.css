@@ -207,3 +207,16 @@ header {
     0% {opacity: 0.2;}
     100% {opacity: 1; }
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #10A7EA !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #10A7EA !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #10A7EA !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #10A7EA !important;
+}
