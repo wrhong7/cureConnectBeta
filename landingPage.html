@@ -12,6 +12,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 	<!-- cureConnect.com Product Demo Page -->
+	<link rel="stylesheet" href="chatbox.css" />
+	<script src="chatbox.js"></script>
+
 </head>
 
 <body>
@@ -84,4 +87,36 @@
 			</button>
 		</div>
 	</div>
+
+	<div class="chatLogoAddOn">
+
+	    <div class="chatWithCureConnectWindow">
+	      <div class="chatWindowIntro">
+	        <div class="answeringMachineIcon">
+	          <img class="imageFile" src="imageAsset/iremProfile.png" />
+	          <div class="imageNameSection">Irem</div>
+	        </div>
+	        <div class="answeringMachineContent">
+	          Ask us about cureConnect,</br>
+	          we will get back to you soon.
+	        </div>
+	      </div>
+	      
+	      <div class="chatWindowContentContainer">
+	        <div class="chatWindowContent">
+	        </div>
+	        <textarea class="chatWindowInputBox" placeholder=" Type here and press enter to send" type="text" onkeypress="this.style.height = ((Math.floor((this.value.length)/(35))+1) * 22) + 'px'; chatOutputBoxSize((this.value.length)/(35));"></textarea>
+	      </div>
+	    </div>
+	    <div class="exitChatBoxButton">
+	    	<div class="sendMessageButton" onclick="sendChatContentToServer()">send</div>
+	    	<div class="chatBoxCloseButton" onclick="closeChatButton()">close</div>
+	    </div>
+
+		<div class="chatLogoAddOnCaption" onclick="chatWithCureConnect()">
+			Question?
+		</div>
+		<img class="chatImageContainer" src="imageAsset/chatLogoOrange.png" onclick="chatWithCureConnect()"/>
+	</div>
+
 </body>

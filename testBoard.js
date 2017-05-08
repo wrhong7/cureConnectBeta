@@ -1,5 +1,9 @@
+var url = "https://hooks.slack.com/services/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";
+var chatResponseBoxCounter = 1;
+
 function sendChatContentToServer() {
   var textbox = $(".chatWindowInputBox").val();
+
   
   //here needs to have the slack update.
 
@@ -19,7 +23,45 @@ function sendChatContentToServer() {
 
   $(".chatWindowContent").animate({ scrollTop: $('.chatWindowContent').prop("scrollHeight")}, 1000);
 
-  console.log(textbox);
+
+  if (textbox.indexOf('@') > -1) {
+    setTimeout(function(){
+      if (chatResponseBoxCounter == 1) {
+        $(".chatWindowContent").append(
+          `
+          <div class="cureConnectSpeaks">
+            Got it. I am <b>briefly out of my office</b>, but I will help you ASAP. <b>What is something that we can help you with today?</b>
+          </div>
+          `
+        )
+      }
+      chatResponseBoxCounter += 1
+    }, 2000)
+  }
+  else {
+    setTimeout(function(){
+      if (chatResponseBoxCounter == 1) {
+        $(".chatWindowContent").append(
+          `
+          <div class="cureConnectSpeaks">
+            I see. It should not be a big problem. I am breifly <b>out of desk at the moment</b>, but I will respond to your email once I get back to my desk. <b>What is your name and email again?</b>
+          </div>
+          `
+        )
+      }
+      chatResponseBoxCounter += 1
+    }, 2000)  
+  }  
+
+  $.ajax({
+      data: 'payload=' + JSON.stringify({
+          "text": textbox
+      }),
+      dataType: 'json',
+      processData: false,
+      type: 'POST',
+      url: url
+  });
 
 
 }
@@ -38,7 +80,7 @@ function chatOutputBoxSize(height) {
   console.log(height)
   var outputBoxHeight = Math.floor(height);
   console.log(outputBoxHeight)
-  outputBoxHeight = 305 - (outputBoxHeight * 22);
+  outputBoxHeight = 306 - (outputBoxHeight * 22);
   console.log(outputBoxHeight)
   var outputBoxHeightPX = outputBoxHeight + "px"
   $(".chatWindowContent").css("height", outputBoxHeightPX)
@@ -58,11 +100,11 @@ function chatWithCureConnect() {
     $(".chatWindowContent").append(
       `
       <div class="cureConnectSpeaks">
-        Hi there! This is Irem, what can I do for you today?
+        Hi there! This is Irem.</br> Just in case I lose you,</br><b>what's your name and email</b>?
       </div>
       `
     )
-  }, 2000)
+  }, 1500)
 
 }
 

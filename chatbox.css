@@ -1,0 +1,165 @@
+
+
+.chatWithCureConnectWindow {
+    width: 25vw;
+    /* max-width: 350px; */
+    /* min-width: 200px; */
+    height: 480px;
+    width: 300px;
+    border-radius: 15px;
+    display: none;
+    border-top: solid white 1px;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+}
+
+.chatWindowIntro {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+    overflow: auto;
+    color: white;
+    font-size: 15px;
+    background-color: #0F3C6C;
+    /* border-radius: 5px; */
+}
+
+.answeringMachineIcon {
+    width: 100%;
+    overflow: auto;
+     padding-top: 10px; 
+    /* margin-left: 36%; */
+}
+
+.imageFile {
+    height: 60px !important;
+    width: 60px !important;
+    margin-left: 38% !important;
+    border-radius: 100% !important;
+}
+
+.imageNameSection {
+    text-align: center;
+}
+
+.answeringMachineContent {
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.chatPressEnter {
+    padding-top: 5px;
+    font-size: 13px;
+}
+
+.chatWindowContentContainer {
+
+}
+
+.chatWindowContent {
+    width: 100%;
+    height: 306px;
+    background-color: white;
+    padding: 5px 10px 0px 10px;
+    overflow: auto;
+}
+
+.chatWindowInputBox {
+    background-color: #0F3C6C;
+    max-height: 200px;
+    min-height: 25px;
+    height: 25px;
+    overflow-y: scroll;
+    width: 100%;
+    bottom: 0px;
+    font-size: 15px;
+    font-style: proxima-nova;
+    color: white;
+}
+
+.cureConnectSpeaks {
+    background-color: rgba(16, 167, 234, 0.2);
+    color: #0F3C6C;
+    font-size: 13px;
+    margin: 5px 60px 0 2px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 80%;
+    height: auto;
+}
+
+.userSpeaksContianer {
+    width: 80%;
+    overflow: auto;
+    margin-left: 20%; 
+}
+
+.userSpeaks {
+    background-color: rgba(16, 167, 234, 0.2);
+    color: #0F3C6C;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    right: 0px;
+    width: auto;
+    overflow: auto;
+    float: right;
+    margin-top: 10px;
+
+/*    make sure to integrate with this slack.*/
+}
+
+.chatWindowInputSendButton {
+
+}
+
+.exitChatBoxButton {
+    background-color: #0F3C6C;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+    display: none;
+    overflow: auto;
+    width: 100%;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+    border-bottom: solid white 1px;
+}
+
+
+.sendMessageButton {
+    float: left;
+    width: 50%;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+.sendMessageButton:hover {
+    color: #0F3C6C;
+    background-color: white;
+}
+
+.chatBoxCloseButton:hover {
+    color: #0F3C6C;
+    background-color: white;
+}
+
+.chatBoxCloseButton {
+    float: left;
+    width: 50%;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}

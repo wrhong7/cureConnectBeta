@@ -630,7 +630,7 @@ header {
     width: auto;
     overflow: auto;
     position: fixed;
-    bottom: 0px;
+    bottom: 10px;
     right: 0px;
     animation: chatButtonBlinking 2s infinite;
     cursor: pointer;

@@ -15,6 +15,10 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+	<link rel="stylesheet" href="chatbox.css" />
+	<script src="chatbox.js"></script>
+
 	<!-- cureConnect.com Product Demo Page -->
 </head>
 
@@ -167,45 +171,76 @@
 
 
 
-<div class="prevButton cureConnectForNursePage1ToLandingPage" onclick="fromPg1ToPg0()">
-	<div class="prevButtonArrow">
-		<
+	<div class="prevButton cureConnectForNursePage1ToLandingPage" onclick="fromPg1ToPg0()">
+		<div class="prevButtonArrow">
+			<
+		</div>
+		<div class="prevButtonCaption" >
+			prev
+		</div>
 	</div>
-	<div class="prevButtonCaption" >
-		prev
-	</div>
-</div>
 
-<div class="nextButton cureConnectForNursePage1ToPage2" onclick="fromPg0ToPg1()">
-	<div class="nextButtonArrow">
-		>
+	<div class="nextButton cureConnectForNursePage1ToPage2" onclick="fromPg0ToPg1()">
+		<div class="nextButtonArrow">
+			>
+		</div>
+		<div class="nextButtonCaption">
+			next
+		</div>
 	</div>
-	<div class="nextButtonCaption">
-		next
-	</div>
-</div>
 
-<div class="bottomStatusBar">
-	<div class="bottomStatusBarUpperLayer">
-		<div class="bottomStatusBarStep1">
-			Step 1
+	<div class="bottomStatusBar">
+		<div class="bottomStatusBarUpperLayer">
+			<div class="bottomStatusBarStep1">
+				Step 1
+			</div>
+			<div class="bottomStatusBarDivider">
+				--
+			</div>
+			<div class="bottomStatusBarStep2">
+				Step 2
+			</div>
+			<div class="bottomStatusBarDivider">
+				--
+			</div>
+			<div class="bottomStatusBarStep3">
+				Step 3
+			</div>
 		</div>
-		<div class="bottomStatusBarDivider">
-			--
-		</div>
-		<div class="bottomStatusBarStep2">
-			Step 2
-		</div>
-		<div class="bottomStatusBarDivider">
-			--
-		</div>
-		<div class="bottomStatusBarStep3">
-			Step 3
-		</div>
+		<div class="bottomStatusBarLowerLayer">
+			4 mins remaining
+		</div>	
 	</div>
-	<div class="bottomStatusBarLowerLayer">
-		4 mins remaining
-	</div>	
-</div>
+
+	<div class="chatLogoAddOn">
+
+	    <div class="chatWithCureConnectWindow">
+	      <div class="chatWindowIntro">
+	        <div class="answeringMachineIcon">
+	          <img class="imageFile" src="imageAsset/iremProfile.png" />
+	          <div class="imageNameSection">Irem</div>
+	        </div>
+	        <div class="answeringMachineContent">
+	          Ask us about cureConnect,</br>
+	          we will get back to you soon.
+	        </div>
+	      </div>
+	      
+	      <div class="chatWindowContentContainer">
+	        <div class="chatWindowContent">
+	        </div>
+	        <textarea class="chatWindowInputBox" placeholder=" Type here and press enter to send" type="text" onkeypress="this.style.height = ((Math.floor((this.value.length)/(35))+1) * 22) + 'px'; chatOutputBoxSize((this.value.length)/(35));"></textarea>
+	      </div>
+	    </div>
+	    <div class="exitChatBoxButton">
+	    	<div class="sendMessageButton" onclick="sendChatContentToServer()">send</div>
+	    	<div class="chatBoxCloseButton" onclick="closeChatButton()">close</div>
+	    </div>
+
+		<div class="chatLogoAddOnCaption" onclick="chatWithCureConnect()">
+			Question?
+		</div>
+		<img class="chatImageContainer" src="imageAsset/chatLogoOrange.png" onclick="chatWithCureConnect()"/>
+	</div>
 
 </body>
