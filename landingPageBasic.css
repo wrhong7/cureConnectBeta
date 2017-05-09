@@ -27,6 +27,8 @@ header {
     padding: 0.4vw;
     text-decoration: none;
     border-radius: 10px;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
 .hederCureConnect:hover {
@@ -48,6 +50,8 @@ header {
 .headerSignIn {
     padding: 0.4vw;
     border-radius: 10px;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
 .headerSignIn:hover {
@@ -59,6 +63,8 @@ header {
 
 .headerExpandMenuButton {
     border-style: none;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
 .headerExpandMenuButton:hover {
@@ -70,11 +76,18 @@ header {
     display: none;
     float: right;
     width: 20vw;
-    color: white;
+    min-width: 200px;
+    color: orangered;
     font-size: 20px;
     text-align: right;
-    padding-right: 2vw;
     /* padding-left: 5vw; */
+    background-color: white;
+    height: 60vh;
+    border-radius: 15px;
+    right: 10px;
+    margin-right: 20px;
+    position: absolute;
+    z-index: 2;
 }
 
 .expandMenuSectionContent {
@@ -82,11 +95,22 @@ header {
 }
 
 .expandMenuSectionList {
-
+    padding-top: 20px;
 }
 
 .expandMenuSectionListComponent {
-    margin-top: 1vw;
+    width: 100%;
+    overflow: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
+}
+
+.expandMenuSectionListComponent:hover {
+    background-color: orangered;
+    color: white;
 }
 
 .contentCenter {
@@ -106,6 +130,8 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
 .contentCenterButtons:hover {
@@ -124,7 +150,8 @@ header {
     text-align: center;
     margin: 0 19.5vw 0 0.5vw;
     cursor: pointer;
-
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
 .contentCenterUpperFloorButtonsRight:hover {
@@ -147,7 +174,8 @@ header {
     margin: 1vw 30vw 0 30vw;
     text-align: center;
     cursor: pointer;
-
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
 .contentCenterLowerFloorButtons:hover {

@@ -21,7 +21,6 @@ function confirmAndPassEmailAddress() {
 	} else {
 		$(".nurseOnBoardingEmailDirectionLowerLayer").replaceWith("Please enter a valid email.")
 	}
-	
 }
 
 
@@ -159,6 +158,7 @@ function toggleExpandMenuButton(stage) {
 		if (toggled == false ) {
 			$(".contentCenter").css({"opacity": "0.1"})
 			$(".contentCenterScrollDownBar").css({"display": "none"})
+
 			$(".expandMenuSection").css({"display": "block"})
 			toggled = true
 
@@ -174,11 +174,13 @@ function toggleExpandMenuButton(stage) {
 	if (stage = 1) {
 		if (toggled == false ) {
 			$(".nurseOnBoardingEmailCover").css({"opacity": "0.1"})
+			$(".nurseOnBoardingRegStep1").css("opacity", "0.7");
 			$(".expandMenuSection").css({"display": "block"})
 			toggled = true
 
 		} else {
 			$(".nurseOnBoardingEmailCover").css({"opacity": "1"})
+			$(".nurseOnBoardingRegStep1").css("opacity", "1");
 			$(".expandMenuSection").css({"display": "none"})
 			toggled = false
 		}

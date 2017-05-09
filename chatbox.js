@@ -22,7 +22,7 @@ function sendChatContentToServer() {
   );
 
   $(".chatWindowContent").animate({ scrollTop: $('.chatWindowContent').prop("scrollHeight")}, 1000);
-
+ 
 
   if (textbox.indexOf('@') > -1) {
     setTimeout(function(){
@@ -93,7 +93,8 @@ function chatWithCureConnect() {
   $(".chatImageContainer").hide();
 
   $(".chatWithCureConnectWindow").css("display", "block");
-  $(".exitChatBoxButton").css("display", "block")
+  $(".exitChatBoxButton").css("display", "block");
+  $(".chatWindowInputBox").focus();
 
 
   setTimeout(function(){

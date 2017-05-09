@@ -1,3 +1,10 @@
+
+function confirmSourcerInfo() {
+  $(".sourcerLinkedInPulled").hide();
+  $(".sourcerProfileConfirmContainer").hide();
+}
+
+
 var url = "https://hooks.slack.com/services/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";
 var chatResponseBoxCounter = 1;
 
@@ -307,13 +314,14 @@ const sourcerRecruitingRegion = [
   "Greater Minneapolis-St. Paul Area", "Mississippi", "Baton Rouge, Louisiana Area", "Greater New Orleans Area", 
   "Jackson, Mississippi Area", "Mobile, Alabama Area", "Missouri", "Columbia, Missouri Area", "Davenport, Iowa Area",
   "Des Moines, Iowa Area", "Fayetteville, Arkansas Area", "Greater St. Louis Area", "Kansas City, Missouri Area",  
-  " Springfield, Missouri Area", "Montana", "Nebraska", "Greater Omaha Area", "Lincoln, Nebraska Area", "Nevada", 
+  "Springfield, Missouri Area", "Montana", "Nebraska", "Greater Omaha Area", "Lincoln, Nebraska Area", "Nevada", 
   "Las Vegas, Nevada Area", "Reno, Nevada Area", "New Hampshire", "New Jersey", "New Mexico", 
   "Albuquerque, New Mexico Area", "New York", "Albany, New York Area", "Buffalo iagara, New York Area", 
   "Greater New York City Area", "Rochester, New York Area", "Syracuse, New York Area", "North Carolina", 
   "Charlotte, North Carolina Area", "Raleigh-Durham, North Carolina Area", "Wilmington, North Carolina Area", 
-  "North Dakota", "Ohio", "Cincinnati Area", "Cleveland/Akron, Ohio Area", "Columbus, Ohio Area", "Dayton, Ohio Area", "Toledo, Ohio Area", "Oklahoma", "Oklahoma City, Oklahoma Area", "Tulsa, Oklahoma Area", "Oregon", "Eugene, Oregon Area", "Portland, Oregon Area", "Pennsylvania",
-  "Allentown, Pennsylvania Area", "Greater Philadelphia Area", "Greater Pittsburgh Area", 
+  "North Dakota", "Ohio", "Cincinnati Area", "Cleveland/Akron, Ohio Area", "Columbus, Ohio Area", "Dayton, Ohio Area", 
+  "Toledo, Ohio Area", "Oklahoma", "Oklahoma City, Oklahoma Area", "Tulsa, Oklahoma Area", "Oregon", "Eugene, Oregon Area", 
+  "Portland, Oregon Area", "Pennsylvania", "Allentown, Pennsylvania Area", "Greater Philadelphia Area", "Greater Pittsburgh Area", 
   "Harrisburg, Pennsylvania Area", "Ithaca, New York Area", "Lancaster, Pennsylvania Area", 
   "Scranton, Pennsylvania Area", "Rhode Island", "Providence, Rhode Island Area", "South Carolina", 
   "Augusta, Georgia Area", "Charleston, South Carolina Area", "Columbia, South Carolina Area", 
