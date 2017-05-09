@@ -65,7 +65,7 @@
     }
 
     .sourcerProfileConfirmContainer {
-        width: 90% !important;
+        width: 95% !important;
     }
 
 }
@@ -79,7 +79,7 @@
 }
 
 .sourcerProfileConfirmContainer {
-    width: 100%;
+    width: 110%;
     padding-top: 30px;
     overflow: auto;
     float: left;
