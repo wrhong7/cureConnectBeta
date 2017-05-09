@@ -1,3 +1,47 @@
+const recruitingContractType = [
+  "Part Time",
+  "Full Time",
+  "W2",
+  "1099 & Contractual"
+]
+
+const jobPostingExpiration = [
+  "Expire in 1 week",
+  "Expire in 2 weeks",
+  "Expire in 3 weeks",
+  "Expire in 4 weeks",
+  "Expire in 5 weeks",
+  "Expire in 6 weeks"
+]
+
+var user3422InstArray = [
+  "NY Phil Institute-Main", 
+  "NY Phil Institute-Uppe West Side Campus", 
+  "NY Phil Institue-Westchester Urgent Care"
+  //this needs to be shifted into a bunch of arrays in my opinion
+]
+
+function fetchInstitutionContent() {
+  $(".recruiterContent").hide();
+  $(".jobPostingContent").hide();
+  $(".jobPostingBookmark").hide();
+  $(".institutionContent").css("display", "block");
+  $(".institutionBookmark").css("display", "block");
+}
+
+function fetchJobPostingContent() {
+  $(".recruiterContent").hide();
+  $(".institutionContent").hide();
+  $(".institutionBookmark").hide();
+  $(".jobPostingContent").css("display", "block");
+  $(".jobPostingBookmark").css("display", "block");
+}
+
+function jobPostingContent() {
+
+}
+
+
 
 function confirmSourcerInfo() {
   $(".sourcerLinkedInPulled").hide();
@@ -78,8 +122,7 @@ function closeChatButton() {
   $(".chatLogoAddOnCaption").css("display", "block");
   $(".chatImageContainer").css("display", "block");
 
-  $(".chatWithCureConnectWindow").hide();
-  $(".exitChatBoxButton").hide();
+  $(".sourcerInfoCover").hide();
 
 }
 
@@ -384,6 +427,38 @@ const sourcerRecruitingSpecialty = [
 ];
 
 $(document).ready(function() {
+
+  $(".recruitingContractType").select2({
+    placeholder: "Contract Type"
+  });
+
+  recruitingContractType.forEach(function(element) {
+    $(".recruitingContractType").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+  $(".jobPostingExpiration").select2({
+    placeholder: "Posting Expires in"
+  });
+
+  jobPostingExpiration.forEach(function(element) {
+    $(".jobPostingExpiration").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+
+
+
+
+
+
+
 
   $(".recruitingRegion").select2({
     placeholder: "Recruiting Regions"

@@ -158,7 +158,6 @@ function toggleExpandMenuButton(stage) {
 		if (toggled == false ) {
 			$(".contentCenter").css({"opacity": "0.1"})
 			$(".contentCenterScrollDownBar").css({"display": "none"})
-
 			$(".expandMenuSection").css({"display": "block"})
 			toggled = true
 

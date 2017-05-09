@@ -51,54 +51,254 @@
 
 </div>
 
-<div class="sourcerLinkedInPulled">
-	<div class="contianer sourcerLinkedInInfoConfirmationDirection">
-		Please double check your information.<br>
-		Add your candidate and regional coverage. Select as <b><u>many applicable options</u></b> as possible.
-	</div>
-	<div class="sourcerProfileContainer">
-		<div class="sourcerProfilePhotoContianer">
-			<img class="sourcerProfilePhoto" src="imageAsset/iremProfile.png" />
-			<div class="changeImageButton">change image</div>
+<div class="sourcerInfoCover">
+	<div class="sourcerLinkedInPulled">
+		<div class="contianer sourcerLinkedInInfoConfirmationDirection">
+			Please double check your information.<br>
+			Add your candidate and regional coverage. Select as <b><u>many applicable options</u></b> as possible.
 		</div>
-		<div class="sourcerProfileEntryContainer">
-			<div class="floorStack">
-				<input class="firstName sourcerInfoEntry" type="text" placeholder="Recruiter First Name" />
-				<input class="lastName sourcerInfoEntry" type="text" placeholder="Last Name" />
+		<div class="sourcerProfileContainer">
+			<div class="sourcerProfilePhotoContianer">
+				<img class="sourcerProfilePhoto" src="imageAsset/iremProfile.png" />
+				<div class="changeImageButton">change image</div>
 			</div>
-			<div class="floorStack">
-				<input class="position sourcerInfoEntry" type="text" placeholder="Professional Title" />
-				<input class="hospital sourcerInfoEntry" type="text" placeholder="Institution" />
-			</div>
-			<div class="floorStack">
-				<input class="phoneNumber sourcerInfoEntry" type="text" placeholder="Phone Number" />
-				<input class="workEmail sourcerInfoEntry" type="text" placeholder="Work Email" />
-			</div>
-			<div class="floorStackForSelector">
-				<div class="selectorWrapper1">
-					<select class="js-example-basic-multiple recruitingRegion selectFieldDimension" multiple="multiple">
-					</select>
+			<div class="sourcerProfileEntryContainer">
+				<div class="floorStack">
+					<input class="firstName sourcerInfoEntry" type="text" placeholder="Recruiter First Name" />
+					<input class="lastName sourcerInfoEntry" type="text" placeholder="Last Name" />
 				</div>
-				<div class="selectorWrapper2">
-					<select class="js-example-basic-multiple recruitingSpecialty selectFieldDimension" multiple="multiple">
-					</select>
+				<div class="floorStack">
+					<input class="position sourcerInfoEntry" type="text" placeholder="Professional Title" />
+					<input class="hospital sourcerInfoEntry" type="text" placeholder="Institution" />
+				</div>
+				<div class="floorStack">
+					<input class="phoneNumber sourcerInfoEntry" type="text" placeholder="Phone Number" />
+					<input class="workEmail sourcerInfoEntry" type="text" placeholder="Work Email" />
+				</div>
+				<div class="floorStackForSelector">
+					<div class="selectorWrapper1">
+						<select class="js-example-basic-multiple recruitingRegion selectFieldDimension" multiple="multiple">
+						</select>
+					</div>
+					<div class="selectorWrapper2">
+						<select class="js-example-basic-multiple recruitingSpecialty selectFieldDimension" multiple="multiple">
+						</select>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-<!-- 	<div class="container">
+	<!-- 	<div class="container">
 
-		<input class="recruitingRegion zipcodeInput" type="text" placeholder="Recruiting Specialization" />
-		<input class="recruitingSpecialty zipcodeInput" type="text" placeholder="Recruiting Specialization" />
+			<input class="recruitingRegion zipcodeInput" type="text" placeholder="Recruiting Specialization" />
+			<input class="recruitingSpecialty zipcodeInput" type="text" placeholder="Recruiting Specialization" />
+		</div>
+	 -->
 	</div>
- -->
+
+	<div class="sourcerProfileConfirmContainer">
+		<div class="sourcerProfileConfirmButton" onclick="confirmSourcerInfo()">
+			confirm
+		</div>
+	</div>
 </div>
 
-<div class="sourcerProfileConfirmContainer">
-	<div class="sourcerProfileConfirmButton" onclick="confirmSourcerInfo()">
-		confirm
+<div class="hospitalInfoCover">
+	<div class="bookmarkTop">
+		<div class="recruiterInformation">
+			Recruiter Info
+		</div>
+		<div class="hospitalInformation" onclick="fetchInstitutionContent()">
+			Instituion Info
+		</div>
+		<div class="outstandingJobPosting" onclick="fetchJobPostingContent()">
+			Job Posting
+		</div>
+	</div>
+
+	<div class="contentContainer">
+		<div class="institutionContent">
+			<div class="contentLeft">
+				<div class="hospitalNameWrapper">
+					<input 
+						class="instutionInfoEntry"
+						placeholder="Institution Name"
+					/>
+				</div>
+			</div>
+			<div class="contentRight">
+				<div class="hospitalNameWrapper">
+					<input 
+						class="instutionInfoEntry"
+						placeholder="Zipcode" 
+					/>
+				</div>
+			</div>
+			<div class="contentLeftRightCross">
+				<div class="hospitalAddressWrapper">
+					<input 
+						class="institutionZipcodeEntry"
+						placeholder="Address" 
+					/>
+				</div>
+			</div>
+			
+			<div class="institutionMapDescSection">
+				<div class="contentLeft">
+					<div class="hospitalNameWrapper">
+						<div class="hospitalMapDesc">Hospital Map</div>
+						<img class="hospitalMap" src="imageAsset/mapSample.png"/>
+					</div>
+				</div>
+				<div class="contentRight">
+					<div class="hospitalNameWrapper">
+						<div class="hospitalMapDesc">Hospital Desc</div>
+						<textarea class="hospitalDescTextara"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="jobPostingContent">
+			<div class="containerLeft">
+				<div class="containerLeftRow">
+					<div class="columnA columnAPaddingAdded">
+						<select class="js-example-basic-multiple recruitingContractType selectFieldDimension" multiple="multiple">
+						</select>
+					</div>
+					<div class="columnB">
+						<input 
+							class="jobField jobStartDate"
+							placeholder="Start Date" 
+						/>
+					</div>
+				</div>
+				<div class="containerLeftSingleRow">
+					<input 
+						class="jobField addJobInstitutionName"
+						placeholder="Institution Name" 
+					/>
+				</div>
+				<div class="containerLeftSingleRow">
+					<input 
+						class="jobField addJobInstitutionName"
+						placeholder="Experience Required" 
+					/>
+				</div>
+				<div class="containerLeftSingleRow">
+					<input 
+						class="jobField addJobInstitutionName"
+						placeholder="Academic Qualifications" 
+					/>
+				</div>
+				<div class="containerLeftRow containerLeftRowPaddingAltered">
+					<div class="columnA">
+						<input 
+							class="jobField addJobInstitutionName"
+							placeholder="Compensation Min" 
+						/>
+					</div>
+					<div class="columnB">
+						<input 
+							class="jobField addJobInstitutionName"
+							placeholder="Compensation Max" 
+						/>
+					</div>
+				</div>
+				<div class="containerLeftRow">
+					<div class="columnA">
+						<input 
+							class="jobField addJobInstitutionName"
+							placeholder="Daily Patient Load" 
+						/>
+					</div>
+					<div class="columnB">
+						<input 
+							class="jobField addJobInstitutionName"
+							placeholder="Hours/Week" 
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="containerRight">
+				<div class="containerRightRow">
+					<div class="columnC">
+						<input 
+							class="jobField jobEndDate"
+							placeholder="End Date" 
+						/>
+					</div>
+					<div class="columnD columnDPaddingAdded">
+						<select class="js-example-basic-multiple jobPostingExpiration selectFieldDimension" multiple="multiple">
+						</select>
+					</div>
+				</div>
+				<div class="containerRightSingleRow">
+					<input 
+						class="jobField openPositionEntryField"
+						placeholder="Open Position" 
+					/>	
+				</div>
+				<div class="containerRightSingleRow">
+					<input 
+						class="jobField addJobInstitutionName"
+						placeholder="Years of Experience" 
+					/>
+				</div>
+				<div class="containerRightSingleRow">
+					<input 
+						class="jobField addJobInstitutionName"
+						placeholder="State License" 
+					/>
+				</div>
+				<div class="containerRightSingleRow">
+					<input 
+						class="jobField addJobInstitutionName"
+						placeholder="Benefits" 
+					/>
+				</div>
+				<div class="containerRightRow containerRightRowPaddingAdded">
+					<div class="columnC">
+						<input 
+							class="jobField addJobInstitutionName"
+							placeholder="Work Day" 
+						/>
+					</div>
+					<div class="columnD">
+						<input 
+							class="jobField addJobInstitutionName"
+							placeholder="Shift Type" 
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bookmarkRight">
+		<div class="institutionBookmark">
+			<div class="bookmarkRightComponent">
+				NY Phil Institute
+			</div>
+			<div class="bookmarkRightComponent">
+				NY Phil Institute Upper West Side Campus
+			</div>
+			<div class="bookmarkRightComponent">
+				Add more +
+			</div>
+		</div>
+		<div class="jobPostingBookmark">
+			<div class="bookmarkRightComponent">
+				ICU Nurse - Weekend
+			</div>
+			<div class="bookmarkRightComponent">
+				Floating Nurse - Night
+			</div>
+			<div class="bookmarkRightComponent">
+				Add more +
+			</div>
+		</div>
 	</div>
 </div>
+
 
 
 

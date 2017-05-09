@@ -48,6 +48,8 @@ body {
 	color: white;
 	animation: containerTailBlinking 4s infinite;
 	cursor: pointer;
+    -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1s;
 }
 
 .ourContainerTail:hover {

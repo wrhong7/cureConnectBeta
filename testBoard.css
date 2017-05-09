@@ -70,6 +70,425 @@
 
 }
 
+
+
+
+
+
+
+
+
+
+.containerRightRowPaddingAdded {
+
+}
+
+.containerLeftRowPaddingAltered {
+    padding-top: 0.2vw;
+}
+
+.hospitalInfoCover {
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh 10vw 10vh 10vw;
+    background: #10A7EA;
+    /* border: solid 1px white; */
+}
+
+.bookmarkTop {
+    width: 100%;
+    overflow: auto;
+    padding-top: 5px;
+    background: #10A7EA;
+    /* border: solid white 1px; */
+}
+
+.recruiterInformation {
+    float: left;
+    background-color: #10A7EA;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: solid 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left: solid 1px;
+    border-right: 1px solid;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.recruiterInformation:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+
+.hospitalInformation {
+    float: left;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: solid 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left: solid 1px;
+    border-right: 1px solid;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.hospitalInformation:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+
+.outstandingJobPosting {
+    float: left;
+    width: 200px;
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    background-color: #10A7EA;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: solid 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left: solid 1px;
+    border-right: 1px solid;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.outstandingJobPosting:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+
+.contentContainer {
+    width: 88%;
+    margin-left: 0.9%;
+    overflow: auto;
+    padding: 20px;
+    float: left;
+    background: #10A7EA;
+    border: solid 1px;
+}
+
+.jobInfoEntry {
+
+}
+
+.recruiterContent {
+
+}
+
+.institutionContent {
+    width: auto;
+    overflow: auto;
+}
+
+.jobPostingContent {
+    width: auto;
+    overflow: auto;
+    display: none;
+}
+
+.containerLeft {
+    width: 50%;
+    overflow: auto;
+    float: left;
+}
+
+.containerLeftRow {
+    width: 99%;
+    height: 50px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    overflow: auto;
+}
+
+.containerLeftSingleRow {
+    width: 102.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    overflow: auto;
+}
+
+.columnA {
+    float: left;
+    width: 49%;
+    height: 50px;
+    margin-right: 1%;
+}
+
+.columnAPaddingAdded {
+    padding-top: 0.3vw;
+    padding-right: 2.5%;
+}
+
+.columnB {
+    float: left;
+    width: 49%;
+    height: 50px;
+    margin-left: 1%;
+}
+
+.containerRight {
+    width: 50%;
+    float: left;
+}
+
+.containerRightSingleRow {
+    width: 102.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    overflow: auto;
+}
+
+.containerRightRow {
+    width: 99%;
+    height: 50px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    overflow: auto;
+}
+
+.columnC {
+    float: left;
+    width: 49.5%;
+    height: 50px;
+    margin-right: 0.5%;
+}
+
+.columnD {
+    float: left;
+    width: 49.5%;
+    height: 50px;
+    margin-left: 0.5%;
+}
+
+.columnDPaddingAdded {
+    padding-top: 0.6vh;
+    width: 46.5% !important;
+}
+
+.jobPostingExpiration {
+
+}
+
+
+
+
+
+.jobField {
+    background-color: #10A7EA;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    width: 94%;
+    height: 41px;
+    margin-top: 2%;
+}
+
+.select2-search--inline {
+    width: 100% !important;
+}
+
+.containerLeftRowOne {
+    width: 100%;
+    overflow: auto;
+}
+
+.columnAltered {
+width: 45.5%;
+    float: left;
+}
+
+
+
+
+
+
+
+.contentLeft {
+    float: left;
+    width: 50%;
+    min-width: 440px;
+    overflow: auto;
+}
+
+.contentRight {
+    float: right;
+    width: 50%;
+    min-width: 440px;
+    overflow: auto;
+}
+
+.instutionInfoEntry {
+    background-color: #10A7EA;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    width: 80%;
+    height: 41px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.institutionZipcodeEntry {
+    background-color: #10A7EA;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    width: 90%;
+    height: 41px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.institutionMapDescSection {
+    width: 100%;
+    overflow: auto;
+    margin-top: 2%;
+}
+
+.hospitalMap {
+    width: 80%;
+    height: 60%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.hospitalMapDesc {
+    margin-left: 10%;
+    width: 50%;
+    overflow: auto;
+}
+
+.hospitalDescTextara {
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 80%;
+    height: 38vh;
+    background-color: #10A7EA;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.instutionDescEntry {
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 80%;
+    height: 38vh;
+}
+
+.hospitalNameWrapper {
+
+}
+
+.hospitalAddressWrapper {
+
+}
+
+.contentLeftRightCross {
+
+}
+
+.bookmarkRight {
+    float: left;
+    width: 10%;
+    color: blue;
+    background: #10A7EA;
+}
+
+.institutionBookmark {
+    float: left;
+    width: auto;
+    overflow: auto;
+}
+
+.jobPostingBookmark {
+    float: left;
+    width: auto;
+    overflow: auto;
+    display: none;
+}
+
+.bookmarkRightComponent {
+    padding: 10px;
+    margin-top: 10px;
+    border-style: solid white 1px;
+    color: white;
+    border: 1px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+    color: white;
+    border: 1px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.bookmarkRightComponent:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+
+
+
+.addNew {
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sourcerInfoCover {
+    width: auto;
+    overflow: auto;
+}
+
 .sourcerProfileContainer {
     width: 80vw;
     max-width: 1000px;
@@ -137,6 +556,7 @@
 }
 
 .selectorWrapper1 {
+    width: 100%;
     float: left;
     margin-left: 10px;
     margin-top: 30px;
@@ -145,6 +565,7 @@
 
 .selectorWrapper2 {
     float: left;
+    width: 100%;
     margin-left: 10px;
     margin-top: 30px;
 }
@@ -154,7 +575,8 @@
 }
 
 .select2-selection--multiple {
-    width: 330px !important;
+/*    width: 330px !important;*/
+    width: 100% !important;
     overflow: auto !important;
     float: left;
     color: white !important;
@@ -172,7 +594,8 @@
 }
 
 .select2-container--default {
-    width: 330px !important;
+/*    width: 330px !important;*/
+    width: 100% !important;
 }
 
 .sourcerLinkedInPulled {
@@ -451,7 +874,7 @@ label { margin-left: 5px; }
 }
 
 .chatWindowContentContainer {
-
+    width: 88%;
 }
 
 .chatWindowContent {
