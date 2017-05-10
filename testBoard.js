@@ -1,17 +1,16 @@
 const recruitingContractType = [
-  "Part Time",
-  "Full Time",
-  "W2",
-  "1099 & Contractual"
+  "Full Time - W2",
+  "Full Time - 1099",
+  "Part Time - 1099"
 ]
 
 const jobPostingExpiration = [
-  "Expire in 1 week",
-  "Expire in 2 weeks",
-  "Expire in 3 weeks",
-  "Expire in 4 weeks",
-  "Expire in 5 weeks",
-  "Expire in 6 weeks"
+  "Expires in 1 week",
+  "Expires in 2 weeks",
+  "Expires in 3 weeks",
+  "Expires in 4 weeks",
+  "Expires in 5 weeks",
+  "Expires in 6 weeks"
 ]
 
 var user3422InstArray = [
@@ -40,8 +39,6 @@ function fetchJobPostingContent() {
 function jobPostingContent() {
 
 }
-
-
 
 function confirmSourcerInfo() {
   $(".sourcerLinkedInPulled").hide();
@@ -261,6 +258,27 @@ const nursingDegreeList = [
   "Doctor of Nursing Philosophy, PhD"
 ]
 
+const nursingDegreeLicenseList = [
+  "Licensed Practical Nurse - LPN",
+  "Registered Nurse - RN",
+  "Nurse Practitioner - NP",
+  "Advanced Practice Registered Nurse - APRN",
+  "Associates, ASN",
+  "Bachelors, BSN",
+  "Masters, MSN, Clinical Nurse Leader, CNL",
+  "Masters, MSN, School Nursing",
+  "Masters, MSN, Nurse Educator",
+  "Masters, MSN, Certified Nurse Anesthetist, CRNA",
+  "Masters, MSN, Clinical Nurse Specialist, CNS",
+  "Masters, MSN, Certified Nurse Midwife, CNM",
+  "Masters, MSN, Nurse Practitioner, NP",
+  "Doctor of Nursing, ND",
+  "Doctor of Nursing Practice, DNP",
+  "Doctor of Nursing Science, DNSc",
+  "Doctor of Nursing Philosophy, PhD"
+]
+
+
 const nursingYrExperienceList = [
   "0-1 Year",
   "1-2 Years",
@@ -390,7 +408,6 @@ const sourcerRecruitingRegion = [
   "Roanoke, Virginia, VA Area", "Washington, WA Rural Area", "Greater Seattle Area", "Spokane, Washington Area",
   "West Virginia, WV, Rural Area", "Wisconsin, WI, Rural Area", "Greater Milwaukee Area", "Green Bay, Wisconsin, WI Area", "Madison, Wisconsin, WI Area", 
   "Oshkosh, Wisconsin, WI Area", "Rockford, Illinois, IL Area", "Wyoming, WY, Rural Area"
-
 ];
 
 const sourcerRecruitingSpecialty = [
@@ -465,26 +482,141 @@ const shiftList = [
   "Dayshift",
   "Nightshift",
   "Undecided",
-  "Alternating"
+  "Alternating",
+  "5-15 Hrs/Wk",
+  "16-25 Hrs/Wk",
+  "25-35 Hrs/Wk",
+  "35-45 Hrs/Wk"
 ]
 
 $(document).ready(function() {
 
-  // user3422InstArray
+  // user3422InstArray - jobPostInstNameField
 
-  // nurseTypes
+  $(".jobPostInstNameField").select2({
+    placeholder: "Institution Name"
+  });
 
-  // nursingYrExperienceList
+  user3422InstArray.forEach(function(element) {
+    $(".jobPostInstNameField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
 
-  // nursingStateLicenseList
+  // nurseTypes - nurseTypeField
 
-  // desiredCompensationList
+  $(".nurseTypeField").select2({
+    placeholder: "Nurse Types"
+  });
 
-  //benefitsList
+  nurseTypes.forEach(function(element) {
+    $(".nurseTypeField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
 
-  //workdays
+  // nursingDegreeLicenseList - degreesLicensesField
 
-  //shiftList
+  $(".degreesLicensesField").select2({
+    placeholder: "Degrees and Licenses"
+  });
+
+  nursingDegreeLicenseList.forEach(function(element) {
+    $(".degreesLicensesField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+  // desiredCompensationList - compInputField
+
+  $(".compInputField").select2({
+    placeholder: "Compensations"
+  });
+
+  desiredCompensationList.forEach(function(element) {
+    $(".compInputField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+  // workdays - workdayInput
+
+  $(".workdayInput").select2({
+    placeholder: "Which days will candidate be working?"
+  });
+
+  workdays.forEach(function(element) {
+    $(".workdayInput").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+  // nursingYrExperienceList - yrsOfExpField
+
+  $(".yrsOfExpField").select2({
+    placeholder: "Years of Experience"
+  });
+
+  nursingYrExperienceList.forEach(function(element) {
+    $(".yrsOfExpField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+  // nursingStateLicenseList - stateLicField
+
+  $(".stateLicField").select2({
+    placeholder: "Contract Type"
+  });
+
+  nursingStateLicenseList.forEach(function(element) {
+    $(".stateLicField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+  // benefitsList - benefitsField
+
+  $(".benefitsField").select2({
+    placeholder: "Offering Benefits"
+  });
+
+  benefitsList.forEach(function(element) {
+    $(".benefitsField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
+  // shiftList - shiftHrsField
+
+  $(".shiftHrsField").select2({
+    placeholder: "Shift & Hours"
+  });
+
+  shiftList.forEach(function(element) {
+    $(".shiftHrsField").append(
+      `
+       <option value="${element}">${element}</option>
+      `
+    )
+  })
+
 
   $(".recruitingContractType").select2({
     placeholder: "Contract Type"
@@ -662,5 +794,3 @@ $(document).ready(function() {
   // })
 
 });
-
-

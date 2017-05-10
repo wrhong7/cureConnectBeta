@@ -125,7 +125,9 @@
 
 .jobPostingFieldContainer {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
+    overflow: auto;
+    min-height: 50px;
 }
 
 .jobPostInputField {
@@ -383,7 +385,11 @@
 }
 
 .select2-search--inline {
-    width: 100% !important;
+    width: 0.75em !important;
+}
+
+.select2-search__field {
+    width: auto !important;
 }
 
 .containerLeftRowOne {
@@ -392,7 +398,7 @@
 }
 
 .columnAltered {
-width: 45.5%;
+    width: 45.5%;
     float: left;
 }
 
@@ -1108,10 +1114,6 @@ body {
 .select2-selection__choice {
 	background-color: #10A7EA !important;
 	border-color: white !important;
-}
-
-.select2-search__field {
-    width: 100% !important;
 }
 
 input[type=range] {
