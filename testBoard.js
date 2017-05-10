@@ -426,7 +426,65 @@ const sourcerRecruitingSpecialty = [
   "Women's Services"
 ];
 
+const nursingStateLicenseList = [
+  "Nurse License Compact (NLC) Applicable", "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+]
+
+const benefitsList = [
+  "Medical",
+  "Prescription Drug Coverage",
+  "Dental",
+  "Vision",
+  "Life Insurance",
+  "Disabilty Insurance",
+  "Pension Plan",
+  "Tuition Reimbursement",
+  "Child Care",
+  "Fitness centers"
+]
+
+const workdays = [
+  "Undecided-1 day per week",
+  "Undecided-2 days per week",
+  "Undecided-3 day per week",
+  "Undecided-4 day per week",
+  "Undecided-5 days per week",
+  "Undecided-6 days per week",
+  "Monday to Friday",
+  "Saturday and Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+
+const shiftList = [
+  "Dayshift",
+  "Nightshift",
+  "Undecided",
+  "Alternating"
+]
+
 $(document).ready(function() {
+
+  // user3422InstArray
+
+  // nurseTypes
+
+  // nursingYrExperienceList
+
+  // nursingStateLicenseList
+
+  // desiredCompensationList
+
+  //benefitsList
+
+  //workdays
+
+  //shiftList
 
   $(".recruitingContractType").select2({
     placeholder: "Contract Type"

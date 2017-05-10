@@ -120,7 +120,7 @@
 			<div class="contentLeft">
 				<div class="hospitalNameWrapper">
 					<input 
-						class="instutionInfoEntry"
+						class="instutionInfoEntry institutionNameEntry"
 						placeholder="Institution Name"
 					/>
 				</div>
@@ -128,7 +128,7 @@
 			<div class="contentRight">
 				<div class="hospitalNameWrapper">
 					<input 
-						class="instutionInfoEntry"
+						class="instutionInfoEntry institutionZipcodeEntry"
 						placeholder="Zipcode" 
 					/>
 				</div>
@@ -136,7 +136,7 @@
 			<div class="contentLeftRightCross">
 				<div class="hospitalAddressWrapper">
 					<input 
-						class="institutionZipcodeEntry"
+						class="institutionAddressEntry"
 						placeholder="Address" 
 					/>
 				</div>
@@ -158,119 +158,102 @@
 			</div>
 		</div>
 		<div class="jobPostingContent">
-			<div class="containerLeft">
-				<div class="containerLeftRow">
-					<div class="columnA columnAPaddingAdded">
-						<select class="js-example-basic-multiple recruitingContractType selectFieldDimension" multiple="multiple">
-						</select>
-					</div>
-					<div class="columnB">
-						<input 
-							class="jobField jobStartDate"
-							placeholder="Start Date" 
-						/>
-					</div>
-				</div>
-				<div class="containerLeftSingleRow">
+			<div class="jobPostingContentLeft">
+				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobField addJobInstitutionName"
-						placeholder="Institution Name" 
+						class="jobPostInputField jobPostInstNameField"
+						placeholder="Institution Name"
 					/>
 				</div>
-				<div class="containerLeftSingleRow">
+				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobField addJobInstitutionName"
-						placeholder="Experience Required" 
+						class="jobPostInputField"
+						placeholder="Nurse Types"
 					/>
 				</div>
-				<div class="containerLeftSingleRow">
+				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobField addJobInstitutionName"
-						placeholder="Academic Qualifications" 
+						class="jobPostInputField"
+						placeholder="Degrees and Licenses" 
 					/>
 				</div>
-				<div class="containerLeftRow containerLeftRowPaddingAltered">
-					<div class="columnA">
-						<input 
-							class="jobField addJobInstitutionName"
-							placeholder="Compensation Min" 
-						/>
-					</div>
-					<div class="columnB">
-						<input 
-							class="jobField addJobInstitutionName"
-							placeholder="Compensation Max" 
-						/>
-					</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField" 
+						placeholder="Compensation Range" 
+					/>
 				</div>
-				<div class="containerLeftRow">
-					<div class="columnA">
-						<input 
-							class="jobField addJobInstitutionName"
-							placeholder="Daily Patient Load" 
-						/>
-					</div>
-					<div class="columnB">
-						<input 
-							class="jobField addJobInstitutionName"
-							placeholder="Hours/Week" 
-						/>
-					</div>
+				<div class="jobPostingFieldContainer">
+					<select class="js-example-basic-multiple recruitingContractType selectFieldDimension" multiple="multiple">
+					</select>
+				</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField" 
+						placeholder="Start Date"
+					/>
+				</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField"
+						placeholder="Daily Patient Load"
+					/>
+				</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField"
+						placeholder="Work Day"
+					/>
 				</div>
 			</div>
-
-			<div class="containerRight">
-				<div class="containerRightRow">
-					<div class="columnC">
-						<input 
-							class="jobField jobEndDate"
-							placeholder="End Date" 
-						/>
-					</div>
-					<div class="columnD columnDPaddingAdded">
-						<select class="js-example-basic-multiple jobPostingExpiration selectFieldDimension" multiple="multiple">
-						</select>
-					</div>
-				</div>
-				<div class="containerRightSingleRow">
+			<div class="jobPostingContentRight">
+				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobField openPositionEntryField"
-						placeholder="Open Position" 
-					/>	
+						class="jobPostInputField"
+						placeholder="Position Title" 
+					/>
 				</div>
-				<div class="containerRightSingleRow">
+				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobField addJobInstitutionName"
+						class="jobPostInputField"
 						placeholder="Years of Experience" 
 					/>
 				</div>
-				<div class="containerRightSingleRow">
+				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobField addJobInstitutionName"
-						placeholder="State License" 
+						class="jobPostInputField"
+						placeholder="State Licenses Required"
 					/>
 				</div>
-				<div class="containerRightSingleRow">
+				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobField addJobInstitutionName"
-						placeholder="Benefits" 
+						class="jobPostInputField" 
+						placeholder="Benefits"
 					/>
 				</div>
-				<div class="containerRightRow containerRightRowPaddingAdded">
-					<div class="columnC">
-						<input 
-							class="jobField addJobInstitutionName"
-							placeholder="Work Day" 
-						/>
-					</div>
-					<div class="columnD">
-						<input 
-							class="jobField addJobInstitutionName"
-							placeholder="Shift Type" 
-						/>
-					</div>
+				<div class="jobPostingFieldContainer">
+					<select class="js-example-basic-multiple jobPostingExpiration selectFieldDimension" multiple="multiple">
+					</select>
 				</div>
-			</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField"
+						placeholder="End Date"
+					/>
+				</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField"
+						placeholder="Patient Type"
+					/>
+				</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField"
+						placeholder="Shift Type and Hours / Week"
+					/>
+				</div>
+			</div>	
 		</div>
 	</div>
 	<div class="bookmarkRight">

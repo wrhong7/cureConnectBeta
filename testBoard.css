@@ -2,7 +2,15 @@
 /*Hospital Sourcer Signing In Beginning
 */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1000px) {
+
+    .jobPostingContentLeft {
+        margin-left: calc( 50% - 200px ) !important;
+    }
+
+    .jobPostingContentRight {
+        margin-left: calc( 50% - 200px ) !important;
+    }
 
     .sourcerLinkedInInfoConfirmationDirection {
         margin-left: 15px !important;
@@ -68,19 +76,83 @@
         width: 95% !important;
     }
 
+    .contentLeft {
+        width: 100% !important;
+    }
+
+    .contentRight {
+        float: left !important;
+        width: 100% !important;
+    }
+
+    .institutionAddressEntry {
+        width: 82.5% !important;
+        margin-left: 10.5% !important;
+    }
+
+    .hospitalAddressWrapper {
+        width: 100% !important;
+
+    }
+
+    .institutionZipcodeEntry {
+        margin-top: 10px !important;
+    }
+
+
+}
+
+
+.jobPostingContentLeft {
+    width: 50%;
+    overflow: auto;
+    padding: 1%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.jobPostingContentRight {
+    width: 50%;
+    overflow: auto;
+    padding: 1%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.jobPostingFieldContainer {
+    width: 100%;
+    height: 50px;
+}
+
+.jobPostInputField {
+    width: 100%;
+    height: 40px;
+    border-bottom: solid 1px;
+    background-color: #10A7EA;
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-left: 5px;
 }
 
 
 
 
 
-
-
+.addJobInstitutionName {
+    margin-top: 2px;
+}
 
 
 
 .containerRightRowPaddingAdded {
-
+    margin-top: 7px;
 }
 
 .containerLeftRowPaddingAltered {
@@ -189,6 +261,7 @@
     float: left;
     background: #10A7EA;
     border: solid 1px;
+    min-width: 400px;
 }
 
 .jobInfoEntry {
@@ -306,7 +379,7 @@
     border-width: 1px;
     width: 94%;
     height: 41px;
-    margin-top: 2%;
+/*    margin-top: 2%;*/
 }
 
 .select2-search--inline {
@@ -356,7 +429,7 @@ width: 45.5%;
     margin-right: 10%;
 }
 
-.institutionZipcodeEntry {
+.institutionAddressEntry {
     background-color: #10A7EA;
     border-left-style: none;
     border-right-style: none;
@@ -1038,7 +1111,7 @@ body {
 }
 
 .select2-search__field {
-
+    width: 100% !important;
 }
 
 input[type=range] {
