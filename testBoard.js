@@ -20,12 +20,37 @@ var user3422InstArray = [
   //this needs to be shifted into a bunch of arrays in my opinion
 ]
 
+function changeBookmarkRight(event) {
+  //give a break of 50 microseconds as jquery is not as fast as react
+  setTimeout(function() {
+    var value = $(".institutionNameEntry").val()
+    $(".charChangeTest").empty();
+    $(".charChangeTest").append(value);
+  }, 30)
+}
+
+function changeBookmarkRightJob(event) {
+  //give a break of 50 microseconds as jquery is not as fast as react
+  setTimeout(function() {
+    var value = $(".jobPositionTitleField").val()
+    $(".openPositionOneTest").empty();
+    $(".openPositionOneTest").append(value);
+  }, 30)
+}
+
+
+
+
 function fetchInstitutionContent() {
   $(".recruiterContent").hide();
   $(".jobPostingContent").hide();
   $(".jobPostingBookmark").hide();
   $(".institutionContent").css("display", "block");
   $(".institutionBookmark").css("display", "block");
+  $(".hospitalInformation").css("background-color", "white")
+  $(".hospitalInformation").css("color", "#10A7EA")
+  $(".outstandingJobPosting").css("background-color", "#10A7EA")
+  $(".outstandingJobPosting").css("color", "white")
 }
 
 function fetchJobPostingContent() {
@@ -34,6 +59,11 @@ function fetchJobPostingContent() {
   $(".institutionBookmark").hide();
   $(".jobPostingContent").css("display", "block");
   $(".jobPostingBookmark").css("display", "block");
+
+  $(".hospitalInformation").css("background-color", "#10A7EA")
+  $(".hospitalInformation").css("color", "white")
+  $(".outstandingJobPosting").css("background-color", "white")
+  $(".outstandingJobPosting").css("color", "#10A7EA")
 }
 
 function jobPostingContent() {

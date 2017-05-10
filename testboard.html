@@ -113,10 +113,53 @@
 		<div class="outstandingJobPosting" onclick="fetchJobPostingContent()">
 			Job Posting
 		</div>
+		<div class="recruiterInformation">
+			Interviews
+		</div>
 	</div>
 
 	<div class="contentContainer">
 		<div class="institutionContent">
+			<div class="contentLeft">
+				<div class="hospitalNameWrapper">
+					<input 
+						class="instutionInfoEntry institutionNameEntry"
+						placeholder="Facility Name"
+						onkeydown="changeBookmarkRight(event)" 
+					/>
+				</div>
+			</div>
+			<div class="contentRight">
+				<div class="hospitalNameWrapper">
+					<input 
+						class="instutionInfoEntry institutionZipcodeEntry"
+						placeholder="Zipcode of Actual Location" 
+					/>
+				</div>
+			</div>
+			<div class="contentLeftRightCross">
+				<div class="hospitalAddressWrapper">
+					<input 
+						class="institutionAddressEntry"
+						placeholder="Facility Address" 
+					/>
+				</div>
+			</div>
+			
+			<div class="institutionMapDescSection">
+				<div class="contentLeft">
+					<div class="hospitalNameWrapper">
+						<div class="hospitalMapDesc">Facility Location</div>
+						<img class="hospitalMap" src="imageAsset/mapSample.png"/>
+					</div>
+				</div>
+				<div class="contentRight">
+					<div class="hospitalNameWrapper">
+						<div class="hospitalMapDesc">Facility Description</div>
+						<textarea class="hospitalDescTextara"></textarea>
+					</div>
+				</div>
+			</div>
 			<div class="contentLeft">
 				<div class="hospitalNameWrapper">
 					<input 
@@ -127,35 +170,10 @@
 			</div>
 			<div class="contentRight">
 				<div class="hospitalNameWrapper">
-					<input 
-						class="instutionInfoEntry institutionZipcodeEntry"
-						placeholder="Zipcode" 
-					/>
+					<div class="postInstInfo">Complete Hospital Info</div>
 				</div>
 			</div>
-			<div class="contentLeftRightCross">
-				<div class="hospitalAddressWrapper">
-					<input 
-						class="institutionAddressEntry"
-						placeholder="Address" 
-					/>
-				</div>
-			</div>
-			
-			<div class="institutionMapDescSection">
-				<div class="contentLeft">
-					<div class="hospitalNameWrapper">
-						<div class="hospitalMapDesc">Hospital Map</div>
-						<img class="hospitalMap" src="imageAsset/mapSample.png"/>
-					</div>
-				</div>
-				<div class="contentRight">
-					<div class="hospitalNameWrapper">
-						<div class="hospitalMapDesc">Hospital Desc</div>
-						<textarea class="hospitalDescTextara"></textarea>
-					</div>
-				</div>
-			</div>
+
 		</div>
 		<div class="jobPostingContent">
 			<div class="jobPostingContentLeft">
@@ -180,9 +198,9 @@
 					</select>
 				</div>
 				<div class="jobPostingFieldContainer">
-					<input 
+					<input
 						class="jobPostInputField" 
-						placeholder="Start Date"
+						placeholder="Position Starting Date"
 					/>
 				</div>
 				<div class="jobPostingFieldContainer">
@@ -195,12 +213,19 @@
 					<select class="js-example-basic-multiple stateLicField selectFieldDimension" multiple="multiple">
 					</select>
 				</div>
+				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField"
+						placeholder="Daily Patient Load"
+					/>
+				</div>
 			</div>
 			<div class="jobPostingContentRight">
 				<div class="jobPostingFieldContainer">
 					<input 
-						class="jobPostInputField"
+						class="jobPostInputField jobPositionTitleField"
 						placeholder="Position Title" 
+						onkeydown="changeBookmarkRightJob()"
 					/>
 				</div>
 				<div class="jobPostingFieldContainer">
@@ -222,7 +247,7 @@
 				<div class="jobPostingFieldContainer">
 					<input 
 						class="jobPostInputField"
-						placeholder="End Date"
+						placeholder="Position Ending Date (or Indefinite)"
 					/>
 				</div>
 				<div class="jobPostingFieldContainer">
@@ -235,27 +260,26 @@
 					<select class="js-example-basic-multiple shiftHrsField selectFieldDimension" multiple="multiple">
 					</select>
 				</div>
+				<div class="jobPostingFieldContainer">
+					<div class="postJobButton">Post Job</div>
+				</div>
 			</div>	
 		</div>
 	</div>
 	<div class="bookmarkRight">
 		<div class="institutionBookmark">
-			<div class="bookmarkRightComponent">
-				NY Phil Institute
-			</div>
-			<div class="bookmarkRightComponent">
-				NY Phil Institute Upper West Side Campus
+			<div class="bookmarkRightComponent charChangeTest">
+				Facility 1
 			</div>
 			<div class="bookmarkRightComponent">
 				Add more +
 			</div>
 		</div>
 		<div class="jobPostingBookmark">
-			<div class="bookmarkRightComponent">
-				ICU Nurse - Weekend
-			</div>
-			<div class="bookmarkRightComponent">
-				Floating Nurse - Night
+			<div 
+				class="bookmarkRightComponent openPositionOneTest"
+			>
+				Open Position One
 			</div>
 			<div class="bookmarkRightComponent">
 				Add more +
