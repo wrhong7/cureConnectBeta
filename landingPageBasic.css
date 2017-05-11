@@ -228,7 +228,7 @@ header {
     border-width: 1px;
     width: 40vw;
     margin: 0 20vw 5vh 20vw;
-    padding-bottom: 10px; 
+    padding-bottom: 2vh; 
 }
 
 @keyframes divAppearSlowMotion {

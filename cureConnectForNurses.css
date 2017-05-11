@@ -31,16 +31,14 @@
 
 }
 
-.nurseOnBoardingEmailDirectionEntryButton {
-    color: #10A7EA;
-    border-style: none;
-    background-color: white;
-    border-width: 2px;
-    border-color: white;
-    height: 45px;
-    width: 70px;
-    cursor: pointer;
 
+.nurseOnBoardingEmailDirectionEntryButton {
+    width: 5vw;
+    overflow: auto;
+    border: solid white 2px;
+    border-radius: 15px;
+    /* margin-left: 5vw; */
+    float: left;
 }
 
 .nurseOnBoardingEmailDirectionEntryButton:hover {
@@ -49,6 +47,12 @@
     border-style: solid;
     border-width: 2px;
     border-color: white;
+}
+
+.nurseOnBoardingEmailDirectionEntryField {
+    width: 20vw;
+    /* overflow: auto; */
+    margin-right: 0.5vw;
 }
 
 .prevButton {
