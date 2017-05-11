@@ -616,6 +616,13 @@ header {
     padding: 0.1% 1% 0.1% 1%;
     border: solid 1px white;
     border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 2s;
+}
+
+.nurseOnBoardingEmailDirectionEntryButton:hover {
+    color: #10A7EA;
+    background-color: white;
 }
 
 .nurseOnBoardingEmailDirectionLowerLayer {
