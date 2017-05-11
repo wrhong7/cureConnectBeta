@@ -1,0 +1,144 @@
+body {
+	background-color: #10A7EA;
+	color: white;
+}
+
+.verificationCover {
+    width: 80vw;
+    overflow: auto;
+    border: solid 1px white;
+    border-radius: 15px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+}
+
+.veriLeft {
+    width: 39vw;
+    margin-left: 0.6vw;
+    margin-right: 0.3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.6vw;
+    min-width: 500px;
+    height: 500px;
+    overflow: auto;
+    float: left;
+    border: solid 1px white;
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.veriRight {
+	width: 39vw;
+    min-width: 500px;
+    margin-left: 0.3vw;
+    margin-right: 0.6vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.6vw;
+    height: 500px;
+    overflow: auto;
+    float: left;
+    border: solid 1px white;
+    border-radius: 15px;
+    background-color: blue;
+}
+
+.contactInfoTopic {
+    text-align: center;
+}
+
+.notSetCheckboxContianer {
+width: 340px;
+    overflow: auto;
+    margin-left: calc( 50% - 170px );
+}
+
+.notificationSetting {
+
+}
+
+.notSetCheckboxTopic {
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: solid 1px white;
+    margin-bottom: 1vw;
+}
+
+.emailDataEntryContainer {
+    width: 310px;
+    margin-left: calc( 50% - 155px );
+    overflow: auto;
+}
+
+.emailDataEntry {
+    float: left;
+    margin-right: 0.5vw;
+    margin-top: 0.1vw;
+}
+
+.emailDataEntryEditButton {
+    float: left;
+    border: solid white 1px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    animation: background-color: 2s;
+}
+
+.emailDataEntryEditButton:hover {
+    color:  #10A7EA;
+    background-color: white;
+}
+
+.mandatoryServNotif {
+    font-size: 16px;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    width: 100%;
+    overflow: auto;
+}
+
+.cellDataEntryContainer {
+    width: 210px;
+    overflow: auto;
+    margin-left: calc( 50% - 105px );
+}
+
+.cellDataEntry {
+    float: left;
+    margin-right: 0.5vw;
+    margin-top: 0.1vw;
+}
+
+.cellDataEntryButton {
+    float: left;
+    border: solid white 1px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    animation: background-color: 2s;
+}
+
+.cellDataEntryButton:hover {
+    color:  #10A7EA;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
