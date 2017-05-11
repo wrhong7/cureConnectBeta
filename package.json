@@ -12,7 +12,9 @@
     "ui-dropzone": "^0.7.4",
     "vue-multiselect": "^2.0.0-beta.15"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^2.5.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

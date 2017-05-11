@@ -73,6 +73,7 @@ function jobPostingContent() {
 function confirmSourcerInfo() {
   $(".sourcerLinkedInPulled").hide();
   $(".sourcerProfileConfirmContainer").hide();
+  $(".hospitalInfoCover").css("display","block")
 }
 
 
