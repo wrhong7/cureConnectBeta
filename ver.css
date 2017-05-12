@@ -108,6 +108,14 @@ width: 340px;
     overflow: auto;
 }
 
+.cellphoneServNotif {
+    font-size: 16px;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    width: 100%;
+    overflow: auto;    
+}
+
 .cellDataEntryContainer {
     width: 410px;
     overflow: auto;
@@ -124,7 +132,7 @@ width: 340px;
     background-color: #10A7EA;
     color: white;
     border-bottom: solid 1px white;
-    width: 300px;
+    width: 280px;
     text-align: center;
 }
 
@@ -135,7 +143,7 @@ width: 340px;
     padding: 5px;
     font-size: 15px;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     text-align: center;
     animation: background-color: 2s;
 }
@@ -143,6 +151,40 @@ width: 340px;
 .cellDataEntryButton:hover {
     color:  #10A7EA;
     background-color: white;
+}
+
+.codeDataEntry {
+    float: left;
+    margin-right: 0.5vw;
+    margin-top: 0.1vw;
+    border: none;
+    background-color: #10A7EA;
+    color: white;
+    border-bottom: solid 1px white;
+    width: 200px;
+    text-align: center;
+}
+
+.codeDataEntryButton {
+    float: left;
+    border: solid white 1px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    animation: background-color: 2s;
+    margin-right: 0.5vw;
+}
+
+.codeDataEntryButton:hover {
+    color:  #10A7EA;
+    background-color: white;
+}
+
+.codeSentNotification {
+    color: red;
 }
 
 
