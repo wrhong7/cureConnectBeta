@@ -2,7 +2,7 @@
 /*Hospital Sourcer Signing In Beginning
 */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1196px) {
 
     .jobPostingContentLeft {
         margin-left: calc( 50% - 200px ) !important;
@@ -67,8 +67,6 @@
 
     .selectorWrapper2{
         float: left;
-        margin-left: 10px !important;
-        margin-top: 5px !important;
         color: red;
     }
 
@@ -178,7 +176,6 @@
     margin: 8vh 10vw 10vh 10vw;
     background: #10A7EA;
     /* border: solid 1px white; */
-    display: none;
 }
 
 
@@ -317,7 +314,7 @@
     float: left;
     background: #10A7EA;
     border: solid 1px;
-    min-width: 400px;
+    /* min-width: 400px; */
 }
 
 .jobInfoEntry {
@@ -325,12 +322,16 @@
 }
 
 .recruiterContent {
-
+width: 90%;
+    min-width: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .institutionContent {
     width: auto;
     overflow: auto;
+    display: none;
 }
 
 .jobPostingContent {
@@ -690,16 +691,17 @@
 .selectorWrapper1 {
     width: 100%;
     float: left;
-    margin-left: 10px;
-    margin-top: 30px;
-    margin-right: 15px;
-}
+    /* margin-left: 10px; */
+    /* margin-top: 30px; */
+    /* margin-right: 15px; */
+    margin-top: 1vw;}
 
 .selectorWrapper2 {
     float: left;
     width: 100%;
-    margin-left: 10px;
-    margin-top: 30px;
+    /* margin-left: 10px; */
+    /* margin-top: 30px; */
+    margin-top: 1vw;
 }
 
 .marginLeft20PxAdded {
@@ -1227,3 +1229,139 @@ input[type=range] {
     -webkit-transition: background-color 1s; /* For Safari 3.1 to 6.0 */
     transition: background-color 1s;
 }
+
+.recruiterContentTop {
+    width: 100%;
+    overflow: auto;
+}
+
+.recruiterContentLeft {
+float: left;
+    width: 25%;
+    overflow: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.recruiterProfilePhoto {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.recruiterProfileRight {
+    float: left;
+    width: 75%;
+    overflow: auto;
+    /* padding-left: 5%; */
+    margin-top: 3vw;
+}
+
+.recruiterNamesContianer {
+    width: auto;
+    overflow: auto;
+    margin-top: 1vw;
+}
+
+.recruiterFirstName {
+background-color: #10A7EA;
+    color: white;
+    border: none;
+    border-bottom: solid white 1px;
+    /* text-align: center; */
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* min-width: 200px; */
+    float: left;
+}
+
+.recruiterLastName {
+    background-color: #10A7EA;
+    color: white;
+    border: none;
+    border-bottom: solid white 1px;
+    /* text-align: center; */
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    /* min-width: 200px; */
+}
+
+.recruiterTitleContainer {
+    margin-top: 1vw;
+}
+
+.recruiterJobTitleField {
+background-color: #10A7EA;
+    color: white;
+    border: none;
+    border-bottom: solid white 1px;
+    /* text-align: center; */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.hospitalNameContainer {
+margin-top: 1vw;
+}
+
+.recruiterHospitalField {
+background-color: #10A7EA;
+    color: white;
+    border: none;
+    border-bottom: solid white 1px;
+    /* text-align: center; */
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.recruiterContentBottom {
+        width: 100%;
+    overflow: auto;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+}
+
+.recruiterContactContainer {
+    width: 96%;
+    overflow: auto;
+    margin-top: 1vw;
+}
+
+.recruiterPhoneNumberField {
+    float: left;
+    background-color: #10A7EA;
+    color: white;
+    border: none;
+    border-bottom: solid white 1px;
+    /* text-align: center; */
+    width: 49%;
+    /* margin-left: 1%; */
+    margin-right: 1%;
+}
+
+.recruiterEmailFiled {
+    float: left;
+    background-color: #10A7EA;
+    color: white;
+    border: none;
+    border-bottom: solid white 1px;
+    /* text-align: center; */
+    width: 49%;
+    margin-left: 1%;
+    /* margin-right: 1%; */
+}
+
+.recruitingCandidateContainer {
+    width: 96%;
+    overflow: auto;
+}
+
+
+
+
+

@@ -10,7 +10,7 @@ body {
     border-radius: 15px;
     margin-left: 10vw;
     margin-right: 10vw;
-    margin-top: 5vw;
+    margin-top: 2vw;
 }
 
 .veriLeft {
@@ -31,7 +31,8 @@ body {
 }
 
 .veriRight {
-	width: 39vw;
+    width: 39vw;
+    height: 666px;
     min-width: 500px;
     margin-left: 0.3vw;
     margin-right: 0.6vw;
@@ -41,7 +42,6 @@ body {
     float: left;
     border: solid 1px white;
     border-radius: 15px;
-    background-color: blue;
     padding-bottom: 2%;
 }
 
@@ -78,7 +78,7 @@ width: 340px;
     float: left;
     margin-right: 0.5vw;
     margin-top: 0.1vw;
-    width: 300px;
+    width: 280px;
     text-align: center;
     border-bottom: 1px solid white;
 }
@@ -90,7 +90,7 @@ width: 340px;
     padding: 5px;
     font-size: 15px;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     text-align: center;
     animation: background-color: 2s;
 }
@@ -113,7 +113,7 @@ width: 340px;
     margin-top: 0.5vw;
     margin-bottom: 0.5vw;
     width: 100%;
-    overflow: auto;    
+    overflow: auto; 
 }
 
 .cellDataEntryContainer {
@@ -155,13 +155,13 @@ width: 340px;
 
 .codeDataEntry {
     float: left;
-    margin-right: 0.5vw;
+    margin-right: 0.2vw;
     margin-top: 0.1vw;
     border: none;
     background-color: #10A7EA;
     color: white;
     border-bottom: solid 1px white;
-    width: 200px;
+    width: 280px;
     text-align: center;
 }
 
@@ -172,10 +172,10 @@ width: 340px;
     padding: 5px;
     font-size: 15px;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     text-align: center;
     animation: background-color: 2s;
-    margin-right: 0.5vw;
+    margin-right: 0.2vw;
 }
 
 .codeDataEntryButton:hover {
@@ -187,6 +187,79 @@ width: 340px;
     color: red;
 }
 
+.containerUpperDeck {
+    width: 100%;
+    overflow: auto;
+}
+
+.containerLowerDeck {
+    width: 100%;
+    overflow: auto;
+}
+
+.resendButton {
+    width: 195px;
+    /* background-color: white; */
+    margin-top: 1vw;
+    margin-right: 10px;
+    float: left;
+    border: white 1px solid;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    animation: background-color 2s;
+    cursor: pointer;
+}
+
+.resendButton:hover {
+    background-color: white;
+    color: #10A7EA;
+
+}
+
+.changePhoneNumberButton {
+    width: 195px;
+    /* background-color: white; */
+    margin-top: 1vw;
+    float: left;
+    border: white 1px solid;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    animation: background-color 2s;
+    cursor: pointer;
+}
+
+.changePhoneNumberButton:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+
+.notificationGreen {
+    color: #FD5E0F;
+    font-size: 16px;
+}
+
+.confirmVerificationButton {
+    width: 300px;
+    overflow: auto;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 15px;
+    margin-left: calc( 50% - 150px );
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    animation: background-color 2s;
+    cursor: pointer;
+}
+
+.confirmVerificationButton:hover {
+    background-color: white;
+    color: #10A7EA;
+}
 
 
 
