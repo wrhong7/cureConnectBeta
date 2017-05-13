@@ -175,7 +175,12 @@
     height: 80vh;
     margin: 8vh 10vw 10vh 10vw;
     background: #10A7EA;
+    display: none;
     /* border: solid 1px white; */
+}
+
+.sourcerThirdPartySignIn {
+    margin-top: 35vh;
 }
 
 
@@ -202,11 +207,13 @@
     padding-top: 5px;
     background: #10A7EA;
     /* border: solid white 1px; */
+    margin-left: 0.3vw;
 }
 
 .recruiterInformation {
     float: left;
-    background-color: #10A7EA;
+    background-color: white;
+    color: #10A7EA;
     width: 200px;
     text-align: center;
     padding: 10px;
@@ -228,6 +235,30 @@
 
 .hospitalInformation {
     float: left;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-top: solid 1px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-left: solid 1px;
+    border-right: 1px solid;
+    cursor: pointer;
+    transition: background-color 1s;
+    background-color: #10A7EA;
+    color: white;
+}
+
+.interviewInformation {
+        float: left;
     width: 200px;
     text-align: center;
     padding: 10px;
@@ -322,7 +353,7 @@
 }
 
 .recruiterContent {
-width: 90%;
+    width: 90%;
     min-width: 400px;
     margin-left: 5%;
     margin-right: 5%;
@@ -563,6 +594,7 @@ width: 90%;
     float: left;
     width: auto;
     overflow: auto;
+    display: none;
 }
 
 .jobPostingBookmark {
@@ -594,6 +626,10 @@ width: 90%;
 .bookmarkRightComponent:hover {
     background-color: white;
     color: #10A7EA;
+}
+
+.recruiterBookmark {
+
 }
 
 
@@ -1161,6 +1197,7 @@ body {
 }
 
 .js-example-basic-multiple {
+
 }
 
 .select2-selection__choice__remove {
@@ -1173,8 +1210,8 @@ body {
 }
 
 input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  background: transparent; /* Otherwise white in Chrome */
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    background: transparent; /* Otherwise white in Chrome */
 }
 
 .zipcodeInput {
@@ -1190,16 +1227,16 @@ input[type=range] {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: white;
+    color: white;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: white;
+    color: white;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: white;
+    color: white;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: white;
+    color: white;
 }
 
 .sendMessageButton {
@@ -1236,11 +1273,12 @@ input[type=range] {
 }
 
 .recruiterContentLeft {
-float: left;
+    float: left;
     width: 25%;
     overflow: auto;
     margin-top: 2vw;
     margin-bottom: 2vw;
+    max-width: 150px;
 }
 
 .recruiterProfilePhoto {
@@ -1253,8 +1291,7 @@ float: left;
     float: left;
     width: 75%;
     overflow: auto;
-    /* padding-left: 5%; */
-    margin-top: 3vw;
+    margin-top: 1vw;
 }
 
 .recruiterNamesContianer {
@@ -1264,15 +1301,13 @@ float: left;
 }
 
 .recruiterFirstName {
-background-color: #10A7EA;
+    background-color: #10A7EA;
     color: white;
     border: none;
     border-bottom: solid white 1px;
-    /* text-align: center; */
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
-    /* min-width: 200px; */
     float: left;
 }
 
@@ -1281,12 +1316,10 @@ background-color: #10A7EA;
     color: white;
     border: none;
     border-bottom: solid white 1px;
-    /* text-align: center; */
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
     float: left;
-    /* min-width: 200px; */
 }
 
 .recruiterTitleContainer {
@@ -1294,36 +1327,33 @@ background-color: #10A7EA;
 }
 
 .recruiterJobTitleField {
-background-color: #10A7EA;
+    background-color: #10A7EA;
     color: white;
     border: none;
     border-bottom: solid white 1px;
-    /* text-align: center; */
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .hospitalNameContainer {
-margin-top: 1vw;
+    margin-top: 1vw;
 }
 
 .recruiterHospitalField {
-background-color: #10A7EA;
+    background-color: #10A7EA;
     color: white;
     border: none;
     border-bottom: solid white 1px;
-    /* text-align: center; */
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .recruiterContentBottom {
-        width: 100%;
+    width: 100%;
     overflow: auto;
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
+    margin-bottom: 4vh;
 }
 
 .recruiterContactContainer {

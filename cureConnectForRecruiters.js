@@ -1,3 +1,8 @@
+function successfulThirdPartyFetching() {
+  $(".sourcerThirdPartySignIn").hide();
+  $(".hospitalInfoCover").css("display", "block");
+}
+
 const recruitingContractType = [
   "Full Time - W2",
   "Full Time - 1099",
@@ -38,32 +43,71 @@ function changeBookmarkRightJob(event) {
   }, 30)
 }
 
+function fetchRecruiterInformation() {
+  //Recruiter Info -- display
+    $(".recruiterContent").css("display", "block");
+    $(".recruiterBookmark").css("display", "block");
+    $(".recruiterInformation").css("background-color", "white");
+    $(".recruiterInformation").css("color", "#10A7EA");
+  //Institutional info -- hide
+
+    $(".institutionContent").hide();
+    $(".institutionBookmark").hide();
+    $(".hospitalInformation").css("background-color", "#10A7EA");
+    $(".hospitalInformation").css("color", "white");
+
+  //JobPosting Info -- hide
+    $(".jobPostingContent").hide();
+    $(".jobPostingBookmark").hide();
+    $(".outstandingJobPosting").css("background-color", "#10A7EA");
+    $(".outstandingJobPosting").css("color", "white");
 
 
+}
 
 function fetchInstitutionContent() {
+
+  //Recruiter Info -- hide
   $(".recruiterContent").hide();
-  $(".jobPostingContent").hide();
-  $(".jobPostingBookmark").hide();
+  $(".recruiterBookmark").hide();
+  $(".recruiterInformation").css("background-color", "#10A7EA");
+  $(".recruiterInformation").css("color", "white");
+
+  //Institutional info -- display
   $(".institutionContent").css("display", "block");
   $(".institutionBookmark").css("display", "block");
-  $(".hospitalInformation").css("background-color", "white")
-  $(".hospitalInformation").css("color", "#10A7EA")
-  $(".outstandingJobPosting").css("background-color", "#10A7EA")
-  $(".outstandingJobPosting").css("color", "white")
+  $(".hospitalInformation").css("background-color", "white");
+  $(".hospitalInformation").css("color", "#10A7EA");
+
+  //JobPosting Info -- hide
+  $(".jobPostingContent").hide();
+  $(".jobPostingBookmark").hide();
+  $(".outstandingJobPosting").css("background-color", "#10A7EA");
+  $(".outstandingJobPosting").css("color", "white");
+
 }
 
 function fetchJobPostingContent() {
+
+  //Recruiter Info -- hide
   $(".recruiterContent").hide();
+  $(".recruiterBookmark").hide();
+  $(".recruiterInformation").css("background-color", "#10A7EA");
+  $(".recruiterInformation").css("color", "white");
+
+  //Institutional info -- hide
+
   $(".institutionContent").hide();
   $(".institutionBookmark").hide();
+  $(".hospitalInformation").css("background-color", "#10A7EA");
+  $(".hospitalInformation").css("color", "white");
+
+  //JobPosting Info -- display
   $(".jobPostingContent").css("display", "block");
   $(".jobPostingBookmark").css("display", "block");
+  $(".outstandingJobPosting").css("background-color", "white");
+  $(".outstandingJobPosting").css("color", "#10A7EA");
 
-  $(".hospitalInformation").css("background-color", "#10A7EA")
-  $(".hospitalInformation").css("color", "white")
-  $(".outstandingJobPosting").css("background-color", "white")
-  $(".outstandingJobPosting").css("color", "#10A7EA")
 }
 
 function jobPostingContent() {
@@ -83,9 +127,7 @@ var chatResponseBoxCounter = 1;
 function sendChatContentToServer() {
   var textbox = $(".chatWindowInputBox").val();
 
-  
   //here needs to have the slack update.
-
 
   //emptying the chatbox content
   $(".chatWindowInputBox").val("");

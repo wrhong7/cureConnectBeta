@@ -5,9 +5,9 @@
 	<title>cureConnect beta</title>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="testBoard.js"></script>
+	<script src="cureConnectForRecruiters.js"></script>
 	<link rel="stylesheet" href="app.css" />
-	<link rel="stylesheet" href="testBoard.css" />
+	<link rel="stylesheet" href="cureConnectForRecruiters.css" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
@@ -24,19 +24,28 @@
 </head>
 <body>
 
-<div class="sourcerThirdPartySignIn" style="display: none;">
+<div class="sourcerThirdPartySignIn">
 	<div class="nurseOnBoardingRegStep2">
 		<div class="nurseRegStep2Header">
 			Pull information from you LinkedIn to finish this one step
 		</div>
 		<div class="nurseRegStep2Content">
-			<div class="signUpWithLinkedIn">
+			<div 
+				class="signUpWithLinkedIn" 
+				onclick="successfulThirdPartyFetching()"
+			>
 				Login with LinekdIn
 			</div>
-			<div class="signUpWithGoogle">
+			<div 
+				class="signUpWithGoogle"
+				onclick="successfulThirdPartyFetching()"
+			>
 				Login with Google
 			</div>
-			<div class="signUpWithCureConnect">
+			<div 
+				class="signUpWithCureConnect"
+				onclick="successfulThirdPartyFetching()"
+			>
 				Create New Account
 			</div>
 		</div>
@@ -50,63 +59,10 @@
 	</div>
 
 </div>
-<!-- 
-<div class="sourcerInfoCover">
-	<div class="sourcerLinkedInPulled">
-		<div class="contianer sourcerLinkedInInfoConfirmationDirection">
-			Please double check your information.<br>
-			Add your candidate and regional coverage. Select as <b><u>many applicable options</u></b> as possible.
-		</div>
-		<div class="sourcerProfileContainer">
-			<div class="sourcerProfilePhotoContianer">
-				<img class="sourcerProfilePhoto" src="imageAsset/iremProfile.png" />
-				<div class="changeImageButton">change image</div>
-			</div>
-			<div class="sourcerProfileEntryContainer">
-				<div class="floorStack">
-					<input class="firstName sourcerInfoEntry" type="text" placeholder="Recruiter First Name" />
-					<input class="lastName sourcerInfoEntry" type="text" placeholder="Last Name" />
-				</div>
-				<div class="floorStack">
-					<input class="position sourcerInfoEntry" type="text" placeholder="Professional Title" />
-					<input class="hospital sourcerInfoEntry" type="text" placeholder="Institution" />
-				</div>
-				<div class="floorStack">
-					<input class="phoneNumber sourcerInfoEntry" type="text" placeholder="Phone Number" />
-					<input class="workEmail sourcerInfoEntry" type="text" placeholder="Work Email" />
-				</div>
-				<div class="floorStackForSelector">
-					<div class="selectorWrapper1">
-						<select class="js-example-basic-multiple recruitingRegion selectFieldDimension" multiple="multiple">
-						</select>
-					</div>
-					<div class="selectorWrapper2">
-						<select class="js-example-basic-multiple recruitingSpecialty selectFieldDimension" multiple="multiple">
-						</select>
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- 	<div class="container">
-
-			<input class="recruitingRegion zipcodeInput" type="text" placeholder="Recruiting Specialization" />
-			<input class="recruitingSpecialty zipcodeInput" type="text" placeholder="Recruiting Specialization" />
-		</div>
-	 -->
-<!-- 	</div>
-
-	<div class="sourcerProfileConfirmContainer">
-		<div class="sourcerProfileConfirmButton" onclick="confirmSourcerInfo()">
-			confirm
-		</div>
-	</div>
-</div>
- --> -->
-
 
 <div class="hospitalInfoCover">
 	<div class="bookmarkTop">
-		<div class="recruiterInformation">
+		<div class="recruiterInformation" onclick="fetchRecruiterInformation()">
 			Recruiter Info
 		</div>
 		<div class="hospitalInformation" onclick="fetchInstitutionContent()">
@@ -115,7 +71,7 @@
 		<div class="outstandingJobPosting" onclick="fetchJobPostingContent()">
 			Job Posting
 		</div>
-		<div class="recruiterInformation">
+		<div class="interviewInformation">
 			Interviews
 		</div>
 	</div>
@@ -287,6 +243,12 @@
 					/>
 				</div>
 				<div class="jobPostingFieldContainer">
+					<input 
+						class="jobPostInputField internalJobAcquisitionField"
+						placeholder="Internal Job Reference Number" 
+					/>
+				</div>
+				<div class="jobPostingFieldContainer">
 					<select class="js-example-basic-multiple yrsOfExpField selectFieldDimension" multiple="multiple">
 					</select>
 				</div>
@@ -325,6 +287,11 @@
 		</div>
 	</div>
 	<div class="bookmarkRight">
+		<div class="recruiterBookmark">
+			<div class="bookmarkRightComponent">
+				Recruiter Profile
+			</div>	
+		</div>
 		<div class="institutionBookmark">
 			<div class="bookmarkRightComponent charChangeTest">
 				Entering Now
