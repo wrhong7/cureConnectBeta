@@ -13,9 +13,11 @@ header {
     background-color: white;
 }
 
+
+
 .productDemo {
     width: 100vw;
-    height: 70vh;
+    height: 95vh;
 }
 
 .productDemo::after {
@@ -33,15 +35,139 @@ header {
     z-index: -1; 
 }
 
+
+
+
+.indexPageMessage {
+    width: 50vw;
+    min-width: 600px;
+    height: 95vh;
+    padding-top: 20vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgba(241, 241, 241, 0.8);
+}
+
+.indexPageMessageLarge {
+    color: rgb(50, 50, 65);
+    font-size: 6vmin;
+    border-bottom: solid 1px;
+    padding-bottom: 1.5vw;
+}
+.indexPageMessageColor1 {
+    color: #E82F3A;
+}
+
+.indexPageMessageColor2 {
+    color: #E82F3A;
+}
+
+.indexPageMessageSmall {
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    color: rgb(50, 50, 65);
+    font-size: 3vmin;
+    /* font-weight: 400; */
+}
+
+.indexPageMessageButtons {
+    width: auto;
+    overflow: auto;
+    margin-bottom: 1vw;
+}
+
+.introForNursesButton {
+    border: solid 1px #E82F3A;
+    color: #E82F3A;
+    padding: 1vw;
+    text-align: center;
+    width: 145px;
+    font-size: 2.5vmin;
+    /* margin-left: calc( 50% - 125px ); */
+    cursor: pointer;
+    animation: background-color 2s;
+    float: left;
+    margin-left: calc( 50% - 150px );
+    /* margin-right: calc( 33.3% - 100px ); */
+    margin-right: 10px;
+}
+
+.introForNursesButton:hover {
+    color: white;
+    background-color: #E82F3A;
+}
+
+.introForHospitalsButton {
+    border: solid 1px #E82F3A;
+    color: #E82F3A;
+    padding: 1vw;
+    text-align: center;
+    width: 145px;
+    font-size: 2.5vmin;
+    /* margin-left: calc( 50% - 125px ); */
+    cursor: pointer;
+    animation: background-color 2s;
+    float: left;
+}
+
+.introForHospitalsButton:hover {
+    color: white;
+    background-color: #E82F3A;
+}
+
+.startRegButton {
+    border: solid 1px #E82F3A;
+    color: #E82F3A;
+    padding: 1vw;
+    text-align: center;
+    width: 300px;
+    margin-left: calc( 50% - 150px );
+    cursor: pointer;
+    animation: background-color 2s;
+}
+
+.startRegButton:hover {
+    color: white;
+    background-color: #E82F3A;
+}
+
+
+
+
+
+
+.expandButtonGeneric {
+    color: #FD5E0F; 
+}
+
+.hospitalButtonExpansion {
+    text-align: right;
+    padding-left: 5px;
+    position: absolute;
+    width: 200px;
+    margin-left: -80px;
+    padding-right: 5px;
+    background-color: white;
+    color: #FD5E0F;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: none;
+}
+
 .demoHeaderLeft {
     float: left;
     float: left;
     margin: 1vh 1vw;
 }
 
+.demoHederCureConnect {
+    margin-top: 5px;
+}
+
 .demoHeaderComponent {
     color: #FD5E0F;
     cursor: pointer;
+    float: left;
 }
 
 .demoHeaderCureConnect {
@@ -690,7 +816,60 @@ header {
 
 .demoHeaderSmallerFont {
     font-size: 15px;
+    /* margin-left: 10px; */
+    width: 120px;
+    float: left;
+    color: #FD5E0F;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.ourStoryButton {
+    width: 80px;
     margin-left: 10px;
+}
+
+.nurseButtonExpansion {
+    text-align: right;
+    padding-left: 5px;
+    position: absolute;
+    width: 200px;
+    margin-left: -80px;
+    padding-right: 5px;
+    background-color: white;
+    color: #FD5E0F;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: none;
+}
+
+.nurseSubButton {
+    width: 100%;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-radius: 10px;
+    animation: background-color 2s;
+}
+
+.nurseSubButton:hover {
+    color: white;
+    background-color: #FD5E0F;
+}
+
+.nurseApproachButton {
+
+}
+
+.nurseHowItWorksButton {
+
+}
+
+.nursePricingButton {
+    
 }
 
 .corpMap {

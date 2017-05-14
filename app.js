@@ -188,6 +188,18 @@ function toggleExpandMenuButton(stage) {
 
 $(document).ready(function() {
 
+	$(".forNursesButton").hover(function() {
+		$(".nurseButtonExpansion").css("display", "block");
+	}, function() {
+		$(".nurseButtonExpansion").css("display", "none");
+	})
+
+	$(".forHospitalButton").hover(function() {
+		$(".hospitalButtonExpansion").css("display", "block");
+	}, function() {
+		$(".hospitalButtonExpansion").css("display", "none");
+	})
+
 	setTimeout(function() {
 		$(".goToMainpageButtonDesc").replaceWith("start")
 	}, 4000)
