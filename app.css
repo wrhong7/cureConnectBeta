@@ -1,3 +1,14 @@
+@media screen and (max-width: 1196px) {
+    .indexIntroForNurses {
+        height: 95vh !important;
+    }
+
+    .indexIntroForHospitalSection {
+        height: 95vh !important;
+    }
+
+}
+
 body {
 /*	default font color and font size and font type*/
 	font-family: 'Montserrat', sans-serif;
@@ -17,7 +28,7 @@ header {
 
 .productDemo {
     width: 100vw;
-    height: 95vh;
+    height: 92vh;
 }
 
 .productDemo::after {
@@ -35,13 +46,10 @@ header {
     z-index: -1; 
 }
 
-
-
-
 .indexPageMessage {
     width: 50vw;
     min-width: 600px;
-    height: 95vh;
+    height: 92vh;
     padding-top: 20vh;
     padding-left: 8%;
     padding-right: 8%;
@@ -131,11 +139,6 @@ header {
     background-color: #E82F3A;
 }
 
-
-
-
-
-
 .expandButtonGeneric {
     color: #FD5E0F; 
 }
@@ -153,6 +156,219 @@ header {
     border: 1px solid white;
     display: none;
 }
+
+.indexIntroForNurses {
+    width: 100%;
+    height: 80vh;
+}
+
+.indexWidescreenLeft {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.leftTopicHead {
+    width: 90%;
+    overflow: auto;
+    color: #323241;
+    font-size: 4vmin;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30vh;
+}
+
+.leftTopicSubhead {
+    width: 90%;
+    overflow: auto;
+    color: #323241;
+    font-size: 3vmin;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.indexWidescreenRight {
+    width: 50vw;
+    float: left;
+    overflow: auto;
+}
+
+.indexComponentTypeOne {
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.indexComponentTypeTwo {
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.indexComponentTypeThree {
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.rightTopicHead {
+    color: #323241;
+    font-size: 3vmin;
+
+}
+
+.rightTopicSubhead {
+    color: #323241;
+    font-size: 2.5vmin;
+}
+
+.separatorLeftTopicHead {
+    width: 65%;
+    height: 1vh;
+    border-bottom: solid 3px #E82F3A;
+    margin-left: 10%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.separator {
+    width: 250px;
+    height: 1vh;
+    border-bottom: solid 2px #E82F3A;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.forNursesDisappear {
+    color: rgba(232, 47, 58, 1);
+    font-size: 4vmin;
+    margin-left: 10%;
+    margin-top: 25%;
+    height: 5vmin;
+
+}
+
+.indexIntroForHospitalSection {
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(15, 60, 108);
+}
+
+.indexWidescreenLeftForHospital {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.leftTopicHeadForHospital {
+    width: 90%;
+    overflow: auto;
+    color: white;
+    font-size: 4vmin;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30vh;
+}
+
+.leftTopicSubheadForHospital {
+    width: 90%;
+    overflow: auto;
+    color: white;
+    font-size: 3vmin;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.indexWidescreenRightForHospital {
+    width: 50vw;
+    float: left;
+    height: 90vh;
+}
+
+.indexComponentTypeOneForHospital {
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.indexComponentTypeTwoForHospital {
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.indexComponentTypeThreeForHospital {
+    margin-top: 10vh;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.rightTopicHeadForHospital {
+    color: white;
+    font-size: 3vmin;
+
+}
+
+.rightTopicSubheadForHospital {
+    color: white;
+    font-size: 2.5vmin;
+}
+
+.separatorLeftTopicHeadForHospital {
+    width: 65%;
+    height: 1vh;
+    border-bottom: solid 3px #FFD200;
+    margin-left: 10%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.separatorForHospital {
+    width: 250px;
+    height: 1vh;
+    border-bottom: solid 2px #FFD200;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.forNursesDisappearForHospital {
+    color: rgba(232, 47, 58, 1);
+    font-size: 4vmin;
+    margin-left: 10%;
+    margin-top: 25%;
+    height: 5vmin;
+}
+
+.indexPageMessageColor1ForHospital {
+    color: rgb(255, 210, 0);
+}
+
+.indexPageMessageColor2ForHospital {
+    color: rgb(255, 210, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .demoHeaderLeft {
     float: left;
@@ -758,7 +974,6 @@ header {
     margin-bottom: -100px;
     width: 100vw;
     height: 100px;
-    bottom: 0px;
     position: absolute;
     background-color: white;
     opacity: 0.8;
