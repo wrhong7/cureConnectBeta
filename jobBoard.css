@@ -11,20 +11,27 @@ body {
 }
 
 .jobPostingIndividual {
-	width: 90vw;
+	width: 92vw;
 	overflow: auto;
     margin-left: 5vw;
-    margin-right: 5vw;
+    margin-right: 2vw;
     margin-top: 2vw;
     padding-bottom: 1vw;
     cursor: pointer;
+    transition: background-color 0.5s;
+    transition: padding-left 0.5s;
+	border-bottom: solid 1px #E82F3A;
+}
+
+.jobPostingIndividual:hover {
+	padding-left: 2vw;
+	background-color: rgba(232, 47, 58, 0.1);
 }
 
 .jobPostingSummarySection {
 	width: auto;
 	overflow: auto;
 	padding-bottom: 1vw;
-	border-bottom: solid 1px #E82F3A;
 }
 
 .jobPostingLeft {
@@ -63,7 +70,7 @@ body {
 }
 
 .postingDept {
-	color: #E82F3A;
+
 }
 
 .postingInsSubnetwork {
@@ -124,9 +131,112 @@ body {
     display: none;
 }
 
+/*search fields*/
 
+.searchCriteriaContainer {
+	width: 90vw;
+	overflow: auto;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
 
+.jobPostingSearcFieldContainer {
+	width: 100%;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
 
+.jobSearchCommonDimension {
+	width: 20vw;
+	min-width: 200px;
+	overflow: auto;
+	border: none;
+	border-bottom: solid 1px;
+	background-color: #FEFEFE;
+	float: left;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	font-size: 15px;
+	text-align: center;
+}
+
+.jobSearchCommonDimension:focus {
+	border: none;
+}
+
+.jobPostingSearchField {
+
+}
+
+.jobPostingSearchShiftField {
+
+}
+
+.jobPostingSearchLocationField {
+
+}
+
+.jobPostingSearchButton {
+	border: 1px solid #E82F3A;
+	height: 40px;
+	padding-top: 8px;
+	color: #E82F3A;
+	cursor: pointer;
+	background-color: #FEFEFE;
+}
+
+.jobPostingSearchButton:hover {
+	color: #FEFEFE;
+	background-color: #E82F3A;
+}
+
+.moreSearchCriteriaButton {
+	margin-top: 20px;
+	text-align: center;
+	color: #E82F3A;
+	width: 100%;
+	overflow: auto;
+	cursor: pointer;
+}
+
+.moreSearchCriteriaButton:hover {
+	background-color: #E82F3A;
+	color: white;
+}
+
+input::placeholder {
+	color: rgba(50, 50, 65, 0.8);
+}
+
+input:focus {
+	outline: none;
+	border-bottom: solid 1px !important;
+}
+
+.jobPostNumber {
+	margin-top: 1vw;
+	width: 100%;
+	overflow: auto;
+}
+
+.moreSearchCriteriaContainer {
+	width: 100%;
+	overflow: auto;
+	margin-top: 2vw;
+}
+
+.turnOffCustomSearch {
+	color: #E82F3A;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.turnOffCustomSearch:hover {
+	text-decoration: underline;
+}
 
 
 

@@ -6,7 +6,6 @@
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="app.js"></script>
-	<link rel="stylesheet" href="app.css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
@@ -15,9 +14,80 @@
 </head>
 <body>
 
+<div class="searchCriteriaContainer">
+	<div class="jobPostingSearcFieldContainer">
+		<input 
+			class="jobSearchCommonDimension jobPostingSearchField" 
+			placeholder="search"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension jobPostingSearchShiftField" 
+			placeholder="Dayshift"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension jobPostingSearchLocationField" 
+			placeholder="Close to 10128"
+		>
+		</input>
+		<div class="jobSearchCommonDimension jobPostingSearchButton">
+			Search
+		</div>
+	</div>
+	<div class="moreSearchCriteriaButton">
+		more search criteria
+	</div>
+	<div class="jobPostNumber">
+		Showing 29 results - this search has been customized with your profile <span class="turnOffCustomSearch">turn off settings</span> 
+	</div>
+	<div class="moreSearchCriteriaContainer">
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="nurse type"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="department"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="compensation"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="social cause & passion"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="degrees & licenses"
+		>
+		</input>
+		</input>
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="experience"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="sort by hospital network"
+		>
+		</input>
+		<input 
+			class="jobSearchCommonDimension" 
+			placeholder="exclude these conditions"
+		>
+		</input>
+	</div>
+</div>
+
 <div class="jobPostingContainer">
 	<div class="jobPostingIndividual">
-
 		<div class="jobPostingSummarySection">
 			<div class="jobPostingLeft">
 				<div class="postingInsName">
@@ -49,7 +119,7 @@
 			</div>
 		</div>
 
-		<div class="jobPostingExpandSection">
+<!-- 		<div class="jobPostingExpandSection">
 			<div class="jobPostingExpandLeft">
 				<div class="detailedJobRequirements">
 					1+ Yr Pediatric Cardiac / Congenital Heart Patients OR<br>
@@ -82,7 +152,7 @@
 				<div class="askRecruiter">Ask a Question</div>
 			</div>
 		</div>
-
+ -->
 	</div>
 	<div class="jobPostingIndividual">
 
@@ -96,7 +166,7 @@
 					<span class="instDistFromYou">3.5 mi away</span>
 				</div>
 				<div class="postingInsPosition">
-					<span class="postingTitle">Clinical Nurse I</span>
+					<span class="postingTitle">Clinical Nurse</span>
 					<span class="postingDept">Infant Cardiac (NICU) Department</span>
 				</div>
 			</div>
@@ -116,41 +186,39 @@
 				<div class="postingExperiences">1+ Yr Experience</div>
 			</div>
 		</div>
+	</div>
+	<div class="jobPostingIndividual">
 
-		<div class="jobPostingExpandSection">
-			<div class="jobPostingExpandLeft">
-				<div class="detailedJobRequirements">
-					1+ Yr Pediatric Cardiac / Congenital Heart Patients OR<br>
-					2+ Yr RN Experience in a Level III or Level IV NICU<br>
-					BSN Degree, BCLS Certification, NY State RN License
+		<div class="jobPostingSummarySection">
+			<div class="jobPostingLeft">
+				<div class="postingInsName">
+					<span class="institutionNetwork">New York Prebysterian Hospital</span>
 				</div>
-				<div class="detailedJobDescription">
-					Patient Type: Pediatric Cardiac Outpatients
-					Patient Ratio: 1:6
-					Will be working with experienced nurse managers
+				<div class="postingInsSubnetwork">
+					<span class="institutionSpecificSite">Children's Hospital, Manhattan</span>
+					<span class="instDistFromYou">3.5 mi away</span>
 				</div>
-			</div>
-			<div class="jobPostingExpandRight">
-				<div class="detailedJobRecruiterInfo">
-					Yesenia Gomez, Nurse Sourcer, NYP Hospital Systems
-				</div>
-				<div class="detailedHospitalLocation">
-					<iframe 
-						width="300" 
-						height="300" 
-						frameborder="0" 
-						style="border:0"
-						src="https://www.google.com/maps/embed/v1/place?q=NewYork-Presbyterian%2FMorgan%20Stanley%20Children's%20Hospital%20&key=
-" allowfullscreen
-					></iframe>
+				<div class="postingInsPosition">
+					<span class="postingTitle">Clinical Nurse I</span>
+					<span class="postingDept">Infant Cardiac (NICU) Department</span>
 				</div>
 			</div>
-			<div class="summaryButtonGroup">
-				<div class="indicateInterest">Indicate Interest</div>
-				<div class="askRecruiter">Ask a Question</div>
+			
+			<div class="jobPostingMiddle">
+				<div class="jobType">Part Time</div>
+				<div class="jobPeriod">June 1, 2017 - Onwards</div>
+				<div class="dayShiftInfo">
+					<span class="jobDay">Th, F</span>
+					<span class="jobShift">Nightshift</span>
+				</div>
+			</div>
+			
+			<div class="jobPostingRight">
+				<div class="compRange">$70-$100</div>
+				<div class="postingCredentials">RN, NY Lic</div>
+				<div class="postingExperiences">1+ Yr Experience</div>
 			</div>
 		</div>
-
 	</div>
 	<div class="jobPostingIndividual">
 
@@ -185,32 +253,6 @@
 			</div>
 		</div>
 
-		<div class="jobPostingExpandSection">
-			<div class="jobPostingExpandLeft">
-				<div class="detailedJobRequirements">
-					1+ Yr Pediatric Cardiac / Congenital Heart Patients OR<br>
-					2+ Yr RN Experience in a Level III or Level IV NICU<br>
-					BSN Degree, BCLS Certification, NY State RN License
-				</div>
-				<div class="detailedJobDescription">
-					Patient Type: Pediatric Cardiac Outpatients
-					Patient Ratio: 1:6
-					Will be working with experienced nurse managers
-				</div>
-			</div>
-			<div class="jobPostingExpandRight">
-				<div class="detailedJobRecruiterInfo">
-					Yesenia Gomez, Nurse Sourcer, NYP Hospital Systems
-				</div>
-				<div class="detailedHospitalLocation">
-				</div>
-			</div>
-			<div class="summaryButtonGroup">
-				<div class="indicateInterest">Indicate Interest</div>
-				<div class="askRecruiter">Ask a Question</div>
-			</div>
-		</div>
-
 	</div>
 	<div class="jobPostingIndividual">
 
@@ -242,92 +284,6 @@
 				<div class="compRange">$70-$100</div>
 				<div class="postingCredentials">RN, NY Lic</div>
 				<div class="postingExperiences">1+ Yr Experience</div>
-			</div>
-		</div>
-
-		<div class="jobPostingExpandSection">
-			<div class="jobPostingExpandLeft">
-				<div class="detailedJobRequirements">
-					1+ Yr Pediatric Cardiac / Congenital Heart Patients OR<br>
-					2+ Yr RN Experience in a Level III or Level IV NICU<br>
-					BSN Degree, BCLS Certification, NY State RN License
-				</div>
-				<div class="detailedJobDescription">
-					Patient Type: Pediatric Cardiac Outpatients
-					Patient Ratio: 1:6
-					Will be working with experienced nurse managers
-				</div>
-			</div>
-			<div class="jobPostingExpandRight">
-				<div class="detailedJobRecruiterInfo">
-					Yesenia Gomez, Nurse Sourcer, NYP Hospital Systems
-				</div>
-				<div class="detailedHospitalLocation">
-				</div>
-			</div>
-			<div class="summaryButtonGroup">
-				<div class="indicateInterest">Indicate Interest</div>
-				<div class="askRecruiter">Ask a Question</div>
-			</div>
-		</div>
-
-	</div>
-	<div class="jobPostingIndividual">
-
-		<div class="jobPostingSummarySection">
-			<div class="jobPostingLeft">
-				<div class="postingInsName">
-					<span class="institutionNetwork">New York Prebysterian Hospital</span>
-				</div>
-				<div class="postingInsSubnetwork">
-					<span class="institutionSpecificSite">Children's Hospital, Manhattan</span>
-					<span class="instDistFromYou">3.5 mi away</span>
-				</div>
-				<div class="postingInsPosition">
-					<span class="postingTitle">Clinical Nurse I</span>
-					<span class="postingDept">Infant Cardiac (NICU) Department</span>
-				</div>
-			</div>
-			
-			<div class="jobPostingMiddle">
-				<div class="jobType">Part Time</div>
-				<div class="jobPeriod">June 1, 2017 - Onwards</div>
-				<div class="dayShiftInfo">
-					<span class="jobDay">Th, F</span>
-					<span class="jobShift">Nightshift</span>
-				</div>
-			</div>
-			
-			<div class="jobPostingRight">
-				<div class="compRange">$70-$100</div>
-				<div class="postingCredentials">RN, NY Lic</div>
-				<div class="postingExperiences">1+ Yr Experience</div>
-			</div>
-		</div>
-
-		<div class="jobPostingExpandSection">
-			<div class="jobPostingExpandLeft">
-				<div class="detailedJobRequirements">
-					1+ Yr Pediatric Cardiac / Congenital Heart Patients OR<br>
-					2+ Yr RN Experience in a Level III or Level IV NICU<br>
-					BSN Degree, BCLS Certification, NY State RN License
-				</div>
-				<div class="detailedJobDescription">
-					Patient Type: Pediatric Cardiac Outpatients
-					Patient Ratio: 1:6
-					Will be working with experienced nurse managers
-				</div>
-			</div>
-			<div class="jobPostingExpandRight">
-				<div class="detailedJobRecruiterInfo">
-					Yesenia Gomez, Nurse Sourcer, NYP Hospital Systems
-				</div>
-				<div class="detailedHospitalLocation">
-				</div>
-			</div>
-			<div class="summaryButtonGroup">
-				<div class="indicateInterest">Indicate Interest</div>
-				<div class="askRecruiter">Ask a Question</div>
 			</div>
 		</div>
 
