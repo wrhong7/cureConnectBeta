@@ -92,7 +92,7 @@ header {
     width: 145px;
     /* margin-left: calc( 50% - 125px ); */
     cursor: pointer;
-    animation: background-color 2s;
+    transition: background-color 2s;
     float: left;
     margin-left: calc( 50% - 150px );
     /* margin-right: calc( 33.3% - 100px ); */
@@ -112,7 +112,7 @@ header {
     width: 145px;
     /* margin-left: calc( 50% - 125px ); */
     cursor: pointer;
-    animation: background-color 2s;
+    transition: background-color 2s;
     float: left;
 }
 
@@ -129,7 +129,7 @@ header {
     width: 300px;
     margin-left: calc( 50% - 150px );
     cursor: pointer;
-    animation: background-color 2s;
+    transition: background-color 2s;
 }
 
 .startRegButton:hover {
@@ -398,9 +398,6 @@ header {
 
 
 
-
-
-
 .demoHeaderLeft {
     float: left;
     float: left;
@@ -415,6 +412,7 @@ header {
     color: #FD5E0F;
     cursor: pointer;
     float: left;
+    font-size: 20px;
 }
 
 .demoHeaderCureConnect {

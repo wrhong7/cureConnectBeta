@@ -1,0 +1,268 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	background-color: #FEFEFE;
+	color: #323241;
+}
+
+.upperLevelContainer {
+	width: 100vw;
+	overflow: auto;
+	min-height: 150px;
+}
+
+.upperLevelContainer::after {
+    background-image: url("imageAsset/jobDetailPageImage.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    height: 150px;
+}
+
+.upperLevelLeft {
+    width: 60vw;
+    min-width: 400px;
+    overflow: auto;
+    margin-top: 100px;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    float: left;
+}
+
+.hospitalName {
+	font-size: 30px;
+	color: rgba(232, 47, 58, 1);;
+}
+
+.upperLevelRight {
+	width: 30vw;
+    min-width: 200px;
+    margin-right: 2vw;
+    margin-left: 3vw;
+    overflow: auto;
+    margin-top: 115px;
+    float: left;
+}
+
+.hospitalPostingDate {
+	font-size: 20px;
+}
+
+.lowerLevelContainer {
+	width: 100vw;
+	overflow: auto;
+
+}
+
+.lowerLevelLeft {
+	width: 60vw;
+	overflow: auto;
+	margin-left: 3vw;
+	margin-right: 2vw;
+	margin-top: 0.5vw;
+	float: left;
+}
+
+.hospitalSubnetworkName {
+	font-size: 20px;
+}
+
+.locationColor {
+	color: rgba(232, 47, 58, 1);
+}
+
+.lowerLevelRight {
+	width: 30vw;
+    min-width: 200px;
+    margin-right: 2vw;
+    margin-left: 3vw;
+    overflow: auto;
+    float: left;
+    font-size: 18px;
+    margin-top: 1vw;
+}
+
+.hospitalRecruitSummary {
+	margin-top: 2vw;
+    font-size: 20px;
+}
+
+.fa {
+	width: 25px;
+	overflow: auto;
+	text-align: center;
+}
+
+.summaryComponent {
+	margin-top: 1vw;
+}
+
+.recruitSummaryTopic {
+	text-align: center;
+    padding-bottom: 1vw;
+    border-bottom: solid 1px;
+    margin-bottom: 1vw;
+}
+
+.recruitSummaryContent {
+
+}
+
+.recruitLic {
+
+}
+
+.recruitReq {
+
+}
+
+.recruitJobType {
+
+}
+
+.recruitSchedule {
+
+}
+
+.recruitComp {
+
+}
+
+.recruitPatientType {
+
+}
+
+.recruitPatientRatio {
+
+}
+
+.summaryContentText {
+
+}
+
+.recruitSummaryContentLeft {
+	width: 50%;
+	overflow: auto;
+	float: left;
+}
+
+.recruitSummaryContentRight {
+	width: 50%;
+	overflow: auto;
+	float: left;
+}
+
+.detailedHospitalLocation {
+	margin-top: 1vw;
+}
+
+.buttonContainers {
+    width: 600px;
+    overflow: auto;
+    margin-left: calc( 50% - 300px );
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.askQuestionButton {
+    width: 280px;
+    overflow: auto;
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 15px;
+    margin-bottom: 0.5vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 1px #FD5E0F;
+    color: #FD5E0F;
+    cursor: pointer;
+}
+
+.askQuestionButton:hover {
+	color: white;
+	background-color: #FD5E0F;
+}
+
+.applyButton {
+	width: 280px;
+    overflow: auto;
+    float: left;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 0.5vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 1px rgba(232, 47, 58, 1);
+    color: rgba(232, 47, 58, 1);
+    cursor: pointer;
+}
+
+.applyButton:hover {
+	color: white;
+	background-color: rgba(232, 47, 58, 1);
+}
+
+.jobPostingDetails {
+	width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+}
+
+.jobPostingDetailsTopic {
+	font-size: 20px;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+    border-bottom: solid 1px
+}
+
+.jobPostingDetailContent {
+	width: 90%;
+	overflow: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.employmentRegulationDetails {
+	width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+.employmentRegulationDetailsTopic {
+	font-size: 20px;
+    padding-bottom: 1vw;
+    margin-bottom: 1vw;
+    border-bottom: solid 1px
+}
+
+.employmentRegulationDetailsContent {
+	width: 90%;
+	overflow: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
