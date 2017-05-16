@@ -1,3 +1,123 @@
 body {
+	font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
 	background-color: #FEFEFE;
+	color: #323241;
 }
+
+.jobPostingContainer {
+	width: 100vw;
+	overflow: auto;
+}
+
+.jobPostingIndividual {
+	width: 90vw;
+	overflow: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    padding-bottom: 1vw;
+    border-bottom: solid 1px #E82F3A;
+    cursor: pointer;
+}
+
+.jobPostingSummarySection {
+	width: auto;
+	overflow: auto;
+}
+
+.jobPostingLeft {
+	width: 50vw;
+	min-width: 400px;
+	overflow: auto;
+	float: left;
+}
+
+.postingInsName {
+	font-size: 25px;
+    color: #E82F3A;
+}
+
+.institutionName {
+	font-size: 25px;
+    color: #E82F3A;	
+}
+
+.instDistFromYou{
+    color: #323241;
+    font-size: 18px;
+    color: #E82F3A;
+}
+
+.postingInsPosition {
+	margin-top: 2vw;
+}
+
+.postingTitle {
+
+}
+
+.postingCredentials {
+	color: #E82F3A;
+}
+
+.postingDept {
+
+}
+
+.postingInsSubnetwork {
+
+}
+
+.institutionSpecificSite {
+
+}
+
+.postingExperiences {
+	margin-top: 2vw;
+}
+
+.jobPostingMiddle {
+	width: 20vw;
+    overflow: auto;
+    float: left;
+}
+
+.jobPeriod {
+
+}
+
+.dayShiftInfo {
+	margin-top: 2vw;
+}
+
+.jobDay {
+
+}
+
+.jobShift {
+	color: #E82F3A;
+}
+
+.jobPostingRight {
+	width: 20vw;
+    overflow: auto;
+    float: left;
+}
+
+.jobType {
+
+}
+
+.compRange {
+
+}
+
+.jobPostingExpandSection {
+
+}
+
+
+
+
+
