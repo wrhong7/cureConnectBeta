@@ -1,3 +1,19 @@
+@media screen and (max-width: 1196px) {
+	.jobPostingSearcFieldContainer {
+		margin-left: calc( 50% - 220px ) !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.jobPostingMiddle {
+		width: 15vw !important;
+	}
+
+	.jobPostingRight {
+		width: 15vw !important;
+	}
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -7,7 +23,8 @@ body {
 
 .jobPostingContainer {
 	width: 100vw;
-	overflow: auto;
+    overflow: auto;
+    margin-top: 4vw;
 }
 
 .jobPostingIndividual {
@@ -144,9 +161,11 @@ body {
 
 .jobPostingSearcFieldContainer {
 	width: 100%;
-	overflow: auto;
-	margin: 0;
-	padding: 0;
+    min-width: 440px;
+    overflow: auto;
+    /* margin: 0; */
+    padding: 0;
+    margin-top: 7vw;
 }
 
 .jobSearchCommonDimension {
@@ -154,13 +173,14 @@ body {
 	min-width: 200px;
 	overflow: auto;
 	border: none;
-	border-bottom: solid 1px;
+	border-bottom: solid 1px rgba(232, 47, 58, 1);
 	background-color: #FEFEFE;
 	float: left;
 	margin-left: 1vw;
 	margin-right: 1vw;
 	font-size: 15px;
 	text-align: center;
+	margin-bottom: 2vw;
 }
 
 .jobSearchCommonDimension:focus {
@@ -180,17 +200,17 @@ body {
 }
 
 .jobPostingSearchButton {
-	border: 1px solid #E82F3A;
+	border: 1px solid rgba(232, 47, 58, 0.7);
 	height: 40px;
 	padding-top: 8px;
-	color: #E82F3A;
+	color: white;
 	cursor: pointer;
-	background-color: #FEFEFE;
+	background-color: rgba(232, 47, 58, 0.7);
 }
 
 .jobPostingSearchButton:hover {
-	color: #FEFEFE;
-	background-color: #E82F3A;
+	color: white;
+	background-color: rgba(232, 47, 58, 1);
 }
 
 .moreSearchCriteriaButton {
@@ -217,7 +237,7 @@ input:focus {
 }
 
 .jobPostNumber {
-	margin-top: 1vw;
+	margin-top: 3vw;
 	width: 100%;
 	overflow: auto;
 }
@@ -226,6 +246,7 @@ input:focus {
 	width: 100%;
 	overflow: auto;
 	margin-top: 2vw;
+	display: none;
 }
 
 .turnOffCustomSearch {
@@ -238,5 +259,57 @@ input:focus {
 	text-decoration: underline;
 }
 
+.searchCriteriaContainer::after {
+	background-image: url("imageAsset/jobBoardHeader.jpg");
+    background-size: cover;                     
+    background-repeat:   no-repeat;
+    background-position: center center;
+    content: "";
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    height: 330px;
+}
+
+.jobPostingFieldHeader {
+
+}
+
+.nursingJobBoardBanner {
+	font-size: 30px;
+    width: 50vw;
+    min-width: 600px;
+    overflow: auto;
+    float: left;
+}
+
+.nursingJobHashTag {
+    color: rgb(232, 47, 58);
+    font-size: 15px;
+}
+
+.accountOwnerInfo {
+	width: 45px;
+    /* height: 45px; */
+    padding: 2.5px;
+    /* padding-top: 3px; */
+    float: right;
+    border-radius: 100%;
+
+}
+
+.accountOwnerInfo:hover {
+	background-color: rgb(232, 47, 58); 
+}
+
+.accountProfilePic {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
 
 
