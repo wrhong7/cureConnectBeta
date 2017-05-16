@@ -200,6 +200,18 @@ $(document).ready(function() {
         'slow');
 	});
 
+	$(".nurseApproachButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".indexIntroForNurses").offset().top},
+        'slow');
+	});
+
+	$(".hospitalApproachButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".indexIntroForHospitalSection").offset().top},
+        'slow');
+	});
+
 	$(".forNursesButton").hover(function() {
 		$(".nurseButtonExpansion").css("display", "block");
 	}, function() {
