@@ -1,0 +1,52 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+	background-color: #B7D7D3;
+	color: #E82F3A;
+}
+
+.illustrationCover {
+	width: 80vw;
+	overflow: auto;
+	height: 60vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+/*	border: solid 1px #E82F3A;*/
+	margin-top: 20vh;
+}
+
+.illustrationHeader {
+	width: auto;
+	overflow: auto;
+}
+
+.headerTrad {
+	width: 300px;
+	height: 5vh;
+	overflow: auto;
+	background-color: yellow;
+	float: left;
+	font-size: 20px;
+}
+
+.headerCureConnect {
+	width: 300px;
+	height: 5vh;
+	overflow: auto;
+	background-color: blue;
+	float: left;
+	font-size: 20px;
+}
+
+.illustrationContentContainer {
+	width: 100%;
+	height: 55vh;
+	overflow: auto;
+	border: solid 1px #E82F3A;
+}
+
+
+
+
+
+
