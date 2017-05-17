@@ -10,6 +10,7 @@
 	.upperLevelRight {
 		width: 70vw !important;
 		margin-top: 0 !important;
+		margin-left: 10vw !important;
 	}
 
 	.lowerLevelLeft {
@@ -26,8 +27,25 @@
 		width: 60vw !important;
 		margin-right: 20vw !important;
 	    margin-left: 20vw !important;
-	    margin-top: 1vw !important;
+	    margin-top: 2vw !important;
 	    text-align: center !important;
+	}
+
+	.hospitalSubnetworkName {
+		margin-left: 5vw !important;
+	}
+
+	.detailedHospitalLocation {
+		margin-top: 2vw !important;
+	}
+
+	.jobPostingDetails {
+		margin-top: 5vw !important;
+	}
+
+	.employmentRegulationDetails {
+		margin-top: 5vw !important;
+		margin-bottom: 10vw !important;
 	}
 
 }
@@ -67,8 +85,8 @@ body {
     min-width: 400px;
     overflow: auto;
     margin-top: 100px;
-    margin-left: 3vw;
-    margin-right: 2vw;
+    margin-left: 10vw;
+    /* margin-right: 2vw; */
     float: left;
 }
 
@@ -78,13 +96,14 @@ body {
 }
 
 .upperLevelRight {
-	width: 30vw;
+	width: 20vw;
     min-width: 200px;
-    margin-right: 2vw;
-    margin-left: 3vw;
+    margin-right: 10vw;
+    /* margin-left: 3vw; */
     overflow: auto;
     margin-top: 115px;
     float: left;
+    text-align: right;
 }
 
 .hospitalPostingDate {
@@ -94,16 +113,17 @@ body {
 .lowerLevelContainer {
 	width: 100vw;
 	overflow: auto;
-
+	padding-bottom: 2vw;
+    background-color: rgba(220, 213, 210, 0.2);
 }
 
 .lowerLevelLeft {
-	width: 60vw;
-	overflow: auto;
-	margin-left: 3vw;
-	margin-right: 2vw;
-	margin-top: 0.5vw;
-	float: left;
+    width: 50vw;
+    overflow: auto;
+    margin-left: 10vw;
+    /* margin-right: 2vw; */
+    margin-top: 0.5vw;
+    float: left;
 }
 
 .hospitalSubnetworkName {
@@ -117,16 +137,17 @@ body {
 .lowerLevelRight {
 	width: 30vw;
     min-width: 200px;
-    margin-right: 2vw;
-    margin-left: 3vw;
+    margin-right: 10vw;
+    /* margin-left: 3vw; */
     overflow: auto;
     float: left;
     font-size: 18px;
     margin-top: 1vw;
+    text-align: right;
 }
 
 .hospitalRecruitSummary {
-	margin-top: 2vw;
+	margin-top: 4vw;
     font-size: 20px;
 }
 
@@ -197,7 +218,7 @@ body {
 }
 
 .detailedHospitalLocation {
-	margin-top: 1vw;
+	margin-top: 4vw;
 }
 
 .buttonContainers {
@@ -249,9 +270,9 @@ body {
 }
 
 .jobPostingDetails {
-	width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+	width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-top: 2vw;
 }
 
@@ -270,9 +291,9 @@ body {
 }
 
 .employmentRegulationDetails {
-	width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+	width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-top: 2vw;
     margin-bottom: 5vw;
 }
