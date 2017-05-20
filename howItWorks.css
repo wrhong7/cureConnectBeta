@@ -1,17 +1,72 @@
+@media screen and (max-width: 1196px) {
+
+    .firstStgIconCover {
+        width: 100% !important;
+        margin-left: 0 !important;
+        height: auto !important;
+        margin-top: 1vw !important;
+    }
+
+    .illustrationColumnOne {
+        min-height: 420px !important;
+        padding-top: 10vh !important;
+    }
+
+    .illustrationColumnTwo {
+        min-height: 420px !important;
+    }
+
+    .illustrationColumnFour {
+        min-height: 420px !important;
+        padding-top: 10vh !important;
+    }
+
+    .arrowsIcon {
+        margin-top: 15vh !important;
+    }
+
+    .brainLogo {
+        margin-top: 15vh !important;
+    }
+
+    .thirdStageIconCover {
+        margin-top: 21vh !important;
+    }
+
+/*    .thirdStage {
+        padding-top: 8vh !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }*/
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
 	color: #E82F3A;
 }
 
+.howItWorksSection {
+    width: 100%;
+    overflow: auto;
+    background-color: #B7D7D3;
+    cursor: default;
+}
+
 .illustrationCover {
-	width: 80vw;
-	overflow: auto;
-	height: 60vh;
-	margin-left: 10vw;
-	margin-right: 10vw;
-/*	border: solid 1px #E82F3A;*/
-	margin-top: 20vh;
+    width: 100vw;
+    overflow: auto;
+}
+
+.firstStgIconCover {
+    text-align: center;
+    height: 125px;
+}
+
+.regDuration {
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0;
 }
 
 .illustrationHeader {
@@ -49,13 +104,163 @@ body {
 
 .illustrationContentContainer {
 	width: 100%;
-    height: 54vh;
     overflow: auto;
     border: solid 1px #B7D7D3;
 }
 
+.illustrationColumnOne {
+    width: 33.3%;
+    min-height: 348.5px;
+    overflow: auto;
+    border-right: solid 1px whitesmoke;
+    float: left;
+    background-color: #B7D7D3;
+}
 
+.nurseIcon {
+    font-size: 100px;
+    max-width: 78px;
+    margin-left: calc( 50% - 39px );
+    margin-top: 20%;
+}
 
+.illustrationColumnTwo {
+    width: 33.3%;
+    min-height: 348.5px;
+    overflow: auto;
+    border-right: solid 1px whitesmoke;
+    float: left;
+    background-color: #B7D7D3;
+}
 
+.arrowsIcon {
+    font-size: 100px;
+    margin-left: calc( 50% - 50px );
+    margin-top: 20%;
+}
 
+.regRecrutingDesc1 {
+    font-size: 25px;
+}
 
+.illustrationColumnThree {
+    display: none;
+    float: left;
+}
+
+.illustrationColumnFour {
+    width: 33.3%;
+    min-height: 348.5px;
+    overflow: auto;
+/*    border-right: solid 1px whitesmoke;*/
+    float: left;
+    background-color: #B7D7D3;
+}
+
+.hospitalIcon {
+    font-size: 100px;
+    max-width: 78px;
+    margin-left: calc( 50% - 39px );
+    margin-top: 20%;
+}
+
+.illustrationCaptionCover {
+    width: 100%;
+    overflow: auto;
+    background-color: #B7D7D3;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.initialStage {
+    display: block;
+}
+
+.firstStage {
+    display: none;
+    opacity: 0;
+    animation: anim 3s;
+}
+
+.secondStage {
+    display: none;
+    padding-top: 2vw !important;
+    animation: anim 3s;
+}
+
+.thirdStage {
+    display: none;
+    padding-top: 2vw !important;
+    animation: anim 3s;
+}
+
+.fourthStage {
+    display: none;
+    animation: anim 3s;
+}
+
+.fistStgIcon {
+    font-size: 4vw !important;
+}
+
+.fistStgIconContainer {
+    width: 100%;
+    overflow: auto;
+    margin-top: 3vw;
+}
+
+.firstStgIconCover {
+    float: left;
+    overflow: auto;
+    width: 33%;
+    min-width: 110px;
+    height: ;
+    text-align: center;
+    margin-top: 1.5vw;
+}
+
+.iconDesc {
+    overflow: auto;
+    text-align: center;
+}
+
+.brainLogo {
+    width: 120px;
+    margin-left: calc( 50% - 60px );
+    margin-top: 10vh;  
+}
+
+.algoMatchingText {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+.commIconCover {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.commIconDesc {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
