@@ -1,0 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    color: #0f3c6c;
+    background-color: #eff5f5;
+}
+
+.betaServiceNotificationContianer {
+    width: 80vw;
+    overflow: auto;
+    margin: 10vw 10vw 0 10vw;
+    border: solid 1px;
+    padding: 5vw;
+    border-radius: 2vw;
+}
+
+.betaServiceFontLarge {
+    font-size: 5vmin;
+
+}
+
+.betaServiceFontMedium {
+	font-size: 3vmin;
+    margin-top: 5vh;
+}
+
+.betaServiceFontSmall {
+    margin-top: 5vh;
+    font-size: 3vmin;
+}
+
+.betaServiceSocialShare {
+    margin-top: 1.5vw;
+    font-size: 3vmin;
+}
+
+.socialIcons {
+    text-align: center;
+}
+
+.socialIconComponent {
+    text-align: center;
+    font-size: 5vmin;
+    margin-top: 1vw;
+    margin-left: 0.5vw;
+}
+
