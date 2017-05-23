@@ -49,8 +49,16 @@ body {
 .howItWorksSection {
     width: 100%;
     overflow: auto;
-    background-color: #B7D7D3;
+    background-color: #EFF5F5;
     cursor: default;
+}
+
+.howItWorksDescCaption {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: #99BFBC;
 }
 
 .illustrationCover {
@@ -105,7 +113,6 @@ body {
 .illustrationContentContainer {
 	width: 100%;
     overflow: auto;
-    border: solid 1px #B7D7D3;
 }
 
 .illustrationColumnOne {
@@ -114,7 +121,7 @@ body {
     overflow: auto;
     border-right: solid 1px whitesmoke;
     float: left;
-    background-color: #B7D7D3;
+    background-color: #EFF5F5;
 }
 
 .nurseIcon {
@@ -122,6 +129,7 @@ body {
     max-width: 78px;
     margin-left: calc( 50% - 39px );
     margin-top: 20%;
+    color: #0F3C6C;
 }
 
 .illustrationColumnTwo {
@@ -130,7 +138,7 @@ body {
     overflow: auto;
     border-right: solid 1px whitesmoke;
     float: left;
-    background-color: #B7D7D3;
+    background-color: #EFF5F5;
 }
 
 .arrowsIcon {
@@ -154,7 +162,7 @@ body {
     overflow: auto;
 /*    border-right: solid 1px whitesmoke;*/
     float: left;
-    background-color: #B7D7D3;
+    background-color: #EFF5F5;
 }
 
 .hospitalIcon {
@@ -162,16 +170,18 @@ body {
     max-width: 78px;
     margin-left: calc( 50% - 39px );
     margin-top: 20%;
+    color: #0F3C6C;
 }
 
 .illustrationCaptionCover {
     width: 100%;
     overflow: auto;
-    background-color: #B7D7D3;
+    background-color: #EFF5F5;
     font-size: 25px;
     text-align: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: #0F3C6C;
 }
 
 @keyframes anim {
@@ -191,28 +201,31 @@ body {
 
 .initialStage {
     display: block;
+    padding-top: 0.5vw !important;
 }
 
 .firstStage {
     display: none;
     opacity: 0;
+    padding-top: 0.5vw !important;
     animation: anim 3s;
 }
 
 .secondStage {
     display: none;
-    padding-top: 2vw !important;
+    padding-top: 0.5vw !important;
     animation: anim 3s;
 }
 
 .thirdStage {
     display: none;
-    padding-top: 2vw !important;
+    padding-top: 0.5vw !important;
     animation: anim 3s;
 }
 
 .fourthStage {
     display: none;
+    padding-top: 0.5vw !important;
     animation: anim 3s;
 }
 
@@ -254,7 +267,7 @@ body {
 }
 
 .commIconCover {
-    font-size: 4vw;
+    font-size: 6vw;
     text-align: center;
     margin-top: 15vh;
 }

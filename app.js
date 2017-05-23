@@ -212,6 +212,22 @@ $(document).ready(function() {
         'slow');
 	});
 
+	$(".nurseHowItWorksButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".illustrationCover").offset().top},
+        'slow');
+	});
+
+	$(".hospitalHowItWorksButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".illustrationCover").offset().top},
+        'slow');
+	});
+
+
+
+
+
 	$(".forNursesButton").hover(function() {
 		$(".nurseButtonExpansion").css("display", "block");
 	}, function() {
