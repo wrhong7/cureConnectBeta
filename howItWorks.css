@@ -62,8 +62,28 @@ body {
 }
 
 .illustrationCover {
+<<<<<<< HEAD
     width: 100vw;
     overflow: auto;
+}
+
+.firstStgIconCover {
+    text-align: center;
+    height: 125px;
+}
+
+.regDuration {
+    width: 100% !important;
+    margin-top: 0 !important;
+    margin-left: 0;
+=======
+	width: 80vw;
+	overflow: auto;
+	margin-left: 10vw;
+	margin-right: 10vw;
+/*	border: solid 1px #E82F3A;*/
+	margin-top: 20vh;
+>>>>>>> b51d513ea780ae1652f8385110fe4b4501d0ef8f
 }
 
 .firstStgIconCover {
@@ -121,7 +141,11 @@ body {
     overflow: auto;
     border-right: solid 1px whitesmoke;
     float: left;
+<<<<<<< HEAD
     background-color: #EFF5F5;
+=======
+    background-color: #B7D7D3;
+>>>>>>> b51d513ea780ae1652f8385110fe4b4501d0ef8f
 }
 
 .nurseIcon {
@@ -129,7 +153,10 @@ body {
     max-width: 78px;
     margin-left: calc( 50% - 39px );
     margin-top: 20%;
+<<<<<<< HEAD
     color: #0F3C6C;
+=======
+>>>>>>> b51d513ea780ae1652f8385110fe4b4501d0ef8f
 }
 
 .illustrationColumnTwo {
@@ -138,7 +165,11 @@ body {
     overflow: auto;
     border-right: solid 1px whitesmoke;
     float: left;
+<<<<<<< HEAD
     background-color: #EFF5F5;
+=======
+    background-color: #B7D7D3;
+>>>>>>> b51d513ea780ae1652f8385110fe4b4501d0ef8f
 }
 
 .arrowsIcon {
@@ -160,9 +191,15 @@ body {
     width: 33.3%;
     min-height: 348.5px;
     overflow: auto;
+<<<<<<< HEAD
 /*    border-right: solid 1px whitesmoke;*/
     float: left;
     background-color: #EFF5F5;
+=======
+    border-right: solid 1px whitesmoke;
+    float: left;
+    background-color: #B7D7D3;
+>>>>>>> b51d513ea780ae1652f8385110fe4b4501d0ef8f
 }
 
 .hospitalIcon {
@@ -170,6 +207,7 @@ body {
     max-width: 78px;
     margin-left: calc( 50% - 39px );
     margin-top: 20%;
+<<<<<<< HEAD
     color: #0F3C6C;
 }
 
@@ -237,6 +275,107 @@ body {
     width: 100%;
     overflow: auto;
     margin-top: 3vw;
+=======
+}
+
+.illustrationCaptionCover {
+    width: 100%;
+    overflow: auto;
+    background-color: #B7D7D3;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.initialStage {
+    display: block;
+}
+
+.firstStage {
+    display: none;
+    opacity: 0;
+    animation: anim 3s;
+}
+
+.secondStage {
+    display: none;
+    animation: anim 3s;
+}
+
+.thirdStage {
+    display: none;
+    animation: anim 3s;
+}
+
+.fourthStage {
+    display: none;
+    animation: anim 3s;
+}
+
+.fistStgIcon {
+    font-size: 4vw;
+}
+
+.fistStgIconContainer {
+    width: 100%;
+    overflow: auto;
+    margin-top: 3vw;
+}
+
+.firstStgIconCover {
+    float: left;
+    overflow: auto;
+    width: 33%;
+    min-width: 110px;
+    height: ;
+    text-align: center;
+    margin-top: 1.5vw;
+}
+
+.iconDesc {
+    overflow: auto;
+    text-align: center;
+}
+
+.brainLogo {
+    width: 120px;
+    margin-left: calc( 50% - 60px );
+    margin-top: 10vh;  
+}
+
+.algoMatchingText {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+.commIconCover {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.commIconDesc {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+>>>>>>> b51d513ea780ae1652f8385110fe4b4501d0ef8f
 }
 
 .firstStgIconCover {
