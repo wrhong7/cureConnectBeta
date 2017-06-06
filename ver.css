@@ -24,7 +24,7 @@ body {
     float: left;
     border: solid 1px white;
     border-radius: 15px;
-    padding-top: 2%;
+    padding-top: 5px;
     padding-left: 3%;
     padding-right: 3%;
     padding-bottom: 2%;
@@ -45,8 +45,44 @@ body {
     padding-bottom: 2%;
 }
 
+.veriRightRowCover {
+    height: 100px;
+}
+
+.verRightSectionDivider {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: solid 1px;
+}
+
+.verRowName {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.verRowPosition {
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.verRowLicense {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.emailSection {
+    margin-top: 23.5px;
+}
+
+
+
 .contactInfoTopic {
     text-align: center;
+    font-size: 25px;
 }
 
 .notSetCheckboxContianer {
@@ -60,18 +96,31 @@ width: 340px;
 }
 
 .notSetCheckboxTopic {
-    padding-top: 2%;
     padding-bottom: 3%;
     font-size: 20px;
     text-align: center;
     border-bottom: solid 1px white;
     margin-bottom: 1vw;
+    margin-top: 20px;
 }
 
 .emailDataEntryContainer {
     width: 410px;
     margin-left: calc( 50% - 205px );
     overflow: auto;
+}
+
+.calDesc {
+    font-size: 18px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.heatmapCover {
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; 
 }
 
 .emailDataEntry {
