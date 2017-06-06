@@ -46,6 +46,8 @@ body {
 }
 
 .veriRightRowCover {
+    width: 100%;
+    overflow: auto;
 }
 
 .buttonGroup {
@@ -152,7 +154,7 @@ width: 340px;
 }
 
 .preferenceListComponent {
-
+    margin-top: 5px;
 }
 
 .calDesc {
@@ -365,6 +367,25 @@ width: 340px;
 .confirmVerificationButton:hover {
     background-color: white;
     color: #10A7EA;
+}
+
+.preferenceListLeft {
+    width: 35%;
+    overflow: auto;
+    float: left;
+    margin-top: 1%;
+    padding-left: 10%;
+}
+
+.preferenceListTopic {
+    margin-top: 5px;
+}
+
+.preferenceListRight {
+    width: 65%;
+    overflow: auto;
+    float: left;
+    margin-top: 1%;
 }
 
 
