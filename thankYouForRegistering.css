@@ -9,7 +9,7 @@ body {
 .betaServiceNotificationContianer {
     width: 80vw;
     overflow: auto;
-    margin: 10vw 10vw 0 10vw;
+    margin: 7vw 10vw 0 10vw;
     border: solid 1px;
     padding: 5vw;
     border-radius: 2vw;
@@ -46,3 +46,8 @@ body {
     margin-left: 0.5vw;
 }
 
+.toCurrentJobOpeningPage {
+    cursor: pointer;
+    color: #E82F3A;
+    margin-left: 4vw;
+}
