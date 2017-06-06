@@ -32,7 +32,7 @@ body {
 
 .veriRight {
     width: 39vw;
-    height: 666px;
+    height: 519.33;
     min-width: 500px;
     margin-left: 0.3vw;
     margin-right: 0.6vw;
@@ -46,7 +46,47 @@ body {
 }
 
 .veriRightRowCover {
-    height: 100px;
+}
+
+.buttonGroup {
+    width: 100%;
+    overflow: auto;
+    margin-top: 5%;
+    padding-left: 30%;
+}
+
+.buttonLeft {
+    width: 30%;
+    margin-right: 2%;
+    float: left;
+    font-size: 15px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonLeft:hover {
+    background-color: white;
+    color: #10A7EA;
+}
+
+.buttonRight {
+    width: 30%;
+    float: left;
+    font-size: 15px;
+    padding: 10px;
+    border: solid 1px #E82F3A;
+    color: gitrgba(232, 47, 58, 1);;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonRight:hover {
+    color: white;
+    background-color: rgba(232, 47, 58, 1);
 }
 
 .verRightSectionDivider {
@@ -54,6 +94,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     border-top: solid 1px;
+    margin-top: 10px;
 }
 
 .verRowName {
@@ -110,10 +151,20 @@ width: 340px;
     overflow: auto;
 }
 
+.preferenceListComponent {
+
+}
+
 .calDesc {
     font-size: 18px;
     margin-left: 5%;
     margin-top: 10px;
+}
+
+.availabiltyDesc {
+    font-size: 18px;
+    margin-left: 5%;
+    margin-top: 25px;   
 }
 
 .heatmapCover {
@@ -121,6 +172,12 @@ width: 340px;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%; 
+}
+
+.preferenceList {
+    margin-left: 5%;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 .emailDataEntry {
