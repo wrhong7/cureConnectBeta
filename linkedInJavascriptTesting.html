@@ -2,6 +2,8 @@
 <head>
 <title>LinkedIn JavaScript API Hello World</title>
 
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
 <!-- 1. Include the LinkedIn JavaScript API and define a onLoad callback function -->
 <script type="text/javascript" src="https://platform.linkedin.com/in.js">
   api_key: 77a98y6t2xsvbb
@@ -10,34 +12,59 @@
 </script>
 
 <script type="text/javascript">
-  // 2. Runs when the JavaScript framework is loaded
+
   function onLinkedInLoad() {
     IN.Event.on(IN, "auth", onLinkedInAuth);
+
+    //we are injecting artificial codes here to change the signin with linkedin Button
+
+    $('span[id*="-title-text"]').css('cssText', 'color: red !important;');
   }
-  
+
   
   // 2. Runs when the viewer has authenticated
   function onLinkedInAuth() {
-
-    IN.API.Profile("me").fields("id","first-name", "last-name", "email-address").result(displayProfiles);
+    IN.API.Profile("me").fields("id","first-name", "last-name", "email-address", "location", "summary", "positions", "picture-url").result(displayProfiles);
   }
 
   // 2. Runs when the Profile() API call returns successfully
   function displayProfiles(profiles) {
+
     member = profiles.values[0];
-    document.getElementById("profiles").innerHTML = 
-      "<p>"+member.id+"<br> " +  member.firstName + "<br> " + member.lastName + "<br>"+member.emailAddress+"</p>";
+
+    var firstName = member.firstName;
+    var lastName = member.lastName;
+    var linkedInEmailAddress = member.emailAddress;
+    var locationInfo = member.location.name;
+    var linkedInSummary = member.summary;
+    var currentWorkInfo = member.positions.values[0].company.name;
+    var currentJobTitle = member.positions.values[0].title;
+    var userPhotoFromLinkedIn = member.pictureUrl;
+
+    console.log(firstName)
+    console.log(locationInfo)
+    console.log(linkedInSummary)
+    console.log(currentWorkInfo)
+    console.log(currentJobTitle)
+    console.log(userPhotoFromLinkedIn)
+    // document.getElementById("profiles").innerHTML 
+
   }
+
+  $('span[id*=li_ui_li_gen_]').css({color:'red !important'});
+
 </script>
 
 </head>
 <body>
 
 <!-- 3. Displays a button to let the viewer authenticate -->
-<script type="in/Login"></script>
+<script type="in/Login" class="helloWorld"></script>
 
 <!-- 4. Placeholder for the greeting -->
-<div id="profiles"></div>
+<div id="profiles">hello</div>
+
 
 </body>
 </html>
+
