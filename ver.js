@@ -89,6 +89,7 @@ var enteredCellNumber;
 var cellValCode;
 
 function sendValidationCode() {
+
 	enteredCellNumber = $(".cellDataEntry").val();
 	enteredCellNumber = replaceAll(enteredCellNumber, "-", "");
 	enteredCellNumber = replaceAll(enteredCellNumber, ".", "");
@@ -163,6 +164,14 @@ function codeValidation() {
 }
 
 
+// Loading LinkedIn Information that was submitted from the registartion page
+
+$(document).ready(function() {
+		var userInformation = JSON.parse(window.localStorage.getItem("userLinkedInInfo"));
+		console.log(userInformation.linkedInEmailAddress);
+		$(".emailDataEntry").append(userInformation.linkedInEmailAddress);
+	}
+)
 
 
 
